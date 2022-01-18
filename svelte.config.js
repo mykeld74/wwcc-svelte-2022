@@ -8,9 +8,7 @@ const config = {
 	// for more information about preprocessors
 	preprocess: [
 		preprocess({
-			scss: {
-				prependData: '@use "src/variables.scss" as *;'
-			}
+			postcss: true
 		})
 	],
 
@@ -21,22 +19,13 @@ const config = {
 		target: '#svelte',
 
 		vite: {
-			css: {
-				preprocessorOptions: {
-					scss: {
-						additionalData: '@use "src/variables.scss" as *;'
-					}
+			resolve: {
+				alias: {
+					$css: path.resolve('./src/css'),
+					$components: path.resolve('./src/components'),
+					$data: path.resolve('./src/data'),
+					$img: path.resolve('./src/images')
 				}
-			}
-		}
-	},
-	vite: {
-		resolve: {
-			alias: {
-				$css: path.resolve('./src/css'),
-				$components: path.resolve('./src/components'),
-				$data: path.resolve('./src/data'),
-				$img: path.resolve('./src/images')
 			}
 		}
 	}
