@@ -67,16 +67,15 @@
 		e.preventDefault();
 
 		let myForm = document.getElementById('ContactUs') as HTMLFormElement;
-		let formData = new FormData(myForm);
-		console.log(fields);
+		let formData = JSON.stringify(fields);
 		if (formIsValid) {
 			fetch('/', {
 				method: 'POST',
 				headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-				body: JSON.stringify(fields)
+				body: formData
 			})
 				.then(() => {
-					console.log('Form successfully submitted', formData.toString()),
+					console.log('Form successfully submitted', formData),
 						(showTYModal = true),
 						myForm.reset();
 				})
