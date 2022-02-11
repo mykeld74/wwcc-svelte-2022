@@ -1,3 +1,7 @@
+<script context="module">
+	export const prerender = true;
+</script>
+
 <script lang="ts">
 	let fields = { name: '', email: '', phone: '', subject: '', message: '' };
 	let errors = { name: '', email: '', phone: '', subject: '', message: '' };
@@ -69,7 +73,7 @@
 		let myForm = document.getElementById('ContactUs') as HTMLFormElement;
 		let formData = JSON.stringify(fields);
 		if (formIsValid) {
-			fetch('/', {
+			fetch('/contact-us', {
 				method: 'POST',
 				headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
 				body: formData
@@ -85,9 +89,9 @@
 </script>
 
 {#if !showTYModal}
-	<form name="Contact Us" id="ContactUs" method="POST" netlify>
+	<form name="Contact Us" id="ContactUs" method="POST" data-netlify="true">
 		<input type="hidden" name="form-name" value="Contact Us" />
-		<input class="hidden" name="bot-field" />
+		<!-- <input class="hidden" name="bot-field" /> -->
 		<div class="formBlock">
 			<label for="name">Name*</label>
 			<input
