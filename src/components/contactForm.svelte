@@ -1,7 +1,3 @@
-<script context="module">
-	export const prerender = true;
-</script>
-
 <script lang="ts">
 	let fields = { name: '', email: '', phone: '', subject: '', message: '' };
 	let errors = { name: '', email: '', phone: '', subject: '', message: '' };
@@ -71,25 +67,23 @@
 		e.preventDefault();
 
 		let myForm = document.getElementById('ContactUs') as HTMLFormElement;
-		let formData = JSON.stringify(fields);
+		let formData = new FormData(myForm);
 		if (formIsValid) {
-			fetch('/contact-us', {
+			fetch('/', {
 				method: 'POST',
 				headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-				body: formData
+				body: new URLSearchParams(formData).toString()
 			})
 				.then(() => {
-					console.log('Form successfully submitted', formData),
-						(showTYModal = true),
-						myForm.reset();
+					console.log('Form successfully submitted'), (showTYModal = true), myForm.reset();
 				})
-				.catch((error) => console.log(error));
+				.catch((error) => alert(error));
 		}
 	};
 </script>
 
 {#if !showTYModal}
-	<form name="Contact Us" id="ContactUs" method="POST" data-netlify="true">
+	<form name="Contact Us" id="ContactUs" method="POST">
 		<input type="hidden" name="form-name" value="Contact Us" />
 		<!-- <input class="hidden" name="bot-field" /> -->
 		<div class="formBlock">
@@ -126,7 +120,7 @@
 		<div class="formBlock">
 			<label for="subject">Subject</label>
 			<input
-				type="tel"
+				type="text"
 				name="subject"
 				id="subject"
 				placeholder="Subject"
