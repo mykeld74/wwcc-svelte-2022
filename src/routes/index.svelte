@@ -16,6 +16,14 @@
 
 	onMount(() => {
 		const tl = gsap.timeline();
+		let watl = gsap.timeline({
+			scrollTrigger: {
+				trigger: '#weAre',
+				start: 'top bottom',
+				end: 'top 200',
+				scrub: true
+			}
+		});
 
 		gsap.from('#header h1', { duration: 0.75, x: -500, opacity: 0 });
 		gsap.from('#header p', { duration: 0.75, x: 500, opacity: 0 });
@@ -37,20 +45,11 @@
 			ease: 'power1.inOut'
 		});
 
-		const wwIsTl = tl.from('#weAre', { opacity: 0, scale: 0, duration: 0.75 }).from('.wwIsBlock', {
+		watl.from('.wwIsBlock', {
 			scale: 0,
 			opacity: 0,
 			duration: 1,
 			stagger: 0.25
-		});
-
-		ScrollTrigger.create({
-			trigger: '#linkSection',
-			animation: wwIsTl,
-			start: 'top bottom',
-			end: 'bottom bottom-=50',
-			scrub: 0.2,
-			markers: false
 		});
 	});
 </script>
