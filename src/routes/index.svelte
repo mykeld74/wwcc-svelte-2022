@@ -23,7 +23,7 @@
 		gsap.from('#linkSection .linkBlock', {
 			scrollTrigger: {
 				trigger: '#linkSection',
-				// toggleActions: 'play none none none',
+				toggleActions: 'play none none none',
 				start: '0 85%',
 				end: 'bottom bottom-=50',
 				scrub: 0.2,
@@ -37,21 +37,21 @@
 			ease: 'power1.inOut'
 		});
 
-		// const wwIsTl = tl.from('#weAre', { opacity: 0, scale: 0, duration: 0.75 }).from('.wwIsBlock', {
-		// 	scale: 0,
-		// 	opacity: 0,
-		// 	duration: 1,
-		// 	stagger: 0.25
-		// });
+		const wwIsTl = tl.from('#weAre', { opacity: 0, scale: 0, duration: 0.75 }).from('.wwIsBlock', {
+			scale: 0,
+			opacity: 0,
+			duration: 1,
+			stagger: 0.25
+		});
 
-		// ScrollTrigger.create({
-		// 	trigger: '#linkSection',
-		// 	animation: wwIsTl,
-		// 	start: 'bottom 85%',
-		// 	end: 'bottom+=400 bottom-=50',
-		// 	scrub: 0.2,
-		// 	markers: false
-		// });
+		ScrollTrigger.create({
+			trigger: '#linkSection',
+			animation: wwIsTl,
+			start: 'bottom 85%',
+			end: 'bottom+=400 bottom-=50',
+			scrub: 0.2,
+			markers: false
+		});
 	});
 </script>
 
