@@ -16,7 +16,7 @@
 		Bring light weights and a mat if you have them!
 	</p>
 
-	<p><strong>There is something for eveyone. Bring a friend and Let's Move Together!</strong></p>
+	<p><strong>There is something for everyone. Bring a friend and Let's Move Together!</strong></p>
 	<h3>Schedule:</h3>
 	<p>
 		<strong>SATURDAYS:</strong><br />
@@ -46,8 +46,5 @@
 	h3 {
 		margin: 0 0 10px 0;
 		text-decoration: underline;
-	}
-	ul {
-		margin-left: 5vw;
 	}
 </style>

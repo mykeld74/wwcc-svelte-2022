@@ -11,7 +11,7 @@
 <main><slot /></main>
 
 <footer class="wowFooter">
-	<p>Click on any of the links below to learn more:</p>
+	<p>Please use <strong>Clickable Links</strong> in the banner below to learn more:</p>
 	<div class="footerLinks">
 		<div class="WowLink">
 			<a href="/women-of-westwoods">

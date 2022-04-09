@@ -37,6 +37,28 @@
 					{/each}
 				</ul>
 			{/each}
+			<p class="category" transition:fade={{ duration: 750 }}>Prayer</p>
+			<ul>
+				<li transition:fly={{ x: 100, y: 50, duration: 125, delay: delayInterval * 13 }}>
+					<a
+						href="https://docs.google.com/forms/d/e/1FAIpQLScjbhWqcpsjKnubkYgRQiX-rAsuNejM8AD2Bk2YzpAqdJh2Tw/viewform"
+						class="navItem"
+						target="_blank"
+						rel="noopener noreferrer">Submit a Prayer Request</a
+					>
+				</li>
+			</ul>
+			<p class="category" transition:fade={{ duration: 750 }}>Give</p>
+			<ul>
+				<li transition:fly={{ x: 100, y: 50, duration: 125, delay: delayInterval * 14 }}>
+					<a
+						href="https://westwoods.churchcenter.com/giving"
+						class="navItem"
+						target="_blank"
+						rel="noopener noreferrer">Donate to Westwoods</a
+					>
+				</li>
+			</ul>
 		</nav>
 	</div>
 {/if}
@@ -54,10 +76,11 @@
 		top: 0;
 		right: 0;
 		width: 100%;
-		max-width: 325px;
+		max-width: 355px;
 		background: var(--theme-colors-top_bar);
 		height: 100vh;
-		padding: 85px 0 0 30px;
+		padding: 85px 0 0 50px;
+		z-index: 900;
 		a {
 			color: var(--theme-colors-text);
 		}
@@ -79,7 +102,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		z-index: 50;
+		z-index: 902;
 		transition: all 0.33s ease-in-out;
 
 		&.close {

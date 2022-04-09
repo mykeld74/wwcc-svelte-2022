@@ -1,6 +1,7 @@
 <script>
 	import HeroBlock from '$components/hero.svelte';
 	import Img from '$components/image.svelte';
+	let seriesID = 'PLzIu1DkkWpWyG4hhL1sd4AATT9qiNxDEx';
 </script>
 
 <svelte:head>
@@ -16,16 +17,16 @@
 	<p class="times">9:00am - 10:30am Live in person and online</p>
 	<Img source="Mark_WIJR" altTag="Current Series Logo" />
 	<h2>Who is Jesus Really</h2>
-	<h4>1.2 - Mark 1</h4>
-	<h4>1.9 - Mark 2</h4>
-	<h4>1.16 - Mark 3</h4>
-	<h4>1.24 - Mark 4</h4>
-	<h4>1.30 - Mark 5</h4>
-	<h4>2.6 - Mark 6</h4>
-	<h4>2.13 - Mark 7</h4>
+	<h4>3.6 - Mark 10</h4>
+	<h4>3.13 - Mark 11</h4>
+	<h4>3.20 - Mark 12</h4>
+	<h4>3.27 - Mark 13</h4>
+	<h4>4.3 - Mark 14</h4>
+	<h4>4.10 - Mark 15</h4>
+	<h4>4.17 - Mark 16</h4>
 	<div class="videoContainer">
 		<iframe
-			src="https://www.youtube.com/embed/videoseries?list=PLzIu1DkkWpWw6UhOfdGQ1WHHSgSf69u3x"
+			src="https://www.youtube.com/embed/videoseries?list={seriesID}"
 			title="YouTube video player"
 			frameBorder="0"
 			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -17,7 +17,8 @@
 
 	<p>
 		For more information about either of these gatherings please contact Cari Schieffelin
-		303.807.0092 or <a href="mailto:jcsmmw@gmail.com">jcsmmw@gmail.com</a>
+		<a href="tel:3038070092">303.807.0092</a> or
+		<a href="mailto:jcsmmw@gmail.com">jcsmmw@gmail.com</a>
 	</p>
 </div>
 

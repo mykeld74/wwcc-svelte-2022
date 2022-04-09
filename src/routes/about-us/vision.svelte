@@ -6,9 +6,6 @@
 	import ScrollTrigger from 'gsap/dist/ScrollTrigger.js';
 	gsap.registerPlugin(ScrollTrigger);
 
-	let h;
-	let w;
-
 	onMount(() => {
 		gsap.from('.block .blockContent', {
 			opacity: 0,
@@ -85,7 +82,7 @@
 </HeroBlock>
 <Block>
 	<h2 slot="title" class="blockContent">Excited Community</h2>
-	<div slot="content" class="blockContent" bind:clientWidth={w} bind:clientHeight={h}>
+	<div slot="content" class="blockContent">
 		<p>
 			<strong>EXCITED:</strong> In the book of Acts the Bible gives us a picture of the early Church:
 			It says, “They were all in awe as many wonders and miraculous signs were done by the Apostles.”

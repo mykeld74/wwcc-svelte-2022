@@ -28,7 +28,7 @@ html {
 	--red: #ff2000;
 	--svg_fill: var(--theme-colors-svg_fill);
 	--theme-colors-text: #f1f1f1;
-	--theme-colors-background: #13191d;
+	--theme-colors-background: #111;
 	--theme-colors-top-bar: #000;
 	--textBlockBg: #111;
 	--textBlockColor: #fff;

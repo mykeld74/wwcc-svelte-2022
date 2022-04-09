@@ -26,7 +26,7 @@
 			scrollTrigger: {
 				trigger: '.block3',
 				// toggleActions: 'play none none none',
-				start: '0 85%',
+				start: 'top bottom',
 				end: 'bottom bottom-=50',
 				scrub: 0.5,
 				markers: false

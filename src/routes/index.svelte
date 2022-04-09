@@ -10,6 +10,7 @@
 	import { fade } from 'svelte/transition';
 	import BgImgSection from '$components/bgImgContainer.svelte';
 	import Modal from '$components/modal.svelte';
+	import WatchOnline from '$components/watchOnline.svelte';
 
 	gsap.registerPlugin(ScrollTrigger);
 
@@ -59,6 +60,7 @@
 </svelte:head>
 
 <div id="welcomeBlock" out:fade={{ duration: 250 }}>
+	<WatchOnline />
 	<div id="header">
 		<h1>Westwoods Community Church</h1>
 		<p class="bigBold">Join us in person or online!</p>

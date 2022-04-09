@@ -16,8 +16,8 @@ const themes = {
 		colors: {
 			text: '#f1f1f1',
 			background: {
-				_: '#13191D',
-				contrast: '#13191D'
+				_: '#050505',
+				contrast: '#111'
 			},
 			top_bar: '#000',
 			modal_bg: '#333',

@@ -10,29 +10,7 @@
 		topic. All gatherings will be held at Westwoods Community Church. Upcoming dates are:
 	</p>
 
-	<ul>
-		<li>Tuesday - 11/16 at 6:30 PM</li>
-		<li>Saturday - 12/11 at 10:00 AM</li>
-		<li>Tuesday - 1/18 at 6:30 PM</li>
-	</ul>
-	<p>
-		November Connect on 11/16 we will focus on Gratitude! What's in our life that we often take for
-		granted? How can we appreciate what have?
-	</p>
-
-	<p>Why does being thankful help?</p>
-
-	<p>Join us for a fun, encouraging evening, and bring a friend!</p>
-
-	<p>
-		Tuesday, November 16th<br />
-		6:30 -8:00 PM<br />
-		Westwoods Coffee Shop
-	</p>
-	<p>
-		Childcare will not be available but we are hopeful with advance notice we can help everyone find
-		a way to come. Please reach out if you need assistance.
-	</p>
+	<h3>May 17th - WoW Connect Night. Watch for details!</h3>
 </div>
 
 <style>

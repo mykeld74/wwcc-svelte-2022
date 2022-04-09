@@ -10,7 +10,6 @@
 	<div class="studentsLogoContainer">
 		<Img source="studentsLogo" altTag="Students Logo" />
 	</div>
-	<h1>Westwoods Students</h1>
 </div>
 <div class="container">
 	<p>
@@ -37,7 +36,7 @@
 
 	<p>
 		<a href="mailto:drew@westwoodscc.org">drew@westwoodscc.org</a><br />
-		(919) 564-8200 303-279-1616 ext. 2
+		303-279-1616 ext. 2
 	</p>
 
 	<iframe
@@ -57,10 +56,11 @@
 		align-items: center;
 		flex-direction: column;
 		color: #000;
-		padding: 10px 0;
+		padding: 20px 0;
 	}
 	.studentsLogoContainer {
-		width: 250px;
+		width: 90%;
+		max-width: 350px;
 	}
 	.container {
 		width: 100%;

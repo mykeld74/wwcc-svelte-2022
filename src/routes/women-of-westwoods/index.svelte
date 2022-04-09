@@ -6,7 +6,7 @@
 	<title>Women of Westwoods</title>
 </svelte:head>
 <div class="container">
-	<p>
+	<p class="center">
 		The Women's Ministry of Westwoods is an arm of the church that provides opportunities for every
 		woman to connect relationally, be encouraged in their walk with Jesus, and equipped to impact
 		their world for the Kingdom. Whether it's through monthly Connect events, mom gatherings,
@@ -16,10 +16,12 @@
 		life and building friendships!
 	</p>
 
-	<p><strong>All Women Welcome!</strong></p>
+	<p class="center welcome"><strong>All Women Welcome!</strong></p>
 
 	<p>
-		If you would to learn more or have any questions, please email us at: womenofwestwoods@gmail.com
+		If you would to learn more or have any questions, please email us at: <a
+			href="mailto:womenofwestwoods@gmail.com">womenofwestwoods@gmail.com</a
+		>
 	</p>
 
 	<p>
@@ -29,9 +31,42 @@
 		prepare and drop off a meal for someone in need, please add your info to this google form:
 	</p>
 	<a href="https://forms.gle/dpUAMn7w3Ngwgazg9" target="_blank" rel="noopener noreferrer">
-		<div class="mealtrainContainer"><Image source="mealtrainLogo" altTag="Meal Train Logo" /></div>
 		<p>https://forms.gle/dpUAMn7w3Ngwgazg9</p>
+		<div class="mealtrainContainer"><Image source="mealtrainLogo" altTag="Meal Train Logo" /></div>
 	</a>
+	<div class="center">
+		<h2>Easter is Coming (April 17th)</h2>
+		<p>But the Season of Lent leads us in and prepares us.</p>
+
+		<p>
+			And Ladies, we'd like to invite you to join us as we press into taking ourselves off the hook
+			for perfection. Our friend Jessica has co-written a devotional with a companion guide to walk
+			us through this season of Lent with Hope, AND the reality of brokenness.
+		</p>
+
+		<p>
+			Click <a
+				href="https://katebowler.com/good-enough/#pre-order"
+				target="_blank"
+				rel="noopener noreferrer">HERE</a
+			> to purchase the book Good Enough - 40ish Devotionals for a Life of Imperfection by Kate Bowler
+			and Jessica Richie, and Click HERE to order your Free Downloadable Lent Reflection Guide.
+		</p>
+
+		<p>
+			Visit the <a
+				href="https://www.facebook.com/womenofwestwoods"
+				target="_blank"
+				rel="noopener noreferrer">WoW FB page</a
+			> to comment and be in communication as we embrace this season together.
+		</p>
+
+		<p>
+			You can participate in the Lent reflections without purchasing the book, however it will
+			enhance your experience with the blessings contained it, and you'll have it for the days
+			beyond.
+		</p>
+	</div>
 </div>
 
 <style>

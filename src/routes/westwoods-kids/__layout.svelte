@@ -19,7 +19,8 @@
 
 <style lang="scss">
 	.kidsFooterContainer {
-		display: flex;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 		align-items: center;
 		justify-content: space-around;
 		gap: 20px;
@@ -28,11 +29,7 @@
 		margin: auto;
 		border-top: 3px solid #fff;
 		border-bottom: 3px solid #fff;
-		padding: 10px;
-		@media (max-width: 478px) {
-			flex-wrap: wrap;
-			justify-content: center;
-		}
+		padding: 10px 10vw;
 	}
 	.kidsButton {
 		box-sizing: border-box;
@@ -43,20 +40,20 @@
 		background: #3760a2;
 		border-radius: 40px;
 		border: none;
-		overflow: hidden;
 		width: 100%;
-		min-width: 23.5vw;
+		overflow: hidden;
+		padding: 0 10px;
 		height: 80px;
 		cursor: pointer;
 		transition: all 0.3s ease-in-out;
 		@media (max-width: 478px) {
 			margin: 10px auto;
-			width: 300px;
 		}
 
 		p {
 			z-index: 2;
 			margin: 0;
+			font-size: clamp(16px, 1.5vw, 24px);
 			font-weight: 600;
 			line-height: 1;
 			color: #fff;

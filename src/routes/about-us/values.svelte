@@ -15,6 +15,14 @@
 			ease: 'power1.inOut'
 		});
 		gsap.from('.block2 .blockContent', {
+			scrollTrigger: {
+				trigger: '.block2',
+				// toggleActions: 'play none none none',
+				start: 'top bottom',
+				end: 'bottom bottom-=50',
+				scrub: 0.5,
+				markers: false
+			},
 			opacity: 0,
 			scale: 0,
 			x: -800,
@@ -26,7 +34,7 @@
 			scrollTrigger: {
 				trigger: '.block3',
 				// toggleActions: 'play none none none',
-				start: '0 85%',
+				start: 'top bottom',
 				end: 'bottom bottom-=50',
 				scrub: 0.5,
 				markers: false
