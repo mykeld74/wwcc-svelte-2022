@@ -45,12 +45,12 @@
 			ease: 'power1.inOut'
 		});
 
-		watl.from('.wwIsBlock', {
-			scale: 0,
-			opacity: 0,
-			duration: 1,
-			stagger: 0.25
-		});
+		// watl.from('.wwIsBlock', {
+		// 	scale: 0,
+		// 	opacity: 0,
+		// 	duration: 1,
+		// 	stagger: 0.25
+		// });
 	});
 </script>
 
