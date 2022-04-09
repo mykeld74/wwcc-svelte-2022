@@ -24,7 +24,7 @@
 			scrollTrigger: {
 				trigger: '#linkSection',
 				toggleActions: 'play none none none',
-				start: '0 85%',
+				start: 'top bottom',
 				end: 'bottom bottom-=50',
 				scrub: 0.2,
 				markers: false
@@ -47,8 +47,8 @@
 		ScrollTrigger.create({
 			trigger: '#linkSection',
 			animation: wwIsTl,
-			start: 'bottom 85%',
-			end: 'bottom+=400 bottom-=50',
+			start: 'top bottom',
+			end: 'bottom bottom-=50',
 			scrub: 0.2,
 			markers: false
 		});
