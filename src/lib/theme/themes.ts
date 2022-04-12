@@ -16,7 +16,7 @@ const themes = {
 		colors: {
 			text: '#f1f1f1',
 			background: {
-				_: '#050505',
+				_: '#252525',
 				contrast: '#111'
 			},
 			top_bar: '#000',
