@@ -17,10 +17,14 @@
 	import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 	let hideAnnouncement: boolean;
+	let filled = false;
 
 	gsap.registerPlugin(ScrollTrigger);
 
 	onMount(() => {
+		setTimeout(() => {
+			filled = true;
+		}, 500);
 		const tl = gsap.timeline();
 		let watl = gsap.timeline({
 			scrollTrigger: {
@@ -112,7 +116,7 @@
 			xml:space="preserve"
 		>
 			<path
-				class="skyline"
+				class="skyline {filled ? 'filled' : ''}"
 				d="M0,207.578v-8.32h6.323v-6.989h20.966v-4.659H42.93v4.992h9.318v-24.96h4.992l1.297-12.061
     	l1.65,11.735l2.934,0.183l2.017-11.918l0.917,12.101l4.034,0.183v15.619h3.58v-18.001h7.715v-15.715h40.287v14.286h9.143v-24.001h10
     	v-4h14.858v4.286h18.001v4.857h4.857v-19.715l6.572-6.572h4.857V94.688h5.828V33.293h34.948v-6.612h28.809v129.405h7.556V138.14
@@ -129,13 +133,13 @@
 					fill="freeze"
 					id="first"
 				/>
-				<animate
+				<!-- <animate
 					attributeName="fill"
 					dur="500ms"
-					to="rgba(0, 0, 0, 0.5)"
+					to="var(--testColor)"
 					fill="freeze"
 					begin="first.begin + 500ms"
-				/>
+				/> -->
 			</path>
 		</svg>
 	</div>
@@ -237,11 +241,7 @@
 			var(--theme-colors-background) 1px 1px 0px;
 		color: var(--theme-colors-text);
 	}
-	.bannerText {
-		margin: 0;
-		font-size: clamp(20px, 5vw, 32px);
-		font-weight: 600;
-	}
+
 	.bigBold {
 		font-size: clamp(65px, 7vw, 95px);
 		margin-bottom: 0;
@@ -265,6 +265,10 @@
 		stroke-dasharray: 5000;
 		stroke-dashoffset: 6000;
 		margin-bottom: 0;
+		transition: fill 500ms ease-in-out;
+		&.filled {
+			fill: var(--theme-colors-svg_fill);
+		}
 	}
 	#linkSection {
 		width: 100%;

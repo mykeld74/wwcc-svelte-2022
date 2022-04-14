@@ -2,6 +2,20 @@
 
 @import './reset.css';
 
+:root {
+	--headerFooter: #000;
+	--base: #121212;
+	--baseColor: #fff;
+	--accentColor: var(--red);
+	--linkColor: var(--red);
+	--red: #ff2000;
+	--svg_fill: var(--theme-colors-svg_fill);
+	--theme-colors-text: #f1f1f1;
+	--theme-colors-background: #111;
+	--theme-colors-top-bar: #000;
+	--textBlockBg: #111;
+	--textBlockColor: #fff;
+}
 body {
 	background-color: var(--theme-colors-background, initial);
 	color: var(--theme-colors-text, initial);
@@ -16,22 +30,11 @@ body {
 	margin: 0;
 	font-size: 10px;
 }
-html {
+
+html{
 	font-family: 'IBM Plex Sans', sans-serif;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
-	--headerFooter: #000;
-	--base: #121212;
-	--baseColor: #fff;
-	--accentColor: var(--red);
-	--linkColor: var(--red);
-	--red: #ff2000;
-	--svg_fill: var(--theme-colors-svg_fill);
-	--theme-colors-text: #f1f1f1;
-	--theme-colors-background: #111;
-	--theme-colors-top-bar: #000;
-	--textBlockBg: #111;
-	--textBlockColor: #fff;
 }
 
 .block2 {
