@@ -1,3 +1,28 @@
+<script context="module">
+	import client from '$lib/client';
+	export const prerender = true;
+
+	export async function load() {
+		const query = `*[_type == "event"] | order(order asc){
+      _id,
+      title,
+      date,
+      time,
+      body
+		}`;
+		const Events = await client.fetch(query);
+		return { props: { Events } };
+	}
+</script>
+<script>
+	import PortableText from '@portabletext/svelte'
+	export let Events;
+
+	
+
+	
+</script>
+
 <svelte:head>
 	<title>WoW Connect | Women of Westwoods</title>
 </svelte:head>
@@ -9,6 +34,19 @@
 		Once a month we will create a space to gather as women to build community around a different
 		topic. All gatherings will be held at Westwoods Community Church. Upcoming dates are:
 	</p>
+
+	<div>
+		{#each Events as {title, date, time, body}}
+		<h3>{title}</h3>
+		<p>{date}</p>
+		<p>{time}</p>
+		<PortableText
+			blocks={body}			
+		/>
+
+		{/each}
+
+	</div>
 
 	<h3>May 17th - WoW Connect Night. Watch for details!</h3>
 </div>
