@@ -10,13 +10,8 @@
 	import { fade } from 'svelte/transition';
 	import BgImgSection from '$components/bgImgContainer.svelte';
 	import Modal from '$components/modal.svelte';
-	import AnnounceModal from '$components/announceModal.svelte';
 	import WatchOnline from '$components/watchOnline.svelte';
-	import Banner from '$components/banner.svelte';
-	import Fa from 'svelte-fa/src/fa.svelte';
-	import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
-	let hideAnnouncement: boolean;
 	let filled = false;
 
 	gsap.registerPlugin(ScrollTrigger);
@@ -61,13 +56,15 @@
 		// 	duration: 1,
 		// 	stagger: 0.25
 		// });
-		let closeAnnouncement: string = window.sessionStorage.getItem('closeAnnouncement');
 
-		if (closeAnnouncement !== '1') {
-			hideAnnouncement = true;
-		} else {
-			hideAnnouncement = false;
-		}
+		// announcement modal code
+		// let closeAnnouncement: string = window.sessionStorage.getItem('closeAnnouncement');
+
+		// if (closeAnnouncement !== '1') {
+		// 	hideAnnouncement = true;
+		// } else {
+		// 	hideAnnouncement = false;
+		// }
 	});
 </script>
 
@@ -75,26 +72,7 @@
 	<title>Westwoods Community Church</title>
 </svelte:head>
 
-<AnnounceModal isAnnouncementOpen={hideAnnouncement}>
-	<h3 slot="header">Easter Weekend - Here's how we're celebrating:</h3>
-	<div slot="content">
-		<p>
-			<strong>4.15:</strong> Good Friday experience - 12-8pm.
-		</p>
-		<p>
-			<strong>4.16:</strong> Easter Egg Hunt - 10-11:30am.
-		</p>
-		<p>
-			<strong>4.17:</strong> Easter Service - 9 and 10:30am.
-		</p>
-		<a
-			href="https://easterinlakewood.com"
-			target="_blank"
-			rel="noopener noreferrer"
-			class="announceLink"><h3>Learn more at EasterInLakewood.com <Fa icon={faArrowRight} /></h3></a
-		>
-	</div>
-</AnnounceModal>
+
 
 <div id="welcomeBlock" out:fade={{ duration: 250 }}>
 	<WatchOnline />
@@ -275,13 +253,13 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 	}
-	.announceLink {
+	/* .announceLink {
 		transition: all 0.3s ease-in-out;
 		&:hover {
 			color: #b12328;
 			text-decoration: underline;
 		}
-	}
+	} */
 	.lbText {
 		font-size: clamp(22px, 2.5vw, 32px);
 		line-height: 1.4;
