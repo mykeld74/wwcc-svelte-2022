@@ -30,21 +30,12 @@
 		them. As a community, we want to be an on-going resource to help in life's big moments. We are
 		creating an on-going meal train crew sign up. If you would like to be someone to potentially
 		prepare and drop off a meal for someone in need, please add your info to this form:
-		<Modal>
-			<p slot="trigger" class="trigger">Click here to add your info.</p>
-
-			<div slot="content">
-				<iframe
-					class="mealTrain"
-					title="Meal Train Sign Up"
-					src="https://docs.google.com/forms/d/e/1FAIpQLScThg82dHBFrRqkVendoOj9_rs5L7iJtbl2Tjz5CVJmgDslmQ/viewform"
-					frameborder="0"
-					marginheight="0"
-					marginwidth="0"
-				/>
-			</div>
-		</Modal>
 	</p>
+	<a
+		href="https://docs.google.com/forms/d/e/1FAIpQLScThg82dHBFrRqkVendoOj9_rs5L7iJtbl2Tjz5CVJmgDslmQ/viewform"
+		target="_blank"
+		rel="noopener noreferrer"><p class="trigger">Click here to add your info.</p></a
+	>
 
 	<!-- <div class="center">
 		<h2>Easter is Coming (April 17th)</h2>
