@@ -8,12 +8,6 @@ export interface mcs {
 export default {
 	mcs: [
 		{
-			title: 'Barrientos',
-			day: 'Thursday Night',
-			contact: ['605.206.1246'],
-			id: '01'
-		},
-		{
 			title: 'Blackman/Winger',
 			day: 'Wednesday Night',
 			contact: ['303.859.3294', '303.985.4856'],
@@ -21,7 +15,7 @@ export default {
 		},
 		{
 			title: 'Brooks',
-			day: 'Sunday Afternoon',
+			day: 'Monday Night',
 			contact: ['970.208.7560'],
 			id: '03'
 		},
@@ -47,6 +41,7 @@ export default {
 			title: 'College Group',
 			day: 'Friday Night',
 			location: '7:30 in the coffee shop',
+			contact: ['info@westwoodscc.org'],
 			id: '07'
 		},
 		{

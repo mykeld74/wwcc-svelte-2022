@@ -39,7 +39,7 @@
 			<p>
 				Missional Communties (MCs) are groups serving together, praying together and sharing life
 				together. Each group will rotate through learning, serving and celebrating during each
-				month. Cal to find out what this week's rotation will be and where to meet.
+				month. Call to find out what this week's rotation will be and where to meet.
 			</p>
 		</div>
 	</div>
