@@ -15,15 +15,11 @@
 <div class="container">
 	<h2 class="joinUs">Join us Sunday mornings!</h2>
 	<p class="times">9:00am - 10:30am Live in person and online</p>
-	<Img source="Mark_WIJR" altTag="Current Series Logo" />
-	<h2>Who is Jesus Really</h2>
-	<h4>3.6 - Mark 10</h4>
-	<h4>3.13 - Mark 11</h4>
-	<h4>3.20 - Mark 12</h4>
-	<h4>3.27 - Mark 13</h4>
-	<h4>4.3 - Mark 14</h4>
-	<h4>4.10 - Mark 15</h4>
-	<h4>4.17 - Mark 16</h4>
+	<Img source="BFA" altTag="Current Series Logo" />
+	<h2>Beauty from Ashes</h2>
+	<h4>4.24 - Light from Darkness</h4>
+	<h4>5.1 - Peace from Fear</h4>
+
 	<div class="videoContainer">
 		<iframe
 			src="https://www.youtube.com/embed/videoseries?list={seriesID}"
