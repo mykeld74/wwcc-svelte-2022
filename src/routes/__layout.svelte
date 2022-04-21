@@ -32,6 +32,17 @@
 	</script>
 	<script src="https://www.google-analytics.com/analytics.js" async></script>
 	<!--  End Google Analytics -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-55JS0EX64L"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'G-55JS0EX64L');
+	</script>
 </svelte:head>
 
 <div id="primaryContainer" hidden>
