@@ -9,9 +9,10 @@
       date,
       time,
 			location,
-      body
+      body,
 		}`;
 		const Events = await client.fetch(query);
+
 		return { props: { Events } };
 	}
 </script>

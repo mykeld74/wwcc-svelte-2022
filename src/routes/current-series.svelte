@@ -1,7 +1,21 @@
+<script context="module">
+	import client from '$lib/client';
+	export const prerender = true;
+
+	export async function load() {
+		const query = `*[_type == "currentseries"] {
+      linkid			
+		}`;
+		const currentSeriesID = await client.fetch(query);
+		return { props: { currentSeriesID } };
+	}
+</script>
+
 <script>
 	import HeroBlock from '$components/hero.svelte';
 	import Img from '$components/image.svelte';
-	let seriesID = 'PLzIu1DkkWpWyG4hhL1sd4AATT9qiNxDEx';
+	export let currentSeriesID;
+	export let seriesID = currentSeriesID[0].linkid;
 </script>
 
 <svelte:head>
