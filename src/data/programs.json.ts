@@ -1,6 +1,10 @@
 export default {
 	programs: [
 		{
+			date: '05-08-22',
+			location: '/Program-05-08-22.pdf'
+		},
+		{
 			date: '05-01-22',
 			location: '/Program-05-01-22.pdf'
 		},
