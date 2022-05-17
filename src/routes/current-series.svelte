@@ -29,10 +29,12 @@
 <div class="container">
 	<h2 class="joinUs">Join us Sunday mornings!</h2>
 	<p class="times">9:00am - 10:30am Live in person and online</p>
-	<Img source="BFA" altTag="Current Series Logo" />
-	<h2>Beauty from Ashes</h2>
-	<h4>4.24 - Light from Darkness</h4>
-	<h4>5.1 - Peace from Fear</h4>
+	<Img source="theChuchSeries" altTag="Current Series Logo" />
+	<h2>The Church</h2>
+	<h4>5.15 - The Church is a HYDRANT</h4>
+	<h4>5.22 - The Church is an INN</h4>
+	<h4>5.29 - The Church is an AGM</h4>
+	<h4>6.5 - The Church is a LIGHTHOUSE</h4>
 
 	<div class="videoContainer">
 		<iframe
