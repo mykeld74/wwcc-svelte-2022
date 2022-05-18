@@ -3,7 +3,7 @@
 		let target;
 
 		function update() {
-			target = document.querySelector('#svelte');
+			target = document.querySelector('body');
 			target.appendChild(node);
 			node.hidden = false;
 		}
