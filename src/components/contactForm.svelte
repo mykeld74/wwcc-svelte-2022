@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Modal from '$components/modal.svelte';
 	let fields = { name: '', email: '', phone: '', subject: '', message: '' };
 	let errors = { name: '', email: '', phone: '', subject: '', message: '' };
 	let formIsValid = false;
@@ -67,7 +68,7 @@
 		e.preventDefault();
 
 		let myForm = document.getElementById('ContactUs') as HTMLFormElement;
-		let formData = new FormData(myForm);
+		let formData = new FormData(myForm) as any;
 		if (formIsValid) {
 			fetch('/', {
 				method: 'POST',
@@ -82,10 +83,10 @@
 	};
 </script>
 
-{#if !showTYModal}
+<section>
 	<form name="Contact Us" id="ContactUs" method="POST">
 		<input type="hidden" name="form-name" value="Contact Us" />
-		<!-- <input class="hidden" name="bot-field" /> -->
+		<input class="hidden" name="bot-field" />
 		<div class="formBlock">
 			<label for="name">Name*</label>
 			<input
@@ -142,10 +143,15 @@
 		</div>
 		<button type="submit" on:click={handleSubmit}>Send</button>
 	</form>
-{/if}
-{#if showTYModal}
-	<div><p>Thank you for your submission, we'll be in touch soon.</p></div>
-{/if}
+
+	{#if showTYModal}
+		<Modal isOpen={showTYModal}>
+			<div slot="content" class="successContent">
+				<p>Thank you for your submission, we'll be in touch soon.</p>
+			</div>
+		</Modal>
+	{/if}
+</section>
 
 <style lang="scss">
 	form {
@@ -154,7 +160,7 @@
 		padding: 20px;
 	}
 	p {
-		color: #fff;
+		color: var(--theme-colors-text);
 		font-size: clamp(20px, 3.5vw, 26px);
 	}
 
@@ -163,7 +169,7 @@
 
 		label {
 			display: block;
-			color: #fff;
+			color: var(--theme-colors-text);
 			margin: 15px 0 0 0;
 			font-size: clamp(16px, 2vw, 22px);
 		}
@@ -198,5 +204,8 @@
 	}
 	.hidden {
 		display: none;
+	}
+	.successContent {
+		min-height: 50vh;
 	}
 </style>

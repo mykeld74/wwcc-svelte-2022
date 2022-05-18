@@ -4,7 +4,6 @@
 
 <script>
 	import HeroBlock from '$components/hero.svelte';
-	import Block from '$components/textComponent.svelte';
 	import ContactForm from '$components/contactForm.svelte';
 </script>
 
@@ -33,11 +32,13 @@
 						<p>7700 Woodard Dr.</p>
 						<p>Lakewood, CO 80227</p>
 						<iframe
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3070.8329214253686!2d-105.08480848435234!3d39.675972808278864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876b81ad73d8223d%3A0xef2d6fab8083844!2sWestwoods%20Community%20Church!5e0!3m2!1sen!2sus!4v1569100714699!5m2!1sen!2sus"
-							frameBorder="0"
-							allowFullScreen
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3070.8285333747203!2d-105.08457898434875!3d39.67607150827313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876b81ad73d8223d%3A0xef2d6fab8083844!2sWestwoods%20Community%20Church!5e0!3m2!1sen!2sus!4v1652884406968!5m2!1sen!2sus"
 							title="Westwoods Map"
 							id="wwMap"
+							style="border:0;"
+							allowFullScreen
+							loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"
 						/>
 					</div>
 				</div>

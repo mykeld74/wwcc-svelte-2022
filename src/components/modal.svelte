@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { fly, fade } from 'svelte/transition';
 	import Portal from '$components/portal.svelte';
-	let isOpen = false;
+	export let isOpen = false;
 	function openModal() {
 		isOpen = true;
 	}
