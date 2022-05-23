@@ -124,7 +124,12 @@
 		align-items: center;
 		justify-content: center;
 		h3 {
+			text-decoration: underline;
+			cursor: pointer;
 			margin: 0;
+			:hover {
+				text-decoration: none;
+			}
 		}
 	}
 </style>
