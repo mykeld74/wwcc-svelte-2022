@@ -1,5 +1,13 @@
 <script>
+	import { onMount } from 'svelte';
 	import Image from '$components/image.svelte';
+	import Modal from '$components/modal.svelte';
+
+	let kidsCampCheck = '1';
+
+	onMount(() => {
+		kidsCampCheck = localStorage.getItem('wwkidsCamp');
+	});
 </script>
 
 <svelte:head>
@@ -12,6 +20,33 @@
 	</div>
 	<h1>Welcome to Westwoods Kids</h1>
 	<p>Transforming our Next Generation with the Love of Jesus One Friend at a Time</p>
+</div>
+<div class="wwKidCamp">
+	<Modal modalName="wwkidsCamp" isOpen={kidsCampCheck === '1' ? false : true}>
+		<h3 slot="trigger" class="trigger lbText">
+			Adventure Island Kids Camp - Click here to learn more!
+		</h3>
+		<div slot="content">
+			<div class="aiImage"><Image source="adventureIsland" altTag="Adventure Island Logo" /></div>
+			<p>
+				Join us for a great summer of connection as we gather with kids and families for Kids
+				Connect. Happening every Tuesday evening for the month of June.
+			</p>
+			<p>We will have a free community meal each night from 5-5:30pm.</p>
+			<p>
+				Our programming will be from 5:30-7:30pm. There will be great time for learning, having fun
+				and growing together.
+			</p>
+			<p>
+				You can register here: <a
+					href="https://westwoodskids.mycokesburyvbs.com/"
+					target="_blank"
+					rel="noopener noreferrer">https://westwoodskids.mycokesburyvbs.com</a
+				>
+			</p>
+			<p>Open for kiddos 3 years old - 5th Grade</p>
+		</div>
+	</Modal>
 </div>
 <div class="textBlock blue">
 	<div class="container"><h2>Westwoods Kids core values are:</h2></div>
@@ -74,6 +109,22 @@
 		}
 		&.red {
 			background: #c21f48;
+		}
+	}
+	.aiImage {
+		width: clamp(200px, 100%, 350px);
+		margin: auto;
+	}
+	.wwKidCamp {
+		width: 100%;
+		text-align: center;
+		background: #c21f48;
+		padding: 15px 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		h3 {
+			margin: 0;
 		}
 	}
 </style>

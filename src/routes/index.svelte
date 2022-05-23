@@ -13,10 +13,14 @@
 	import WatchOnline from '$components/watchOnline.svelte';
 
 	let filled = false;
+	let kidsCampCheck = '1';
 
 	gsap.registerPlugin(ScrollTrigger);
 
 	onMount(() => {
+		kidsCampCheck = localStorage.getItem('kidsCamp');
+		console.log(kidsCampCheck);
+
 		setTimeout(() => {
 			filled = true;
 		}, 500);
@@ -72,8 +76,6 @@
 	<title>Westwoods Community Church</title>
 </svelte:head>
 
-
-
 <div id="welcomeBlock" out:fade={{ duration: 250 }}>
 	<WatchOnline />
 	<div id="header">
@@ -121,6 +123,31 @@
 			</path>
 		</svg>
 	</div>
+</div>
+<div class="banner">
+	<Modal modalName="kidsCamp" isOpen={kidsCampCheck === '1' ? false : true}>
+		<p slot="trigger" class="trigger lbText">Adventure Island Kids Camp - Tuesday Nights in June</p>
+		<div slot="content">
+			<div class="aiImage"><Img source="adventureIsland" altTag="Adventure Island Logo" /></div>
+			<p>
+				Join us for a great summer of connection as we gather with kids and families for Kids
+				Connect. Happening every Tuesday evening for the month of June.
+			</p>
+			<p>We will have a free community meal each night from 5-5:30pm.</p>
+			<p>
+				Our programming will be from 5:30-7:30pm. There will be great time for learning, having fun
+				and growing together.
+			</p>
+			<p>
+				You can register here: <a
+					href="https://westwoodskids.mycokesburyvbs.com/"
+					target="_blank"
+					rel="noopener noreferrer">https://westwoodskids.mycokesburyvbs.com</a
+				>
+			</p>
+			<p>Open for kiddos 3 years old - 5th Grade</p>
+		</div>
+	</Modal>
 </div>
 
 <div id="linkSection">
@@ -313,5 +340,15 @@
 	#wwMap {
 		width: 100%;
 		height: 50vh;
+	}
+
+	.aiImage {
+		width: clamp(200px, 100%, 350px);
+		margin: auto;
+	}
+	.banner {
+		background: var(--red);
+		text-align: center;
+		cursor: pointer;
 	}
 </style>

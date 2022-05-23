@@ -2,11 +2,13 @@
 	import { fly, fade } from 'svelte/transition';
 	import Portal from '$components/portal.svelte';
 	export let isOpen = false;
+	export let modalName = 'default';
 	function openModal() {
 		isOpen = true;
 	}
 	function closeModal() {
 		isOpen = false;
+		localStorage.setItem(modalName, '1');
 	}
 </script>
 
@@ -45,6 +47,7 @@
 		background: var(--theme-colors-text);
 		opacity: 0.8;
 		z-index: 501;
+
 		cursor: pointer;
 	}
 	:global(.modalContent) {
