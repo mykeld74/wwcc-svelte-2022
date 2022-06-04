@@ -77,8 +77,12 @@ export default {
 			]
 		},
 		{
+			heading: 'Campaign',
+			items: [{ page: '7700 Lighthouse', slug: '/lighthouse', order: 12 }]
+		},
+		{
 			heading: 'Have a Question',
-			items: [{ page: 'Contact Us', slug: '/contact-us', order: 12 }]
+			items: [{ page: 'Contact Us', slug: '/contact-us', order: 13 }]
 		}
 	]
 };
