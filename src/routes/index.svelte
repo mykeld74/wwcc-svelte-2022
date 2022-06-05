@@ -18,9 +18,6 @@
 	gsap.registerPlugin(ScrollTrigger);
 
 	onMount(() => {
-		kidsCampCheck = localStorage.getItem('kidsCamp');
-		console.log(kidsCampCheck);
-
 		setTimeout(() => {
 			filled = true;
 		}, 500);
@@ -186,6 +183,11 @@
 			</div>
 		</Modal>
 	</BgImgSection>
+	<a href="/lighthouse">
+		<BgImgSection source="lighthouse" id="lighthouse" className="linkBlock">
+			<p class="lbText">7700 Lighthouse Campaign</p>
+		</BgImgSection>
+	</a>
 </div>
 <div id="weAreContainer">
 	<BgImgSection id="weAre" source="worship2021" className="weAre">
