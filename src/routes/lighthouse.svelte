@@ -1,5 +1,6 @@
 <script>
 	import Img from '$components/image.svelte';
+	import PledgeForm from '$components/pledgeForm.svelte';
 </script>
 
 <svelte:head>
@@ -93,6 +94,8 @@
 			</ol>
 		</li>
 	</ol>
+	<PledgeForm />
+
 	<div class="redesign">
 		<Img source="7700woodard" altTag="7700 Woodard" />
 	</div>
