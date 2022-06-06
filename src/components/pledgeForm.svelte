@@ -1,15 +1,18 @@
 <script>
 	import Modal from '$components/modal.svelte';
 
+	let SelectedTeams = [];
+
 	let fields = {
 		FirstName: '',
 		LastName: '',
 		Email: '',
 		Phone: '',
-		PledgeType: 'One Time',
-		Amount: ''
+		PledgeType: '',
+		Amount: '',
+		Teams: ''
 	};
-	let errors = { FirstName: '', LastName: '', Email: '', Phone: '', PledgeType: '', Amount: '' };
+	let errors = { FirstName: '', LastName: '', Email: '', Phone: '' };
 	let formIsValid = false;
 	let formIsSubmitted = false;
 	let showModal = false;
@@ -17,6 +20,7 @@
 	const handleSubmit = (e) => {
 		formIsValid = true;
 		showModal = true;
+		fields.Teams = SelectedTeams.join(',');
 		const EmailTest = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{1,6}$/;
 
 		if (fields.FirstName.length < 2) {
@@ -50,20 +54,6 @@
 		} else {
 			errors.Phone = '';
 		}
-		if (fields.Amount.length < 1) {
-			formIsValid = false;
-			showModal = false;
-			errors.Amount = 'Please enter your pledge amount.';
-		} else {
-			errors.Amount = '';
-		}
-		if (fields.PledgeType !== 'One Time' && fields.PledgeType !== 'Monthly') {
-			formIsValid = false;
-			showModal = false;
-			errors.PledgeType = `One time or Monthly?`;
-		} else {
-			errors.PledgeType = '';
-		}
 
 		const scriptURL =
 			'https://script.google.com/macros/s/AKfycbyutZsPiRwPVWClbIoPSU6H_ZjmW_fB4VS9DWzaDVbusVReswKM8bI64VZukX-PFHb2/exec';
@@ -74,7 +64,7 @@
 			showModal = true;
 			fetch(scriptURL, { method: 'POST', body: new FormData(form) })
 				.then((response) => {
-					console.log('Success!');
+					console.log('Success!' + response);
 					showModal = true;
 					form.reset();
 					fields = {
@@ -83,7 +73,8 @@
 						Email: '',
 						Phone: '',
 						PledgeType: 'One Time',
-						Amount: ''
+						Amount: '',
+						Teams: SelectedTeams.join(', ')
 					};
 					formIsSubmitted = false;
 				})
@@ -93,7 +84,10 @@
 </script>
 
 <div class="pledgeFormContainer">
-	<h4>Complete the form below to pledge a one time payment or a monthly commitment:</h4>
+	<h4>
+		If you would like to be part of one of the teams or are interested in making a financial pledge
+		please complete this form:
+	</h4>
 	<form name="lighthousePledgeForm" id="lighthousePledgeForm" onSubmit={handleSubmit} class="form">
 		<section class="formSection">
 			<div class="inputContainer">
@@ -127,13 +121,11 @@
 		<section class="formSection">
 			<div class="inputContainer">
 				<input id="Amount" name="Amount" type="number" bind:value={fields.Amount} required />
-				<label for="Amount" class="placeholderLabel">Amount*:</label>
+				<label for="Amount" class="placeholderLabel">Amount:</label>
 			</div>
-
-			<p class="error">{errors.Amount}</p>
 		</section>
 		<section class="formSection radioContainer">
-			<p class="label">Pledge Type*:</p>
+			<p class="label">Pledge Type:</p>
 			<div class="radioButtonsContainer">
 				<section class="radioButtons">
 					<input
@@ -156,7 +148,62 @@
 					<label for="radioMonthly" class="noMargin">Monthly</label>
 				</section>
 			</div>
-			<p class="error pledge">{errors.PledgeType}</p>
+		</section>
+		<section class="formSection teamContainer">
+			<p class="label contactMe">Please contact me about being part of the following team(s):</p>
+			<div class="checkboxContainer">
+				<section class="checkboxButtons">
+					<input
+						type="checkbox"
+						id="MCteam"
+						name="SelectedTeams"
+						value="MC Team"
+						bind:group={SelectedTeams}
+					/>
+					<label for="MCteam">MC Team</label>
+				</section>
+				<section class="checkboxButtons">
+					<input
+						type="checkbox"
+						id="PrayerTeam"
+						name="SelectedTeams"
+						value="Prayer Team"
+						bind:group={SelectedTeams}
+					/>
+					<label for="PrayerTeam">Prayer Team</label>
+				</section>
+				<section class="checkboxButtons">
+					<input
+						type="checkbox"
+						id="Attendanceteam"
+						name="SelectedTeams"
+						value="Attendance Team"
+						bind:group={SelectedTeams}
+					/>
+					<label for="Attendanceteam">Attendance Team</label>
+				</section>
+				<section class="checkboxButtons">
+					<input
+						type="checkbox"
+						id="Scripture team"
+						name="SelectedTeams"
+						value="Scripture Team"
+						bind:group={SelectedTeams}
+					/>
+					<label for="Scripture team">Scripture Team</label>
+				</section>
+				<section class="checkboxButtons">
+					<input
+						type="checkbox"
+						id="Financial team"
+						name="SelectedTeams"
+						value="Financial Team"
+						bind:group={SelectedTeams}
+					/>
+					<label for="Financial team">Financial Team</label>
+				</section>
+			</div>
+			<input type="hidden" name="Teams" value={SelectedTeams.join(', ')} />
 		</section>
 
 		<section class="submitButtonContainer">
@@ -166,9 +213,14 @@
 </div>
 <Modal isOpen={showModal}>
 	<div slot="content">
-		<h2>Thank you for your pledge!</h2>
+		<h2>Thank you for your support!</h2>
 		<p>
-			If you would like to set up your recurring donation or one time payment you may do that now.
+			If you have expressed interest in one of the teams, someone from that team will reach out to
+			you soon.
+		</p>
+		<p>
+			If you made a financial pledge and would like to set up your recurring or one time donation
+			you may do that here:
 		</p>
 		<div>
 			<a
@@ -205,9 +257,28 @@
 		width: 100%;
 		height: 50px;
 	}
+
+	.teamContainer {
+		grid-column: 1/-1;
+		display: flex;
+		flex-direction: column;
+	}
+	.checkboxContainer {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	}
+	.checkboxButtons {
+		width: 100%;
+		display: flex;
+		label {
+			color: #333;
+		}
+	}
 	.inputContainer {
 		position: relative;
 	}
+
 	input {
 		height: 50px;
 		box-sizing: border-box;
@@ -244,17 +315,25 @@
 	input[type='number'] {
 		font-size: clamp(16px, 2vw, 22px);
 	}
+	input[type='checkbox'] {
+		height: 25px;
+		width: 25px;
+		margin-right: 10px;
+	}
 	.error {
 		margin: 0;
 		color: var(--accentColor);
 	}
-	.pledge {
-		grid-column: 1 / -1;
-	}
+
 	.label {
 		margin-bottom: 5px;
 		color: #333;
+		&.contactMe {
+			font-weight: 600;
+			margin-bottom: 15px;
+		}
 	}
+
 	.formSection {
 		position: relative;
 	}
