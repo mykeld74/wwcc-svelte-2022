@@ -1,6 +1,7 @@
 <script>
 	import Img from '$components/image.svelte';
 	import PledgeForm from '$components/pledgeForm.svelte';
+	import LighthouseIcon from '$components/lighthouseIcon.svelte';
 </script>
 
 <svelte:head>
@@ -32,14 +33,23 @@
 	<h3>Objectives to accomplish by the end of 2022:</h3>
 	<ol>
 		<li>
-			7 new MCs
-			<ul>
-				<li>77 new mc attenders - <span class="strong">Value of Relationships / Purpose</span></li>
+			7 new MCs <ul>
+				<li>
+					<span class="iconContainer">
+						<LighthouseIcon />
+					</span>77 new mc attenders - <span class="strong">Value of Relationships / Purpose</span>
+				</li>
 			</ul>
 		</li>
 		<li>
 			770 people praying for Westwoods each month - <span class="strong">Value of Prayer</span>
-			<ul><li>77 people committed to getting 10 people to pray for Westwoods once a month</li></ul>
+			<ul>
+				<li>
+					<span class="iconContainer">
+						<LighthouseIcon />
+					</span>77 people committed to getting 10 people to pray for Westwoods once a month
+				</li>
+			</ul>
 		</li>
 		<li>
 			7700 people gathering for Weekend services - <span class="strong"
@@ -60,17 +70,33 @@
 	</ol>
 	<h3>Each Objective will have unique champions each leading a unique team to accomplish it.</h3>
 	<ul>
-		<li>7 new MCs / 77 new mc attenders – <span class="strong">Joe Brooks</span></li>
-		<li>770 people praying– <span class="strong">Shanna and Taryn</span></li>
 		<li>
-			7700 people gathering with us for Weekend services – <span class="strong">Chris Sanchez</span>
+			<span class="iconContainer">
+				<LighthouseIcon />
+			</span>LighthouseIcon 7 new MCs / 77 new mc attenders – <span class="strong">Joe Brooks</span>
 		</li>
 		<li>
-			77,000 verses of God’s Word read during the campaign – <span class="strong">Drew Cole</span>
+			<span class="iconContainer">
+				<LighthouseIcon />
+			</span>770 people praying– <span class="strong">Shanna and Taryn</span>
 		</li>
 		<li>
-			$770,000 raised to resource all the above and to make sure this Lighthouse stays lit for a
-			LONG TIME – <span class="strong">Lynn Deegan</span>
+			<span class="iconContainer">
+				<LighthouseIcon />
+			</span>7700 people gathering with us for Weekend services –
+			<span class="strong">Chris Sanchez</span>
+		</li>
+		<li>
+			<span class="iconContainer">
+				<LighthouseIcon />
+			</span>77,000 verses of God’s Word read during the campaign –
+			<span class="strong">Drew Cole</span>
+		</li>
+		<li>
+			<span class="iconContainer">
+				<LighthouseIcon />
+			</span>$770,000 raised to resource all the above and to make sure this Lighthouse stays lit
+			for a LONG TIME – <span class="strong">Lynn Deegan</span>
 		</li>
 	</ul>
 	<h3>Financial Details:</h3>
@@ -137,6 +163,22 @@
 		li ol {
 			margin-left: clamp(10px, 5vw, 30px);
 		}
+	}
+
+	ul li {
+		position: relative;
+		list-style-type: none;
+
+		/* &:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 20px;
+			height: 20px;
+			background: url('https://res.cloudinary.com/mykeld74/image/upload/f_auto,q_auto/WestwoodsCC/lighthouseIcon')
+				center center / contain no-repeat;
+		} */
 	}
 	.lighthouseContainer {
 		width: calc(100% - 40px);
