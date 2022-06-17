@@ -29,13 +29,6 @@
 <div class="container">
 	<h2 class="joinUs">Join us Sunday mornings!</h2>
 	<p class="times">9:00am - 10:30am Live in person and online</p>
-	<Img source="theChuchSeries" altTag="Current Series Logo" />
-	<h2>The Church</h2>
-	<h4>5.15 - The Church is a HYDRANT</h4>
-	<h4>5.22 - The Church is an INN</h4>
-	<h4>5.29 - The Church is an AGM</h4>
-	<h4>6.5 - The Church is a LIGHTHOUSE</h4>
-
 	<div class="videoContainer">
 		<iframe
 			src="https://www.youtube.com/embed/videoseries?list={seriesID}"
@@ -45,6 +38,14 @@
 			allowFullScreen
 		/>
 	</div>
+	<h2>Summer Psalms</h2>
+	<h4>6.12 - Psalms 77</h4>
+	<h4>6.19 - Psalms 127</h4>
+	<h4>6.26 - Psalms 103</h4>
+	<h4>7.3 - Psalms 73</h4>
+	<h4>7.10 - Psalms 1</h4>
+	<h4>7.17 - Psalms 40</h4>
+	<h4>7.24 - Psalms 143</h4>
 </div>
 
 <style>
