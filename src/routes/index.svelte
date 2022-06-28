@@ -11,8 +11,10 @@
 	import BgImgSection from '$components/bgImgContainer.svelte';
 	import Modal from '$components/modal.svelte';
 	import WatchOnline from '$components/watchOnline.svelte';
+	import AnnouncementModal from '$components/announceModal.svelte';
 
 	let filled = false;
+	let showAnnouncement = true;
 
 	gsap.registerPlugin(ScrollTrigger);
 
@@ -58,13 +60,15 @@
 		// });
 
 		// announcement modal code
-		// let closeAnnouncement: string = window.sessionStorage.getItem('closeAnnouncement');
+		let closeAnnouncement: string = window.sessionStorage.getItem('closeAnnouncement');
 
-		// if (closeAnnouncement !== '1') {
-		// 	hideAnnouncement = true;
-		// } else {
-		// 	hideAnnouncement = false;
-		// }
+		if (closeAnnouncement !== '1') {
+			showAnnouncement = true;
+			console.log('show announcement');
+		} else {
+			showAnnouncement = false;
+			console.log('hide announcement');
+		}
 	});
 </script>
 
@@ -118,6 +122,9 @@
 				/> -->
 			</path>
 		</svg>
+	</div>
+	<div class="alert">
+		<h3>January 3rd, we will have only 1 service at 10:00am. See you then.</h3>
 	</div>
 </div>
 
@@ -195,6 +202,17 @@
 		</div>
 	</BgImgSection>
 </div>
+<AnnouncementModal isAnnouncementOpen={showAnnouncement}>
+	<h1 slot="header">Sunday, July 3rd - One Service</h1>
+	<div slot="content">
+		<h3>This Sunday, July 3rd we will only have one service at 10:00am.</h3>
+		<p>
+			If you show up at 9:00, you'll have an hour to kill, if you show up at 10:30 you'll miss a
+			bunch.
+		</p>
+		<h2>We hope to see you at 10:00!</h2>
+	</div>
+</AnnouncementModal>
 
 <style lang="scss">
 	#welcomeBlock {
@@ -316,5 +334,20 @@
 	#wwMap {
 		width: 100%;
 		height: 50vh;
+	}
+	.alert {
+		background: var(--red);
+		padding: 15px 10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+
+		h3 {
+			margin: 0;
+		}
 	}
 </style>
