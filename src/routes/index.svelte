@@ -80,7 +80,7 @@
 	<WatchOnline />
 	<div id="header">
 		<h1>Westwoods Community Church</h1>
-		<p class="bigBold">Join us in person or online!</p>
+		<p class="bigBold">Belong before you believe!</p>
 		<Img source="redline" altTag="just a red line" />
 	</div>
 
