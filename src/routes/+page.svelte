@@ -8,6 +8,7 @@
 	import Modal from '$components/modal.svelte';
 	import WatchOnline from '$components/watchOnline.svelte';
 	import AnnouncementModal from '$components/announceModal.svelte';
+	import TodaysVerse from '$components/dailyBibleReading.svelte';
 
 	let filled = false;
 	let showAnnouncement = true;
@@ -163,6 +164,7 @@
 		</BgImgSection>
 	</a>
 </div>
+<TodaysVerse />
 <div id="weAreContainer">
 	<BgImgSection id="weAre" source="worship2021" className="weAre">
 		<p class="wwIs center">Westwoods Is:</p>
