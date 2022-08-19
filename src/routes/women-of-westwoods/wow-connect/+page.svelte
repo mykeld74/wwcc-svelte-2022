@@ -1,7 +1,7 @@
 <script>
 	import PortableText from '@portabletext/svelte';
 	export let Events;
-	/** @type {import('./$types').PageData */
+	/** @type {import('./$types').PageData} */
 	export let data;
 	$: ({ Events } = data);
 </script>

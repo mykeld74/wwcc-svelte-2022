@@ -1,15 +1,7 @@
 <script>
-	// throw new Error(
-	// 	'@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)'
-	// );
-	// Suggestion (check code before using, and possibly convert to data.X access later):
-	// /** @type {import('./$types').PageData} */
-	// export let data;
-	//
-
 	import HeroBlock from '$components/hero.svelte';
 	import Img from '$components/image.svelte';
-	/** @type {import('./$types').PageData */
+	/** @type {import('./$types').PageData} */
 	export let data;
 	$: ({ currentSeriesID } = data);
 	$: seriesID = currentSeriesID[0].linkid;
