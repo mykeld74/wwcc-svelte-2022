@@ -1,21 +1,20 @@
-<script context="module">
-	import client from '$lib/client';
-	export const prerender = true;
-
-	export async function load() {
-		const query = `*[_type == "currentseries"] {
-      linkid			
-		}`;
-		const currentSeriesID = await client.fetch(query);
-		return { props: { currentSeriesID } };
-	}
-</script>
-
 <script>
+	// throw new Error(
+	// 	'@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)'
+	// );
+	// Suggestion (check code before using, and possibly convert to data.X access later):
+	// /** @type {import('./$types').PageData} */
+	// export let data;
+	//
+
 	import HeroBlock from '$components/hero.svelte';
 	import Img from '$components/image.svelte';
-	export let currentSeriesID;
-	export let seriesID = currentSeriesID[0].linkid;
+	/** @type {import('./$types').PageData */
+	export let data;
+	$: ({ currentSeriesID } = data);
+	$: seriesID = currentSeriesID[0].linkid;
+
+	// export let seriesID = currentSeriesID[0].linkid;
 </script>
 
 <svelte:head>

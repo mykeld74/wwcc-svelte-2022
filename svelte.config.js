@@ -1,6 +1,5 @@
 import preprocess from 'svelte-preprocess';
 import adapter from '@sveltejs/adapter-netlify';
-import path from 'path';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -19,17 +18,6 @@ const config = {
 			enabled: true,
 			onError: 'continue',
 			entries: ['*']
-		},
-
-		vite: {
-			resolve: {
-				alias: {
-					$css: path.resolve('./src/css'),
-					$components: path.resolve('./src/components'),
-					$data: path.resolve('./src/data'),
-					$img: path.resolve('./src/images')
-				}
-			}
 		}
 	}
 };
