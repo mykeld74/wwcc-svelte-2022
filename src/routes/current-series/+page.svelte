@@ -1,7 +1,7 @@
 <script>
 	import HeroBlock from '$components/hero.svelte';
 	import Img from '$components/image.svelte';
-	/** @type {import('./$types').PageData */
+	/** @type {import('./$types').PageData} */
 	export let data;
 	$: ({ currentSeriesID } = data);
 	$: seriesID = currentSeriesID[0].linkid;
