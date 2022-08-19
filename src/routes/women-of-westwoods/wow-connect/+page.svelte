@@ -1,25 +1,9 @@
-<script context="module">
-	import client from '$lib/client';
-	export const prerender = true;
-
-	export async function load() {
-		const query = `*[_type == "event"] | order(order asc){
-      _id,
-      title,
-      date,
-      time,
-			location,
-      body,
-		}`;
-		const Events = await client.fetch(query);
-
-		return { props: { Events } };
-	}
-</script>
-
 <script>
 	import PortableText from '@portabletext/svelte';
 	export let Events;
+	/** @type {import('./$types').PageData */
+	export let data;
+	$: ({ Events } = data);
 </script>
 
 <svelte:head>

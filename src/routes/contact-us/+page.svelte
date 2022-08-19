@@ -1,7 +1,3 @@
-<script context="module">
-	export const prerender = true;
-</script>
-
 <script>
 	import HeroBlock from '$components/hero.svelte';
 	import ContactForm from '$components/contactForm.svelte';
