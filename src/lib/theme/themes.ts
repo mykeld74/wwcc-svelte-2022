@@ -10,7 +10,9 @@ const themes = {
 			modal_bg: '#f1f1f1',
 			container_bg: '#fff',
 			modal_background: 'rgba(0, 0, 0, 0.25)',
-			svg_fill: '#333'
+			svg_fill: '#333',
+			card_bg: '#333',
+			card_color: '#fff'
 		}
 	},
 	dark: {
@@ -24,7 +26,9 @@ const themes = {
 			modal_bg: '#333',
 			container_bg: '#111',
 			modal_background: 'rgba(255, 255, 255, 0.25)',
-			svg_fill: '#000'
+			svg_fill: '#000',
+			card_bg: '#f1f1f1',
+			card_color: '#000'
 		}
 	}
 };
