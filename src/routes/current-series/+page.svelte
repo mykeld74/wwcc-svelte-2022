@@ -27,14 +27,9 @@
 			allowFullScreen
 		/>
 	</div>
-	<h2>Summer Psalms</h2>
-	<h4>6.12 - Psalms 77</h4>
-	<h4>6.19 - Psalms 127</h4>
-	<h4>6.26 - Psalms 103</h4>
-	<h4>7.3 - Psalms 73</h4>
-	<h4>7.10 - Psalms 1</h4>
-	<h4>7.17 - Psalms 40</h4>
-	<h4>7.24 - Psalms 143</h4>
+	<h2>One Another's</h2>
+	<h4>8.28 - Spur On One Another</h4>
+	<h4>9.4 - Bear One Another's Burdens</h4>
 </div>
 
 <style>

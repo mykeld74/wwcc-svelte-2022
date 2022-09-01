@@ -5,7 +5,7 @@
 <div class="container">
 	<h2>Meet Us at the Park!</h2>
 	<h3>
-		A playground playdate for parents and caretakers of littles to connect. Invite your friends!
+		A playground play date for parents and caretakers of littles to connect. Invite your friends!
 	</h3>
 	<h3>Every 2ND and 4TH Wednesday (Weather Permitting)</h3>
 
