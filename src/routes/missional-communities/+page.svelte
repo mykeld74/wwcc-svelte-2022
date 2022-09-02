@@ -25,6 +25,7 @@
 							<p class="mcTitle">{mc.title}</p>
 						</div>
 						<p class="mcDay">{mc.day}</p>
+						<p class="mcTime">{mc.time}</p>
 						{#if mc.contact}
 							{#each mc.contact as contact}
 								<p class="mcContact">{contact}</p>
@@ -83,6 +84,13 @@
 		grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
 		grid-gap: 20px;
 		margin-bottom: 30px;
+	}
+	.mc {
+		border-radius: 10px;
+
+		border: 1px solid #777;
+		padding: 10px;
+		box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 	}
 	p {
 		margin: 0 0 10px 0;

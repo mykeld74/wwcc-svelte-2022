@@ -8,47 +8,80 @@ export interface mcs {
 export default {
 	mcs: [
 		{
-			title: 'Blackman/Winger',
-			day: 'Wednesday Night',
-			contact: ['303.859.3294', '303.985.4856'],
-			id: '02'
-		},
-		{
 			title: 'Brooks',
 			day: 'Monday Night',
 			contact: ['970.208.7560'],
+			time: '6:30pm',
+			id: '01'
+		},
+		{
+			title: 'Dorazio/Daugherty',
+			day: '2nd & 4th Tuesday Night',
+			contact: ['716.514.6200', '303.717.8328'],
+			time: '6:00pm',
+			id: '02'
+		},
+		{
+			title: 'Sanchez/Hayes',
+			day: 'Every Other Tuesday Night',
+			contact: ['303.653.5002'],
+			time: '6:00pm',
 			id: '03'
 		},
 		{
-			title: 'Cole',
+			title: 'Blackman/Winger',
 			day: 'Wednesday Night',
-			contact: ['303.547.7427'],
+			contact: ['303.859.3294', '303.985.4856'],
+			time: '6:30pm',
 			id: '04'
 		},
 		{
-			title: 'Hause',
-			day: 'Monday Night',
-			contact: ['303.928.0475'],
+			title: 'Van Horn/Burkett',
+			day: '2nd & 4th Wednesday Night',
+			contact: ['806.470.1642'],
+			time: '7:00pm',
 			id: '05'
 		},
 		{
-			title: 'Tonkin',
-			day: 'Thursday Night',
-			contact: ['720.413.6752'],
+			title: 'Hause',
+			day: 'Every other Wednesday Night',
+			contact: ['303.928.0475'],
+			time: '6:00pm',
 			id: '06'
 		},
 		{
-			title: 'College Group',
-			day: 'Friday Night',
-			location: '7:30 in the coffee shop',
-			contact: ['info@westwoodscc.org'],
+			title: 'Boswell/Tonkin',
+			day: 'Thursday Night',
+			contact: ['303.264.7206'],
+			time: '6:00pm',
 			id: '07'
+		},
+		{
+			title: 'Cole',
+			day: 'Thursday Night',
+			contact: ['303.547.7427'],
+			time: '7:00pm',
+			id: '08'
+		},
+		{
+			title: 'Barrientos/Phelps',
+			day: 'Friday Night',
+			contact: ['303.653.3148'],
+			time: '6:30pm',
+			id: '09'
+		},
+		{
+			title: 'College Group',
+			day: '2nd & 4th Tuesday Night',
+			contact: ['716.514.6200', '303.717.8328'],
+			time: '6:00pm',
+			id: '10'
 		},
 		{
 			title: 'Westwoods Students',
 			day: 'Monday Night',
-			location: '6:30 at Westwoods',
-			id: '08'
+			time: '6:30pm',
+			id: '11'
 		}
 	]
 };
