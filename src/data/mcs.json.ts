@@ -23,7 +23,7 @@ export default {
 		},
 		{
 			title: 'Sanchez/Hayes',
-			day: 'Every Other Tuesday Night',
+			day: '1st and 3rd Tuesday Night',
 			contact: ['303.653.5002'],
 			time: '6:00pm',
 			id: '03'
