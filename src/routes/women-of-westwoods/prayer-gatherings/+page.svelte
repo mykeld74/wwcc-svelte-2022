@@ -11,7 +11,7 @@
 	</p>
 
 	<p>
-		<strong>3rd Thursday of the Month - 6:30pm</strong> - Adoptive/Foster Moms (and those raising a relative)
+		<strong>1st Thursday of the Month - 6:30pm</strong> - Adoptive/Foster Moms (and those raising a relative)
 		at Westwoods.
 	</p>
 
