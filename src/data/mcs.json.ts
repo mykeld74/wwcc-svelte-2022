@@ -16,7 +16,7 @@ export default {
 		},
 		{
 			title: 'Boswell/Tonkin',
-			day: 'Thursday Night',
+			day: 'Tuesday Night',
 			contact: ['303.264.7206'],
 			time: '6:00pm',
 			id: '02'
