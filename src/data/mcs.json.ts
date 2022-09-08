@@ -15,44 +15,44 @@ export default {
 			id: '01'
 		},
 		{
+			title: 'Boswell/Tonkin',
+			day: 'Thursday Night',
+			contact: ['303.264.7206'],
+			time: '6:00pm',
+			id: '02'
+		},
+		{
 			title: 'Dorazio/Daugherty',
 			day: '2nd & 4th Tuesday Night',
 			contact: ['716.514.6200', '303.717.8328'],
 			time: '6:00pm',
-			id: '02'
+			id: '03'
 		},
 		{
 			title: 'Sanchez/Hayes',
 			day: '1st and 3rd Tuesday Night',
 			contact: ['303.653.5002'],
 			time: '6:00pm',
-			id: '03'
+			id: '04'
 		},
 		{
 			title: 'Blackman/Winger',
 			day: 'Wednesday Night',
 			contact: ['303.859.3294', '303.985.4856'],
 			time: '6:30pm',
-			id: '04'
+			id: '05'
 		},
 		{
 			title: 'Van Horn/Burkett',
 			day: '2nd & 4th Wednesday Night',
 			contact: ['806.470.1642'],
 			time: '7:00pm',
-			id: '05'
+			id: '06'
 		},
 		{
 			title: 'Hause',
 			day: 'Every other Wednesday Night',
 			contact: ['303.928.0475'],
-			time: '6:00pm',
-			id: '06'
-		},
-		{
-			title: 'Boswell/Tonkin',
-			day: 'Thursday Night',
-			contact: ['303.264.7206'],
 			time: '6:00pm',
 			id: '07'
 		},
