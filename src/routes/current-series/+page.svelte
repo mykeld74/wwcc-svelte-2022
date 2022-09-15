@@ -27,9 +27,11 @@
 			allowFullScreen
 		/>
 	</div>
-	<h2>One Another's</h2>
-	<h4>8.28 - Spur On One Another</h4>
-	<h4>9.4 - Bear One Another's Burdens</h4>
+	<h2>Prayers to Pray</h2>
+	<h4>9.11 - Not My Will But Yours</h4>
+	<h4>9.18 - HELP! A Desperate Prayer</h4>
+	<h4>9.25 - May We Be One</h4>
+	<h4>10.2 - I Messed Up</h4>
 </div>
 
 <style>
