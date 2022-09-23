@@ -2,10 +2,10 @@
 	import Fa from 'svelte-fa/src/fa.svelte';
 	import { faBars, faLink, faTimes } from '@fortawesome/free-solid-svg-icons';
 	import { fly, fade } from 'svelte/transition';
-	import navItems from '$data/navItems.json';
+	import navItems from '$data/navItems';
 	const delayInterval = 50;
 
-	const navBlocks = navItems.navItems;
+	const navBlocks = navItems;
 
 	export let isOpen = false;
 </script>

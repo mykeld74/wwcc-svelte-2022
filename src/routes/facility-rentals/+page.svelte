@@ -1,8 +1,6 @@
 <script>
-	import Facility from '$data/facilities.json';
+	import Facilities from '$data/facilities';
 	import BgImage from '$components/bgImgContainer.svelte';
-
-	const Rooms = Facility.rooms;
 </script>
 
 <svelte:head>
@@ -14,7 +12,7 @@
 </BgImage>
 
 <div class="container">
-	{#each Rooms as room, i}
+	{#each Facilities as room, i}
 		<div class="room">
 			<p class="title">{room.title}</p>
 			<ul>

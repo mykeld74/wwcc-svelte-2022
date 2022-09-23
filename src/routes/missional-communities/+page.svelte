@@ -1,7 +1,6 @@
 <script>
 	import Img from '$components/image.svelte';
-	import MCs from '$data/mcs.json';
-	const MC = MCs.mcs;
+	import MC from '$data/mcs';
 </script>
 
 <svelte:head>
@@ -31,9 +30,9 @@
 								<p class="mcContact">{contact}</p>
 							{/each}
 						{/if}
-						{#if mc.location}
+						<!-- {#if mc.location}
 							<p class="mcLocation">{mc.location}</p>
-						{/if}
+						{/if} -->
 					</div>
 				{/each}
 			</div>

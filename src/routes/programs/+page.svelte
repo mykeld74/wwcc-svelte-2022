@@ -1,5 +1,5 @@
 <script>
-	import data from '$data/programs.json';
+	import Programs from '$data/programs';
 	import HeroBlock from '$components/hero.svelte';
 	import Block from '$components/textComponent.svelte';
 	import { scale, fade } from 'svelte/transition';
@@ -23,7 +23,7 @@
 
 		<div class="programContainer">
 			{#if loaded}
-				{#each data.programs as program, i}
+				{#each Programs as program, i}
 					<div
 						class="program"
 						in:scale={{ duration: 500, delay: 100 * i }}

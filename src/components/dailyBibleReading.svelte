@@ -1,5 +1,5 @@
 <script>
-	import Verses from '$data/bibleReading.json';
+	import Readings from '$data/bibleReading';
 
 	const today = new Date();
 	const day = today.getDate();
@@ -8,7 +8,7 @@
 
 	const todayDate = `${month}-${day}-${year}`;
 
-	let findToday = Verses.readings.find((verse) => verse.date === todayDate);
+	let findToday = Readings.find((verse) => verse.date === todayDate);
 	let todaysVerse = findToday?.passage;
 </script>
 

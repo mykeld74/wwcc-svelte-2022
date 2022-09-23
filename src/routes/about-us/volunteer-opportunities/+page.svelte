@@ -1,10 +1,9 @@
 <script>
 	import { onMount } from 'svelte';
 
-	import Volunteer from '$data/volunteer.json';
+	import Opportunities from '$data/volunteerOppotunities';
 	import HeroBlock from '$components/hero.svelte';
 
-	const Ops = Volunteer.opportunities;
 	let desc;
 	let descHeight = 0;
 	let w;
@@ -23,7 +22,7 @@
 
 	let descMinHeight = () => {
 		desc = document.querySelectorAll('.desc');
-		for (let i = 0; i < Ops.length; i++) {
+		for (let i = 0; i < Opportunities.length; i++) {
 			if (desc[i].clientHeight > descHeight) {
 				descHeight = desc[i].clientHeight;
 			}
@@ -41,7 +40,7 @@
 </HeroBlock>
 
 <div class="container" bind:clientWidth={w}>
-	{#each Ops as op, i}
+	{#each Opportunities as op, i}
 		<div class="volBlock">
 			<h4 class="title">{op.title}</h4>
 			<p class="desc" id="desc{i}" style="min-height: {descHeight}px">

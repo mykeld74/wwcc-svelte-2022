@@ -1,5 +1,5 @@
 <script>
-	import Verses from '$data/bibleReading.json';
+	import Readings from '$data/bibleReading';
 	import HeroBlock from '$components/hero.svelte';
 	import { fly, fade } from 'svelte/transition';
 </script>
@@ -13,7 +13,7 @@
 </HeroBlock>
 
 <div class="container">
-	{#each Verses.readings as reading, index}
+	{#each Readings as reading, index}
 		<div class="card" in:fly={{ y: 300, x: 600, duration: 175, delay: index * 90 }} out:fade>
 			<h4 class="title">{reading.date}</h4>
 			<p class="passage">{reading.passage} {index}</p>
