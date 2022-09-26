@@ -11,6 +11,11 @@
 		<Img source="studentsLogo" altTag="Students Logo" />
 	</div>
 </div>
+<a href="https://square.link/u/WRpWnncS" target="_blank" rel="noopener noreferrer">
+	<div class="registrationBanner">
+		<p>Click here to pay for the fall retreat!</p>
+	</div>
+</a>
 <div class="container">
 	<p>
 		Westwoods Students is a gathering of 6th-12th grade students with the purpose of fostering space
@@ -75,6 +80,16 @@
 
 		@media (max-width: 801px) {
 			height: 95vw;
+		}
+	}
+	.registrationBanner {
+		background: var(--linkColor);
+		color: #fff;
+		text-align: center;
+		padding: 10px 0;
+		p {
+			margin: 0;
+			font-weight: 600;
 		}
 	}
 </style>

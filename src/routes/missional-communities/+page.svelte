@@ -30,9 +30,9 @@
 								<p class="mcContact">{contact}</p>
 							{/each}
 						{/if}
-						<!-- {#if mc.location}
+						{#if mc.location}
 							<p class="mcLocation">{mc.location}</p>
-						{/if} -->
+						{/if}
 					</div>
 				{/each}
 			</div>
