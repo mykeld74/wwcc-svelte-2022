@@ -130,7 +130,6 @@
 	}
 	.wowFooter {
 		p {
-			margin: 0 0 5px 20px;
 			font-size: 0.95rem;
 		}
 	}
@@ -147,6 +146,13 @@
 	.WowLink {
 		padding: 20px;
 		text-align: center;
+
+		a {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
 
 		p {
 			color: #f785b5;
