@@ -67,12 +67,6 @@ const mcs = [
 		time: '6:30pm'
 	},
 	{
-		title: 'College Group',
-		day: '2nd & 4th Tuesday Night',
-		contact: ['716.514.6200', '303.717.8328'],
-		time: '6:00pm'
-	},
-	{
 		title: 'Westwoods Students',
 		day: 'Monday Night',
 		time: '6:30pm',
