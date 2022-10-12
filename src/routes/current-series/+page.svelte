@@ -27,11 +27,10 @@
 			allowFullScreen
 		/>
 	</div>
-	<h2>Prayers to Pray</h2>
-	<h4>9.11 - Not My Will But Yours</h4>
-	<h4>9.18 - HELP! A Desperate Prayer</h4>
-	<h4>9.25 - May We Be One</h4>
-	<h4>10.2 - I Messed Up</h4>
+	<h2>Lessons from the Farm</h2>
+	<h4>10.9 - You Reap What You Sow</h4>
+	<h4>10.16 - My Part/His Part</h4>
+	<h4>10.23 - Good Soil and the Extravagant Farmer</h4>
 </div>
 
 <style>
