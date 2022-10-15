@@ -12,7 +12,8 @@ const themes = {
 			modal_background: 'rgba(0, 0, 0, 0.25)',
 			svg_fill: '#333',
 			card_bg: '#333',
-			card_color: '#fff'
+			card_color: '#fff',
+			overlay_opacity: 0.35
 		}
 	},
 	dark: {
@@ -28,7 +29,8 @@ const themes = {
 			modal_background: 'rgba(255, 255, 255, 0.25)',
 			svg_fill: '#000',
 			card_bg: '#f1f1f1',
-			card_color: '#000'
+			card_color: '#000',
+			overlay_opacity: 0.75
 		}
 	}
 };

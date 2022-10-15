@@ -16,38 +16,38 @@
 	gsap.registerPlugin(ScrollTrigger);
 
 	onMount(() => {
-		setTimeout(() => {
-			filled = true;
-		}, 500);
-		const tl = gsap.timeline();
-		let watl = gsap.timeline({
-			scrollTrigger: {
-				trigger: '#weAre',
-				start: 'top bottom',
-				end: 'top 200',
-				scrub: true
-			}
-		});
+		// setTimeout(() => {
+		// 	filled = true;
+		// }, 500);
+		// const tl = gsap.timeline();
+		// let watl = gsap.timeline({
+		// 	scrollTrigger: {
+		// 		trigger: '#weAre',
+		// 		start: 'top bottom',
+		// 		end: 'top 200',
+		// 		scrub: true
+		// 	}
+		// });
 
-		gsap.from('#header h1', { duration: 0.75, x: -500, opacity: 0 });
-		gsap.from('#header p', { duration: 0.75, x: 500, opacity: 0 });
+		// gsap.from('#header h1', { duration: 0.75, x: -500, opacity: 0 });
+		// gsap.from('#header p', { duration: 0.75, x: 500, opacity: 0 });
 
-		gsap.from('#linkSection .linkBlock', {
-			scrollTrigger: {
-				trigger: '#linkSection',
-				toggleActions: 'play none none none',
-				start: 'top bottom',
-				end: 'bottom bottom-=50',
-				scrub: 0.2,
-				markers: false
-			},
-			opacity: 0,
-			scale: 0,
-			y: 300,
-			duration: 0.5,
-			stagger: 0.25,
-			ease: 'power1.inOut'
-		});
+		// gsap.from('#linkSection .linkBlock', {
+		// 	scrollTrigger: {
+		// 		trigger: '#linkSection',
+		// 		toggleActions: 'play none none none',
+		// 		start: 'top bottom',
+		// 		end: 'bottom bottom-=50',
+		// 		scrub: 0.2,
+		// 		markers: false
+		// 	},
+		// 	opacity: 0,
+		// 	scale: 0,
+		// 	y: 300,
+		// 	duration: 0.5,
+		// 	stagger: 0.25,
+		// 	ease: 'power1.inOut'
+		// });
 
 		// watl.from('.wwIsBlock', {
 		// 	scale: 0,
@@ -75,13 +75,13 @@
 
 <div id="welcomeBlock" out:fade={{ duration: 250 }}>
 	<WatchOnline />
+	<div class="overlay" />
 	<div id="header">
 		<h1>Westwoods Community Church</h1>
 		<p class="bigBold">Belong before you believe!</p>
-		<Img source="redline" altTag="just a red line" />
 	</div>
 
-	<div class="skylineContainer">
+	<!-- <div class="skylineContainer">
 		<svg
 			version="1.1"
 			id="DenverSkyline"
@@ -110,16 +110,10 @@
 					fill="freeze"
 					id="first"
 				/>
-				<!-- <animate
-					attributeName="fill"
-					dur="500ms"
-					to="var(--testColor)"
-					fill="freeze"
-					begin="first.begin + 500ms"
-				/> -->
+
 			</path>
 		</svg>
-	</div>
+	</div> -->
 </div>
 
 <div id="linkSection">
@@ -166,7 +160,7 @@
 </div>
 <TodaysVerse />
 <div id="weAreContainer">
-	<BgImgSection id="weAre" source="worship2021" className="weAre">
+	<BgImgSection id="weAre" source="wwWorship22b" className="weAre">
 		<p class="wwIs center">Westwoods Is:</p>
 		<div class="wwIsContainer">
 			<div class="wwIsBlock b1">
@@ -201,7 +195,7 @@
 <style lang="scss">
 	#welcomeBlock {
 		position: relative;
-		min-height: calc(100vh - 50px);
+		min-height: 75vh;
 		display: flex;
 		background: var(--theme-colors-background);
 		justify-content: center;
@@ -209,9 +203,19 @@
 		align-items: center;
 		text-align: center;
 		overflow: hidden;
+		background: url(https://res.cloudinary.com/mykeld74/image/upload/f_auto,q_auto/WestwoodsCC/denverSkyline)
+			0 center / cover no-repeat;
 		@media (max-width: 450px) {
-			min-height: calc(100vh - 100px);
+			min-height: calc(100vh - 50px);
+			background-position: -230px center;
 		}
+	}
+
+	.overlay {
+		position: absolute;
+		inset: 0;
+		background: var(--theme-colors-background);
+		opacity: var(--theme-colors-overlay_opacity);
 	}
 	#header {
 		z-index: 20;
@@ -236,23 +240,7 @@
 			var(--theme-colors-background) 1px -1px 0px, var(--theme-colors-background) -1px 1px 0px,
 			var(--theme-colors-background) 1px 1px 0px;
 	}
-	.skylineContainer {
-		width: clamp(800px, 110vw, 110%);
-		position: absolute;
-		bottom: -20px;
-	}
-	.skyline {
-		fill: transparent;
-		stroke-width: 1px;
-		stroke: #000;
-		stroke-dasharray: 5000;
-		stroke-dashoffset: 6000;
-		margin-bottom: 0;
-		transition: fill 500ms ease-in-out;
-		&.filled {
-			fill: var(--theme-colors-svg_fill);
-		}
-	}
+
 	#linkSection {
 		width: 100%;
 		display: grid;
