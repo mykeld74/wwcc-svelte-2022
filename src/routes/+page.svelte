@@ -230,11 +230,12 @@
 		height: 100%;
 		border: #fff solid 10px;
 		font-family: 'Barlow Condensed', sans-serif;
-		color: #fff;
+
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
 		padding: 10px;
+		color: #fff;
 		.title,
 		.subtitle {
 			font-size: 70px;
@@ -254,6 +255,9 @@
 		margin: 0 0 20px;
 		text-align: center;
 		width: 100%;
+		:hover & {
+			color: var(--linkColor);
+		}
 	}
 
 	.overlay {

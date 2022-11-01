@@ -27,10 +27,11 @@
 			allowFullScreen
 		/>
 	</div>
-	<h2>Lessons from the Farm</h2>
-	<h4>10.9 - You Reap What You Sow</h4>
-	<h4>10.16 - My Part/His Part</h4>
-	<h4>10.23 - Good Soil and the Extravagant Farmer</h4>
+	<h2>30 Days of Thanks</h2>
+	<h4>10.30 - 30 Day Experiment</h4>
+	<h4>11.6 - The POWER of Thankfulness</h4>
+	<h4>11.13 - Capital T Thankfulness</h4>
+	<h4>11.203 - Thankfulness secret ingredient</h4>
 </div>
 
 <style>
