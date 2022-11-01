@@ -130,9 +130,16 @@
 		</BgImgSection>
 	</a>
 	<a href="/current-series">
-		<BgImgSection source="currentSeries" id="currentSeries" className="linkBlock">
+		<!-- <BgImgSection source="currentSeries" id="currentSeries" className="linkBlock">
 			<p class="lbText">Current Series</p>
-		</BgImgSection>
+		</BgImgSection> -->
+		<div class="currentSeriesContainer">
+			<div class="thirtyDayContainer">
+				<p class="currentSeriesText">Current Series</p>
+				<p class="title">30 Days</p>
+				<p class="subtitle">Of Thanks</p>
+			</div>
+		</div>
 	</a>
 	<BgImgSection source="building" id="directions" className="linkBlock">
 		<Modal>
@@ -209,6 +216,44 @@
 			min-height: calc(100vh - 50px);
 			background-position: -230px center;
 		}
+	}
+
+	.currentSeriesContainer {
+		width: 100%;
+		height: 100%;
+		background: #000;
+		padding: 10px;
+		min-height: 300px;
+	}
+	.thirtyDayContainer {
+		width: 100%;
+		height: 100%;
+		border: #fff solid 10px;
+		font-family: 'Barlow Condensed', sans-serif;
+		color: #fff;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		padding: 10px;
+		.title,
+		.subtitle {
+			font-size: 70px;
+			line-height: 1.1;
+			font-weight: 500;
+			margin: 0;
+			text-transform: uppercase;
+		}
+	}
+	.currentSeriesText {
+		font-family: 'IBM Plex Sans', sans-serif;
+		font-size: clamp(22px, 2.5vw, 32px);
+		line-height: 1.4;
+		text-shadow: #333 0px 0px 2px;
+		font-weight: 700;
+		transition: color 0.3s ease-in-out 0s;
+		margin: 0 0 20px;
+		text-align: center;
+		width: 100%;
 	}
 
 	.overlay {
