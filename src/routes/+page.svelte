@@ -61,10 +61,8 @@
 
 		if (closeAnnouncement !== '1') {
 			showAnnouncement = true;
-			console.log('show announcement');
 		} else {
 			showAnnouncement = false;
-			console.log('hide announcement');
 		}
 	});
 </script>

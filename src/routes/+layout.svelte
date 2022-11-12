@@ -1,9 +1,5 @@
 <script lang="ts">
-	// throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
-	// Suggestion (check code before using, and possibly convert to data.X access later):
-	// import type { LayoutData } from './$types';
-	// export let data: LayoutData;
-	// $: ({ title } = data);
+	import { page } from '$app/stores';
 
 	import '$css/reset.css';
 	import '$css/wwcc.css';
@@ -14,10 +10,24 @@
 	import Modal from '$components/modal.svelte';
 	import Img from '$components/image.svelte';
 	import { onMount } from 'svelte';
+	import WowFooter from '$components/wowFooter.svelte';
+	let isLoaded = false;
+	let showWowFooter = false;
+	let currentPath = '';
 
 	export let title = 'Westwoods Community Church';
 
+	$: if (page) {
+		currentPath = $page.url.pathname;
+		if (currentPath.includes('women-of-westwoods')) {
+			showWowFooter = true;
+		} else {
+			showWowFooter = false;
+		}
+	}
+
 	onMount(() => {
+		isLoaded = true;
 		document.getElementById('primaryContainer').hidden = false;
 	});
 </script>
@@ -58,28 +68,33 @@
 			<slot />
 		</main>
 		<footer>
-			<div class="footerLogo">
-				<Img source="wwLogo" altTag="Westwoods Community Church Logo" />
-			</div>
-			<div class="footerText">
-				<p>&copy;{new Date().getFullYear()} Westwoods Community Church</p>
-				<Modal>
-					<p slot="trigger" class="trigger">Directions and Times</p>
-					<p slot="header" class="xtraLrg">Join us this Sunday</p>
-					<div slot="content">
-						<p class="xtraLrg">9:00am & 10:30am</p>
-						<p>7700 Woodard Dr.</p>
-						<p>Lakewood, CO 80227</p>
-						<iframe
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3070.8329214253686!2d-105.08480848435234!3d39.675972808278864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876b81ad73d8223d%3A0xef2d6fab8083844!2sWestwoods%20Community%20Church!5e0!3m2!1sen!2sus!4v1569100714699!5m2!1sen!2sus"
-							frameBorder="0"
-							allowFullScreen
-							title="Westwoods Map"
-							id="wwMap"
-						/>
-					</div>
-				</Modal>
-				<p>7700 W. Woodard Drive | Lakewood | CO | 80227 | 303.279.1616</p>
+			{#if showWowFooter}
+				<WowFooter />
+			{/if}
+			<div class="mainFooter">
+				<div class="footerLogo">
+					<Img source="wwLogo" altTag="Westwoods Community Church Logo" />
+				</div>
+				<div class="footerText">
+					<p>&copy;{new Date().getFullYear()} Westwoods Community Church</p>
+					<Modal>
+						<p slot="trigger" class="trigger">Directions and Times</p>
+						<p slot="header" class="xtraLrg">Join us this Sunday</p>
+						<div slot="content">
+							<p class="xtraLrg">9:00am & 10:30am</p>
+							<p>7700 Woodard Dr.</p>
+							<p>Lakewood, CO 80227</p>
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3070.8329214253686!2d-105.08480848435234!3d39.675972808278864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876b81ad73d8223d%3A0xef2d6fab8083844!2sWestwoods%20Community%20Church!5e0!3m2!1sen!2sus!4v1569100714699!5m2!1sen!2sus"
+								frameBorder="0"
+								allowFullScreen
+								title="Westwoods Map"
+								id="wwMap"
+							/>
+						</div>
+					</Modal>
+					<p>7700 W. Woodard Drive | Lakewood | CO | 80227 | 303.279.1616</p>
+				</div>
 			</div>
 		</footer>
 	</ThemeWrapper>
@@ -100,7 +115,7 @@
 	.trigger {
 		cursor: pointer;
 	}
-	footer {
+	.mainFooter {
 		background: var(--theme-colors-top_bar);
 		color: var(--theme-colors-text);
 		padding: 10px;
