@@ -19,7 +19,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		background: var(--bgImage) no-repeat center 0% / var(--bgSize, cover);
+		background: var(--bgImage) no-repeat 25% 0% / var(--bgSize, cover);
 	}
 	.linkBlock {
 		min-height: 300px;

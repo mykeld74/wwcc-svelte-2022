@@ -27,11 +27,11 @@
 			allowFullScreen
 		/>
 	</div>
-	<h2>30 Days of Thanks</h2>
-	<h4>10.30 - 30 Day Experiment</h4>
-	<h4>11.6 - The POWER of Thankfulness</h4>
-	<h4>11.13 - Capital T Thankfulness</h4>
-	<h4>11.203 - Thankfulness secret ingredient</h4>
+	<h2>Home For Christmas</h2>
+	<h4>11.27 - Hope</h4>
+	<h4>12.4 - Faith</h4>
+	<h4>12.11 - Joy</h4>
+	<h4>12.18 - Peace</h4>
 </div>
 
 <style>
@@ -53,6 +53,7 @@
 		position: relative;
 		width: 100%;
 		aspect-ratio: 16/9;
+		margin-bottom: 20px;
 	}
 	iframe {
 		position: absolute;

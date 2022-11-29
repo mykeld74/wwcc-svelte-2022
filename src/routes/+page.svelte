@@ -16,46 +16,6 @@
 	gsap.registerPlugin(ScrollTrigger);
 
 	onMount(() => {
-		// setTimeout(() => {
-		// 	filled = true;
-		// }, 500);
-		// const tl = gsap.timeline();
-		// let watl = gsap.timeline({
-		// 	scrollTrigger: {
-		// 		trigger: '#weAre',
-		// 		start: 'top bottom',
-		// 		end: 'top 200',
-		// 		scrub: true
-		// 	}
-		// });
-
-		// gsap.from('#header h1', { duration: 0.75, x: -500, opacity: 0 });
-		// gsap.from('#header p', { duration: 0.75, x: 500, opacity: 0 });
-
-		// gsap.from('#linkSection .linkBlock', {
-		// 	scrollTrigger: {
-		// 		trigger: '#linkSection',
-		// 		toggleActions: 'play none none none',
-		// 		start: 'top bottom',
-		// 		end: 'bottom bottom-=50',
-		// 		scrub: 0.2,
-		// 		markers: false
-		// 	},
-		// 	opacity: 0,
-		// 	scale: 0,
-		// 	y: 300,
-		// 	duration: 0.5,
-		// 	stagger: 0.25,
-		// 	ease: 'power1.inOut'
-		// });
-
-		// watl.from('.wwIsBlock', {
-		// 	scale: 0,
-		// 	opacity: 0,
-		// 	duration: 1,
-		// 	stagger: 0.25
-		// });
-
 		// announcement modal code
 		let closeAnnouncement: string = window.sessionStorage.getItem('closeAnnouncement');
 
@@ -131,13 +91,10 @@
 		<!-- <BgImgSection source="currentSeries" id="currentSeries" className="linkBlock">
 			<p class="lbText">Current Series</p>
 		</BgImgSection> -->
-		<div class="currentSeriesContainer">
-			<div class="thirtyDayContainer">
-				<p class="currentSeriesText">Current Series</p>
-				<p class="title">30 Days</p>
-				<p class="subtitle">Of Thanks</p>
-			</div>
-		</div>
+
+		<BgImgSection source="ChristmasGraphic" bgSize="cover" id="currentSeries" className="linkBlock">
+			<div class="currentSeriesContainer"><p class="lbText">Current Series</p></div>
+		</BgImgSection>
 	</a>
 	<BgImgSection source="building" id="directions" className="linkBlock">
 		<Modal>
@@ -219,9 +176,11 @@
 	.currentSeriesContainer {
 		width: 100%;
 		height: 100%;
-		background: #000;
-		padding: 10px;
 		min-height: 300px;
+		background: transparent;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
 	}
 	.thirtyDayContainer {
 		width: 100%;
@@ -241,20 +200,6 @@
 			font-weight: 500;
 			margin: 0;
 			text-transform: uppercase;
-		}
-	}
-	.currentSeriesText {
-		font-family: 'IBM Plex Sans', sans-serif;
-		font-size: clamp(22px, 2.5vw, 32px);
-		line-height: 1.4;
-		text-shadow: #333 0px 0px 2px;
-		font-weight: 700;
-		transition: color 0.3s ease-in-out 0s;
-		margin: 0 0 20px;
-		text-align: center;
-		width: 100%;
-		:hover & {
-			color: var(--linkColor);
 		}
 	}
 
@@ -303,7 +248,7 @@
 	.lbText {
 		font-size: clamp(22px, 2.5vw, 32px);
 		line-height: 1.4;
-		text-shadow: #333 0px 0px 2px;
+		text-shadow: #000 0px 0px 3px;
 		font-weight: 700;
 		transition: color 0.3s ease-in-out 0s;
 		margin: 0;
