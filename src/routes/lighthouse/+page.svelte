@@ -10,6 +10,14 @@
 
 <div class="hero">
 	<h1 class="center">7700 Lighthouse Campaign</h1>
+	<a
+		href="https://westwoods.churchcenter.com/giving"
+		class="navItem s-WnRlGR2WwRpv"
+		target="_blank"
+		rel="noopener noreferrer"
+	>
+		<div class="donateButton"><p>Donate Now</p></div>
+	</a>
 </div>
 
 <div class="lighthouseContainer">
@@ -187,5 +195,30 @@
 	}
 	.strong {
 		font-weight: 700;
+	}
+	.donateButton {
+		position: fixed;
+		top: 80px;
+		right: 80px;
+		z-index: 2;
+		width: 120px;
+		height: 120px;
+		border-radius: 50%;
+		background: var(--accentColor);
+		color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@media (max-width: 768px) {
+			top: auto;
+			bottom: 20px;
+			right: 20px;
+		}
+		p {
+			font-size: 1.5rem;
+			font-weight: 700;
+			margin: 0;
+			text-align: center;
+		}
 	}
 </style>
