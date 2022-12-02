@@ -11,7 +11,7 @@
 <div class="hero">
 	<h1 class="center">7700 Lighthouse Campaign</h1>
 	<a
-		href="https://westwoods.churchcenter.com/giving"
+		href="https://westwoods.churchcenter.com/giving/to/7700-lighthouse-fund"
 		class="navItem s-WnRlGR2WwRpv"
 		target="_blank"
 		rel="noopener noreferrer"
