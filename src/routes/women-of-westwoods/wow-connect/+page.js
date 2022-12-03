@@ -12,6 +12,5 @@ export async function load() {
       order
 		}`;
 
-	console.log(Events);
 	return { Events };
 }
