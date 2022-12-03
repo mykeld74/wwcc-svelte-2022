@@ -9,8 +9,9 @@ export async function load() {
       time,
 			location,
       body,
-      order
 		}`;
+	const Events = await client.fetch(query);
 
+	console.log(Events);
 	return { Events };
 }
