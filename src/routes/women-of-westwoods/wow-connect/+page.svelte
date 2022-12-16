@@ -1,5 +1,5 @@
 <script>
-	import PortableText from '@portabletext/svelte';
+	import { PortableText } from '@portabletext/svelte';
 	export let Events;
 	/** @type {import('./$types').PageData} */
 	export let data;
@@ -26,7 +26,7 @@
 				<p class="dateTime"><strong>Time: </strong>{time}</p>
 				<p class="location"><strong>Location: </strong>{location}</p>
 				<hr />
-				<PortableText blocks={body} />
+				<PortableText components={{ block: { body } }} />
 			</article>
 		{/each}
 	</section>
