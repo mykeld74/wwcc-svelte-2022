@@ -1,30 +1,12 @@
 <script lang="ts">
-	import { gsap } from 'gsap';
-	import ScrollTrigger from 'gsap/dist/ScrollTrigger.js';
-	import { onMount } from 'svelte';
-	import Img from '$components/image.svelte';
 	import { fade } from 'svelte/transition';
 	import BgImgSection from '$components/bgImgContainer.svelte';
 	import Modal from '$components/modal.svelte';
 	import WatchOnline from '$components/watchOnline.svelte';
-	import AnnouncementModal from '$components/announceModal.svelte';
-	import TodaysVerse from '$components/dailyBibleReading.svelte';
 
+	import TodaysVerse from '$components/dailyBibleReading.svelte';
 	let filled = false;
 	let showAnnouncement = true;
-
-	gsap.registerPlugin(ScrollTrigger);
-
-	onMount(() => {
-		// announcement modal code
-		let closeAnnouncement: string = window.sessionStorage.getItem('closeAnnouncement');
-
-		if (closeAnnouncement !== '1') {
-			showAnnouncement = true;
-		} else {
-			showAnnouncement = false;
-		}
-	});
 </script>
 
 <svelte:head>
@@ -72,6 +54,26 @@
 			</path>
 		</svg>
 	</div> -->
+
+	<Modal>
+		<p slot="trigger" class="holidayAnnouncementLink">Click here for Holiday Services info</p>
+		<p slot="header" class="holidayHeader">Holiday Services</p>
+		<div slot="content">
+			<p class="holiday">Christmas Eve Service</p>
+			<p class="holidayDesc">
+				<a href="https://lakewoodchristmas.org" target="_blank"
+					>Click here to learn more about our Christmas Eve Services.</a
+				>
+			</p>
+			<p class="holiday">Christmas Day Services</p>
+			<p class="holidayDesc">We will not have services on Christmas day.</p>
+			<p class="holiday">New Year's Day Service</p>
+			<p class="holidayDesc">
+				We will only have 1 service at 10:00 am on New Year's Day. Looking forward to seeing you
+				there!
+			</p>
+		</div>
+	</Modal>
 </div>
 
 <div id="linkSection">
@@ -172,6 +174,29 @@
 			background-position: -230px center;
 		}
 	}
+	.holidayAnnouncementLink {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		z-index: 100;
+		background-color: var(--accentColor);
+		color: #fff;
+		border: none;
+		padding: 10px;
+		font-size: clamp(16px, 2vw, 24px);
+		font-weight: 700;
+		margin: 0;
+		cursor: pointer;
+	}
+	.holidayHeader {
+		width: 100%;
+		text-align: center;
+		font-size: clamp(28px, 5vw, 40px);
+		font-weight: 700;
+		border-bottom: 2px solid var(--theme-colors-text);
+		padding-bottom: 20px;
+	}
 
 	.currentSeriesContainer {
 		width: 100%;
@@ -238,13 +263,16 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 	}
-	/* .announceLink {
-		transition: all 0.3s ease-in-out;
-		&:hover {
-			color: #b12328;
-			text-decoration: underline;
-		}
-	} */
+
+	.holiday {
+		font-size: clamp(24px, 4vw, 32px);
+		font-weight: 700;
+		margin: 0 0 10px;
+	}
+	.holidayDesc {
+		font-size: clamp(18px, 2vw, 24px);
+		margin: 0 0 30px;
+	}
 	.lbText {
 		font-size: clamp(22px, 2.5vw, 32px);
 		line-height: 1.4;

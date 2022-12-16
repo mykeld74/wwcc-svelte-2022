@@ -7,7 +7,6 @@
 	}
 	function closeModal() {
 		isAnnouncementOpen = false;
-		sessionStorage.setItem('closeAnnouncement', '1');
 	}
 </script>
 
@@ -27,3 +26,14 @@
 		</div>
 	</Portal>
 {/if}
+
+<style>
+	.modalHeader {
+		width: 100%;
+		text-align: center;
+		font-size: clamp(28px, 5vw, 40px);
+		font-weight: 700;
+		border-bottom: 2px solid var(--theme-colors-text);
+		padding-bottom: 20px;
+	}
+</style>
