@@ -13,12 +13,12 @@ const config = {
 
 	kit: {
 		adapter: adapter(),
-		prerender: {
-			crawl: true,
-			enabled: true,
-			onError: 'continue',
-			entries: ['*'],
-			default: true
+		alias: {
+			$lib: './src/lib',
+			$components: './src/components',
+			$css: './src/css',
+			$data: './src/data',
+			$img: './src/images'
 		}
 	}
 };
