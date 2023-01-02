@@ -18,7 +18,7 @@
 <div class="container">
 	<h2 class="joinUs">Join us Sunday mornings!</h2>
 	<p class="times">9:00am - 10:30am Live in person and online</p>
-	<div class="videoContainer">
+	<!-- <div class="videoContainer">
 		<iframe
 			src="https://www.youtube.com/embed/videoseries?list={seriesID}"
 			title="YouTube video player"
@@ -26,15 +26,18 @@
 			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 			allowFullScreen
 		/>
+	</div> -->
+
+	<div class="currentSeriesList">
+		<h2>Our current series - Jesus is <span class="underline" />.</h2>
+		<!-- <h4>11.27 - Hope</h4>
+		<h4>12.4 - Faith</h4>
+		<h4>12.11 - Joy</h4>
+		<h4>12.18 - Peace</h4> -->
 	</div>
-	<h2>Home For Christmas</h2>
-	<h4>11.27 - Hope</h4>
-	<h4>12.4 - Faith</h4>
-	<h4>12.11 - Joy</h4>
-	<h4>12.18 - Peace</h4>
 </div>
 
-<style>
+<style lang="scss">
 	.joinUs {
 		font-size: clamp(32px, 4.5vw, 56px);
 	}
@@ -54,6 +57,20 @@
 		width: 100%;
 		aspect-ratio: 16/9;
 		margin-bottom: 20px;
+	}
+	.underline {
+		border-bottom: 4px solid var(--theme-colors-text);
+		display: inline-block;
+		width: 200px;
+	}
+	.currentSeriesList {
+		width: 100%;
+		margin-top: 50px;
+		padding-top: 25px;
+		border-top: 1px solid var(--theme-colors-text);
+		h4 {
+			margin-left: 20px;
+		}
 	}
 	iframe {
 		position: absolute;

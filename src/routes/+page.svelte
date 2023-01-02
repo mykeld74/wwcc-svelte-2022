@@ -54,26 +54,6 @@
 			</path>
 		</svg>
 	</div> -->
-
-	<Modal>
-		<p slot="trigger" class="holidayAnnouncementLink">Click here for Holiday Services info</p>
-		<p slot="header" class="holidayHeader">Holiday Services</p>
-		<div slot="content">
-			<p class="holiday">Christmas Eve Service</p>
-			<p class="holidayDesc">
-				<a href="https://lakewoodchristmas.org" target="_blank"
-					>Click here to learn more about our Christmas Eve Services.</a
-				>
-			</p>
-			<p class="holiday">Christmas Day Services</p>
-			<p class="holidayDesc">We will not have services on Christmas day.</p>
-			<p class="holiday">New Year's Day Service</p>
-			<p class="holidayDesc">
-				We will only have 1 service at 10:00 am on New Year's Day. Looking forward to seeing you
-				there!
-			</p>
-		</div>
-	</Modal>
 </div>
 
 <div id="linkSection">
@@ -94,7 +74,7 @@
 			<p class="lbText">Current Series</p>
 		</BgImgSection> -->
 
-		<BgImgSection source="ChristmasGraphic" bgSize="cover" id="currentSeries" className="linkBlock">
+		<BgImgSection source="JesusIs" bgSize="cover" id="currentSeries" className="linkBlock">
 			<div class="currentSeriesContainer"><p class="lbText">Current Series</p></div>
 		</BgImgSection>
 	</a>
@@ -206,6 +186,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: flex-end;
+		padding-bottom: 20px;
 	}
 	.thirtyDayContainer {
 		width: 100%;
