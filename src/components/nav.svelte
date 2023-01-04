@@ -79,7 +79,7 @@
 		max-width: 355px;
 		background: var(--theme-colors-top_bar);
 		height: 100vh;
-		padding: 85px 0 0 50px;
+		padding: 85px 0 70px 50px;
 		z-index: 900;
 		a {
 			color: var(--theme-colors-text);
