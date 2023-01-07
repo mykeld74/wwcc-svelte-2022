@@ -34,6 +34,7 @@
 
 <svelte:head>
 	<title>{title}</title>
+	<script src="https://js.churchcenter.com/modal/v1"></script>
 	<!--  Start Google Analytics -->
 	<script>
 		window.ga = function () {

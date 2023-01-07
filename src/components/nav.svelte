@@ -56,7 +56,7 @@
 			<ul>
 				<li transition:fly={{ x: 100, y: 50, duration: 125, delay: delayInterval * 14 }}>
 					<a
-						href="https://westwoods.churchcenter.com/giving"
+						href="https://westwoods.churchcenter.com/giving?open-in-church-center-modal=true"
 						class="navItem"
 						target="_blank"
 						rel="noopener noreferrer">Donate to Westwoods</a
