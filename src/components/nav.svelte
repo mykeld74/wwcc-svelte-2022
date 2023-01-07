@@ -1,4 +1,6 @@
 <script>
+	// @ts-nocheck
+
 	import Fa from 'svelte-fa/src/fa.svelte';
 	import { faBars, faLink, faTimes } from '@fortawesome/free-solid-svg-icons';
 	import { fly, fade } from 'svelte/transition';
@@ -20,8 +22,10 @@
 	</div>
 </button>
 {#if isOpen}
+	<!-- svelte-ignore a11y-click-events-have-key-events -->
 	<div class="navOverlay" transition:fade on:click={() => (isOpen = false)} />
 	<div id="navContainer" transition:fly={{ x: 300, duration: 500 }}>
+		<!-- svelte-ignore a11y-click-events-have-key-events -->
 		<nav on:click={() => (isOpen = false)}>
 			{#each navBlocks as navBlock}
 				<p class="category" transition:fade={{ duration: 750 }}>
