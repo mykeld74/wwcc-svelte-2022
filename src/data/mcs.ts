@@ -7,6 +7,12 @@ export interface mcs {
 
 const mcs = [
 	{
+		title: 'Ver Millers',
+		day: '2nd Sunday',
+		contact: ['303.519.0501'],
+		time: '2:00pm'
+	},
+	{
 		title: 'Brooks',
 		day: 'Monday Night',
 		contact: ['970.208.7560'],
@@ -19,7 +25,7 @@ const mcs = [
 		time: '6:00pm'
 	},
 	{
-		title: 'Dorazio/Daugherty',
+		title: 'Young Adults/College Aged',
 		day: '2nd & 4th Tuesday Night',
 		contact: ['716.514.6200', '303.717.8328'],
 		time: '6:00pm'
