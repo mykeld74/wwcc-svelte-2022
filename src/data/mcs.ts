@@ -55,12 +55,6 @@ const mcs = [
 		time: '7:00pm'
 	},
 	{
-		title: 'Hause',
-		day: 'Every other Wednesday Night',
-		contact: ['303.928.0475'],
-		time: '6:00pm'
-	},
-	{
 		title: 'Cole',
 		day: 'Thursday Night',
 		contact: ['303.547.7427'],
