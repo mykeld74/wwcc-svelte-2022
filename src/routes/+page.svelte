@@ -55,6 +55,11 @@
 		</svg>
 	</div> -->
 </div>
+<a href="/lent"
+	><div class="lentBanner">
+		<p class="lentLink">Learn about our Lent Practices</p>
+	</div></a
+>
 
 <div id="linkSection">
 	<a
@@ -152,6 +157,19 @@
 		@media (max-width: 450px) {
 			min-height: calc(100vh - 50px);
 			background-position: -230px center;
+		}
+	}
+
+	.lentBanner {
+		background: var(--accentColor);
+		color: #fff;
+		text-align: center;
+		padding: 10px;
+		p {
+			font-size: clamp(22px, 3vw, 32px);
+			font-weight: 500;
+			margin: 0;
+			text-transform: uppercase;
 		}
 	}
 	.holidayAnnouncementLink {
