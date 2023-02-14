@@ -38,7 +38,7 @@ const mcs = [
 	},
 	{
 		title: 'Parents Praying for Adult Kids',
-		day: 'Tuesday Night',
+		day: '1st and 3rd Tuesday Night',
 		time: '6:30pm',
 		location: '@Westwoods Community Church'
 	},
