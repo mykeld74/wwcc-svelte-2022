@@ -57,6 +57,11 @@ const navItems = [
 				page: 'What We Believe',
 				slug: '/about-us/what-we-believe',
 				order: 9
+			},
+			{
+				page: 'Leadership',
+				slug: '/about-us/leaders',
+				order: 10
 			}
 		]
 	},
@@ -66,12 +71,12 @@ const navItems = [
 			{
 				page: 'Facility Rentals',
 				slug: '/facility-rentals/',
-				order: 10
+				order: 11
 			},
 			{
 				page: 'Weddings',
 				slug: '/facility-rentals/weddings',
-				order: 11
+				order: 12
 			}
 		]
 	},

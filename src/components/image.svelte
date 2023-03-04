@@ -2,10 +2,11 @@
 	// import { image, initialize } from 'svelte-cloudinary';
 	export let source: string;
 	export let altTag: string;
+	export let width: number | string = 'auto';
 
 	// initialize({ cloud_name: 'mykeld74' });
 
-	let src = `https://res.cloudinary.com/mykeld74/image/upload/f_auto,q_auto/WestwoodsCC/${source}`;
+	let src = `https://res.cloudinary.com/mykeld74/image/upload/f_auto,q_auto,w_${width}/WestwoodsCC/${source}`;
 </script>
 
 <!-- <img use:image={{ src, bind: true, lazy: true }} alt={altTag} class={source} /> -->
