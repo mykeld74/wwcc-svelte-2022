@@ -56,7 +56,7 @@
 	.cardContainer {
 		max-width: 1270px;
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
 		grid-gap: 1rem;
 		margin: 0 auto;
 	}
