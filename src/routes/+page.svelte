@@ -20,7 +20,7 @@
 		gsap.set('#header', { perspective: 400 });
 
 		tl.from(chars, {
-			// delay: 0.25,
+			delay: 0.25,
 			duration: 1.0,
 			opacity: 0,
 			scale: 0,
@@ -33,7 +33,7 @@
 
 		setTimeout(() => {
 			mySplitText.revert();
-		}, 1250);
+		}, 1500);
 	});
 </script>
 
