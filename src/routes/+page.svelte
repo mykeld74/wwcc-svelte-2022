@@ -1,12 +1,40 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
 	import BgImgSection from '$components/bgImgContainer.svelte';
 	import Modal from '$components/modal.svelte';
 	import WatchOnline from '$components/watchOnline.svelte';
+	import { gsap } from 'gsap/dist/gsap';
+	import { SplitText } from 'gsap/dist/SplitText';
 
-	import TodaysVerse from '$components/dailyBibleReading.svelte';
+	gsap.registerPlugin(SplitText);
+
 	let filled = false;
 	let showAnnouncement = true;
+
+	onMount(() => {
+		var tl = gsap.timeline(),
+			mySplitText = new SplitText('#header', { type: 'words,chars' }),
+			chars = mySplitText.chars; //an array of all the divs that wrap each character
+
+		gsap.set('#header', { perspective: 400 });
+
+		tl.from(chars, {
+			// delay: 0.25,
+			duration: 1.0,
+			opacity: 0,
+			scale: 0,
+			y: 80,
+			rotationX: 180,
+			transformOrigin: '0% 50% -50',
+			ease: 'back',
+			stagger: 0.01
+		});
+
+		setTimeout(() => {
+			mySplitText.revert();
+		}, 1250);
+	});
 </script>
 
 <svelte:head>
@@ -17,7 +45,7 @@
 	<WatchOnline />
 	<div class="overlay" />
 	<div id="header">
-		<h1>Westwoods Community Church</h1>
+		<h1 id="wwcc">Westwoods Community Church</h1>
 		<p class="bigBold">Belong before you believe!</p>
 	</div>
 
@@ -107,7 +135,6 @@
 		</BgImgSection>
 	</a>
 </div>
-<TodaysVerse />
 <div id="weAreContainer">
 	<BgImgSection id="weAre" source="wwWorship22b" className="weAre">
 		<p class="wwIs center">Westwoods Is:</p>
