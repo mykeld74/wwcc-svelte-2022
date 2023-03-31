@@ -4,8 +4,8 @@
 	import BgImgSection from '$components/bgImgContainer.svelte';
 	import Modal from '$components/modal.svelte';
 	import WatchOnline from '$components/watchOnline.svelte';
-	import { gsap } from 'gsap/dist/gsap';
-	import { SplitText } from 'gsap/dist/SplitText';
+	import { gsap } from 'gsap/dist';
+	import { SplitText } from 'gsap/dist';
 
 	gsap.registerPlugin(SplitText);
 
