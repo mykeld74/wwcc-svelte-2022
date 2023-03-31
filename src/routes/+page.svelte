@@ -5,14 +5,14 @@
 	import Modal from '$components/modal.svelte';
 	import WatchOnline from '$components/watchOnline.svelte';
 	import { gsap } from 'gsap/dist/gsap';
-	import { SplitText } from 'gsap/dist/SplitText';
+	import { SplitText } from 'gsap/dist/SplitText.js';
 
-	gsap.registerPlugin(SplitText);
-
-	let filled = false;
-	let showAnnouncement = true;
+	// let filled = false;
+	// let showAnnouncement = true;
 
 	onMount(() => {
+		gsap.registerPlugin(SplitText);
+
 		var tl = gsap.timeline(),
 			mySplitText = new SplitText('#header', { type: 'words,chars' }),
 			chars = mySplitText.chars; //an array of all the divs that wrap each character
