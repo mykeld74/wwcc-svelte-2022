@@ -26,7 +26,7 @@
 				<p class="dateTime"><strong>Time: </strong>{time}</p>
 				<p class="location"><strong>Location: </strong>{location}</p>
 				<hr />
-				<PortableText components={{ block: { body } }} />
+				<PortableText value={body} />
 			</article>
 		{/each}
 	</section>
