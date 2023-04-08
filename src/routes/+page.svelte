@@ -6,6 +6,7 @@
 	import WatchOnline from '$components/watchOnline.svelte';
 	import { gsap } from 'gsap/dist/gsap';
 	import { SplitText } from 'gsap/dist/SplitText.js';
+	import EasterModal from '$components/eastermodal.svelte';
 
 	// let filled = false;
 	// let showAnnouncement = true;
@@ -48,6 +49,8 @@
 		<h1 id="wwcc">Westwoods Community Church</h1>
 		<p class="bigBold">Belong before you believe!</p>
 	</div>
+
+	<EasterModal />
 
 	<!-- <div class="skylineContainer">
 		<svg
