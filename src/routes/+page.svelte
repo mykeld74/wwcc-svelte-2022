@@ -6,7 +6,6 @@
 	import WatchOnline from '$components/watchOnline.svelte';
 	import { gsap } from 'gsap/dist/gsap';
 	import { SplitText } from 'gsap/dist/SplitText.js';
-	import EasterModal from '$components/eastermodal.svelte';
 
 	// let filled = false;
 	// let showAnnouncement = true;
@@ -50,8 +49,6 @@
 		<p class="bigBold">Belong before you believe!</p>
 	</div>
 
-	<EasterModal />
-
 	<!-- <div class="skylineContainer">
 		<svg
 			version="1.1"
@@ -86,11 +83,6 @@
 		</svg>
 	</div> -->
 </div>
-<a href="/lent"
-	><div class="lentBanner">
-		<p class="lentLink">Learn about our Lent Practices</p>
-	</div></a
->
 
 <div id="linkSection">
 	<a
