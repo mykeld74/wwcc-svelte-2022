@@ -124,9 +124,9 @@
 			</div>
 		</Modal>
 	</BgImgSection>
-	<a href="/lighthouse">
-		<BgImgSection source="lighthouse" id="lighthouse" className="linkBlock">
-			<p class="lbText">7700 Lighthouse Campaign</p>
+	<a href="/current-events">
+		<BgImgSection source="currentEvents" id="currentEvents" className="linkBlock">
+			<p class="lbText">Current Events</p>
 		</BgImgSection>
 	</a>
 </div>
