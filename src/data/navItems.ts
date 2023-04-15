@@ -9,23 +9,23 @@ const navItems = [
 		heading: 'Our Groups',
 		items: [
 			{
-				page: 'Missional Communities',
-				slug: '/missional-communities',
-				order: 1
-			},
-			{
 				page: 'Westwoods Kids',
 				slug: '/westwoods-kids',
-				order: 2
+				order: 1
 			},
 			{
 				page: 'Westwoods Students',
 				slug: '/westwoods-students',
-				order: 3
+				order: 2
 			},
 			{
 				page: 'Women of Westwoods',
 				slug: '/women-of-westwoods',
+				order: 3
+			},
+			{
+				page: 'Missional Communities',
+				slug: '/missional-communities',
 				order: 4
 			}
 		]
