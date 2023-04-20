@@ -102,7 +102,12 @@
 			<p class="lbText">Current Series</p>
 		</BgImgSection> -->
 
-		<BgImgSection source="JesusIs" bgSize="cover" id="currentSeries" className="linkBlock">
+		<BgImgSection
+			source="EasterChangesEverything"
+			bgSize="cover"
+			id="currentSeries"
+			className="linkBlock"
+		>
 			<div class="currentSeriesContainer"><p class="lbText">Current Series</p></div>
 		</BgImgSection>
 	</a>
@@ -225,7 +230,7 @@
 		background: transparent;
 		display: flex;
 		justify-content: center;
-		align-items: flex-end;
+		align-items: center;
 		padding-bottom: 20px;
 	}
 	.thirtyDayContainer {
