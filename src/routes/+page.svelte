@@ -230,7 +230,7 @@
 		background: transparent;
 		display: flex;
 		justify-content: center;
-		align-items: center;
+		align-items: flex-start;
 		padding-bottom: 20px;
 	}
 	.thirtyDayContainer {
