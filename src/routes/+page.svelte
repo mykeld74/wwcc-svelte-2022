@@ -103,12 +103,15 @@
 		</BgImgSection> -->
 
 		<BgImgSection
-			source="EasterChangesEverything"
+			source="whoDoYouThinkYouAre"
 			bgSize="cover"
 			id="currentSeries"
 			className="linkBlock"
 		>
-			<div class="currentSeriesContainer"><p class="lbText">Current Series</p></div>
+			<div class="currentSeriesContainer">
+				<p class="lbText">Current Series</p>
+				<p class="seriesTitle">Who Do You Think You Are?</p>
+			</div>
 		</BgImgSection>
 	</a>
 	<BgImgSection source="building" id="directions" className="linkBlock">
@@ -228,10 +231,19 @@
 		height: 100%;
 		min-height: 300px;
 		background: transparent;
+		flex-direction: column;
 		display: flex;
-		justify-content: center;
-		align-items: flex-end;
-		padding-bottom: 20px;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px 0 10px;
+	}
+	.seriesTitle {
+		font-weight: 700;
+		margin: 0;
+		text-shadow: 2px 2px 2px #724524;
+		:hover & {
+			color: #fff;
+		}
 	}
 	.thirtyDayContainer {
 		width: 100%;

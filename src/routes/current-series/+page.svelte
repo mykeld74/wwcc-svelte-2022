@@ -29,20 +29,12 @@
 	</div>
 
 	<div class="currentSeriesList">
-		<h2>Our current series - Jesus is <span class="underline" />.</h2>
-		<h4>1.8 - Powerful, Personal, Present</h4>
-		<h4>1.15 - God</h4>
-		<h4>1.22 - The Lamb of God</h4>
-		<h4>1.29 - The Gift Giver</h4>
-		<h4>2.5 - Living Water</h4>
-		<h4>2.12 - The Bread of Life</h4>
-		<h4>2.19 - The Light of the World</h4>
-		<h4>2.26 - The Door</h4>
-		<h4>3.5 - The Good Shepherd</h4>
-		<h4>3.12 - The Resurrection and Life</h4>
-		<h4>3.19 - The Way, Truth, and Life</h4>
-		<h4>3.26 - The True Vine</h4>
-		<h4>4.2 - More</h4>
+		<h2>Our current series - Who Do You Think You Are?</h2>
+		<h4>5.7: Holy</h4>
+		<h4>5.14: Masterpiece</h4>
+		<h4>5.21: Overcomer</h4>
+		<h4>5.28: Ambassador</h4>
+		<h4>6.4: Salt and Light</h4>
 	</div>
 </div>
 
