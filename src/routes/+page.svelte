@@ -87,7 +87,7 @@
 <div class="banner">
 	<Modal>
 		<p slot="trigger" class="trigger">
-			Kids Camps is coming Tuesdays in June!! Click Here to Learn More and Register!
+			Kids Camp is coming Tuesdays in June!! Click Here to Learn More and Register!
 		</p>
 		<div slot="header" class="imgHeader">
 			<div class="kcImgContainer">
