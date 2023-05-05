@@ -103,10 +103,10 @@
 			</ul>
 			<p>7700 Woodard Dr.<br />Lakewood, CO 80227</p>
 			<div class="kcLinkContainer">
-				<a href="https://forms.gle/URiCn4eeMUNZesbh8" class="button"
+				<a href="https://forms.gle/URiCn4eeMUNZesbh8" class="button" target="_blank"
 					><p>Register your Kiddo here</p></a
 				>
-				<a href="https://forms.gle/vctz9fmpCUg9uQEC9" class="button"
+				<a href="https://forms.gle/vctz9fmpCUg9uQEC9" class="button" target="_blank"
 					><p>Register to volunteer here</p></a
 				>
 			</div>
