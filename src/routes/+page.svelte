@@ -84,35 +84,6 @@
 		</svg>
 	</div> -->
 </div>
-<div class="banner">
-	<Modal>
-		<p slot="trigger" class="trigger">
-			Kids Camp is coming Tuesdays in June!! Click Here to Learn More and Register!
-		</p>
-		<div slot="header" class="imgHeader">
-			<div class="kcImgContainer">
-				<Image source="kidsCamp" altTag="kids camp logo" />
-			</div>
-		</div>
-		<div slot="content">
-			<p class="xtraLrg">Kids Camp</p>
-			<h4>Every Tuesday in June</h4>
-			<ul>
-				<li>Free Community Meal: 5:00-5:30pm</li>
-				<li>Kids Camp: 5:30-7:30pm</li>
-			</ul>
-			<p>7700 Woodard Dr.<br />Lakewood, CO 80227</p>
-			<div class="kcLinkContainer">
-				<a href="https://forms.gle/URiCn4eeMUNZesbh8" class="button" target="_blank"
-					><p>Register your Kiddo here</p></a
-				>
-				<a href="https://forms.gle/vctz9fmpCUg9uQEC9" class="button" target="_blank"
-					><p>Register to volunteer here</p></a
-				>
-			</div>
-		</div>
-	</Modal>
-</div>
 
 <div id="linkSection">
 	<a
@@ -338,20 +309,7 @@
 			}
 		}
 	}
-	.banner {
-		width: 100%;
-		padding: 20px;
-		text-align: center;
-		p {
-			cursor: pointer;
-			font-size: clamp(22px, 2.5vw, 32px);
-			font-weight: 700;
-			margin: 0;
-			&:hover {
-				text-decoration: underline;
-			}
-		}
-	}
+
 	.imgHeader {
 		width: 100%;
 		display: flex;
