@@ -26,7 +26,9 @@
 				<p class="dateTime"><strong>Time: </strong>{time}</p>
 				<p class="location"><strong>Location: </strong>{location}</p>
 				<hr />
-				<PortableText value={body} />
+				{#if body}
+					<PortableText value={body} />
+				{/if}
 			</article>
 		{/each}
 	</section>
