@@ -5,6 +5,8 @@
 	export let data;
 	$: ({ currentSeriesID } = data);
 	$: seriesID = currentSeriesID[0].linkid;
+
+	$: console.log(seriesID);
 </script>
 
 <svelte:head>
@@ -29,12 +31,16 @@
 	</div>
 
 	<div class="currentSeriesList">
-		<h2>Our current series - Who Do You Think You Are?</h2>
-		<h4>5.7: Holy</h4>
-		<h4>5.14: Masterpiece</h4>
-		<h4>5.21: Overcomer</h4>
-		<h4>5.28: Ambassador</h4>
-		<h4>6.4: Salt and Light</h4>
+		<h2>Our current series - Reconstruction, The Way of Jesus</h2>
+		<h4>6.18 - Intro</h4>
+		<h4>6.25 - God is love, so it's all about love</h4>
+		<h4>7.2 - God is always present and always at work</h4>
+		<h4>7.9 - Jesus is what He is like</h4>
+		<h4>7.16 - God meets us in our mess</h4>
+		<h4>7.23 - God cares more than we do</h4>
+		<h4>7.30 - God works in, around and through us</h4>
+		<h4>8.6 - God's power is not power to control but power to love</h4>
+		<h4>8.13 - Gods transformation comes through participation</h4>
 	</div>
 </div>
 

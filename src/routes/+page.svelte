@@ -6,7 +6,7 @@
 	import WatchOnline from '$components/watchOnline.svelte';
 	import { gsap } from 'gsap/dist/gsap';
 	import { SplitText } from 'gsap/dist/SplitText.js';
-	import Image from '$components/image.svelte';
+	import AnnounceModal from '$components/announceModal.svelte';
 
 	// let filled = false;
 	// let showAnnouncement = true;
@@ -49,6 +49,12 @@
 		<h1 id="wwcc">Westwoods Community Church</h1>
 		<p class="bigBold">Belong before you believe!</p>
 	</div>
+	<AnnounceModal isAnnouncementOpen="true">
+		<div slot="header"><h2>July 2nd</h2></div>
+		<div slot="content">
+			<h3>On Sunday, July 2nd we will have only 1 service at 10:00am. We hope to see you then!</h3>
+		</div>
+	</AnnounceModal>
 
 	<!-- <div class="skylineContainer">
 		<svg
@@ -104,14 +110,14 @@
 		</BgImgSection> -->
 
 		<BgImgSection
-			source="whoDoYouThinkYouAre"
+			source="Reconstruction"
 			bgSize="cover"
 			id="currentSeries"
 			className="linkBlock"
+			position="0 center"
 		>
 			<div class="currentSeriesContainer">
 				<p class="lbText">Current Series</p>
-				<p class="seriesTitle">Who Do You Think You Are?</p>
 			</div>
 		</BgImgSection>
 	</a>

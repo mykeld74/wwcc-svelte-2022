@@ -3,10 +3,11 @@
 	export let bgSize: string = 'cover';
 	export let id: string = '';
 	export let className: string = '';
+	export let position: string = 'center';
 
 	let backgroundImage = `url('https://res.cloudinary.com/mykeld74/image/upload/f_auto,q_auto/WestwoodsCC/${source}')`;
 
-	$: bgImages = `--bgImage:${backgroundImage};--bgSize:${bgSize}`;
+	$: bgImages = `--bgImage:${backgroundImage};--bgSize:${bgSize};--bgPosition:${position}`;
 </script>
 
 <div style={bgImages} {id} class="bgImgSection {className}">
@@ -19,7 +20,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		background: var(--bgImage) no-repeat center / var(--bgSize, cover);
+		background: var(--bgImage) no-repeat var(--bgPosition, center) / var(--bgSize, cover);
 	}
 	.linkBlock {
 		min-height: 300px;
