@@ -42,7 +42,7 @@
 	<title>Westwoods Community Church</title>
 </svelte:head>
 
-<div id="welcomeBlock" out:fade={{ duration: 250 }}>
+<div id="welcomeBlock" out:fade|global={{ duration: 250 }}>
 	<WatchOnline />
 	<div class="overlay" />
 	<div id="header">

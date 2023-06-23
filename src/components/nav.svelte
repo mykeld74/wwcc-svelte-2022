@@ -23,27 +23,27 @@
 </button>
 {#if isOpen}
 	<!-- svelte-ignore a11y-click-events-have-key-events -->
-	<div class="navOverlay" transition:fade on:click={() => (isOpen = false)} />
-	<div id="navContainer" transition:fly={{ x: 300, duration: 500 }}>
+	<div class="navOverlay" transition:fade|global on:click={() => (isOpen = false)} />
+	<div id="navContainer" transition:fly|global={{ x: 300, duration: 500 }}>
 		<!-- svelte-ignore a11y-click-events-have-key-events -->
 		<nav on:click={() => (isOpen = false)}>
 			{#each navBlocks as navBlock}
-				<p class="category" transition:fade={{ duration: 750 }}>
+				<p class="category" transition:fade|global={{ duration: 750 }}>
 					{navBlock.heading}
 				</p>
 				<ul>
 					{#each navBlock.items as link, i}
 						<li
-							transition:fly={{ x: 100, y: 50, duration: 125, delay: delayInterval * link.order }}
+							transition:fly|global={{ x: 100, y: 50, duration: 125, delay: delayInterval * link.order }}
 						>
 							<a href={link.slug} class="navItem">{link.page}</a>
 						</li>
 					{/each}
 				</ul>
 			{/each}
-			<p class="category" transition:fade={{ duration: 750 }}>Prayer</p>
+			<p class="category" transition:fade|global={{ duration: 750 }}>Prayer</p>
 			<ul>
-				<li transition:fly={{ x: 100, y: 50, duration: 125, delay: delayInterval * 13 }}>
+				<li transition:fly|global={{ x: 100, y: 50, duration: 125, delay: delayInterval * 13 }}>
 					<a
 						href="https://docs.google.com/forms/d/e/1FAIpQLScjbhWqcpsjKnubkYgRQiX-rAsuNejM8AD2Bk2YzpAqdJh2Tw/viewform"
 						class="navItem"
@@ -52,9 +52,9 @@
 					>
 				</li>
 			</ul>
-			<p class="category" transition:fade={{ duration: 750 }}>Give</p>
+			<p class="category" transition:fade|global={{ duration: 750 }}>Give</p>
 			<ul>
-				<li transition:fly={{ x: 100, y: 50, duration: 125, delay: delayInterval * 14 }}>
+				<li transition:fly|global={{ x: 100, y: 50, duration: 125, delay: delayInterval * 14 }}>
 					<a
 						href="https://westwoods.churchcenter.com/giving?open-in-church-center-modal=true"
 						class="navItem"

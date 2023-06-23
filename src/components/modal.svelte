@@ -16,9 +16,9 @@
 
 {#if isOpen}
 	<Portal>
-		<div class="modalWrapper" transition:fade>
+		<div class="modalWrapper" transition:fade|global>
 			<div class="modalBackground" on:click={closeModal} />
-			<div class="modalContent" transition:fly={{ opacity: 0, y: 500 }}>
+			<div class="modalContent" transition:fly|global={{ opacity: 0, y: 500 }}>
 				<p class="modalHeader"><slot name="header" /></p>
 				<div class="modalBody">
 					<slot name="content" />

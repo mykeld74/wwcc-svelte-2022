@@ -14,7 +14,7 @@
 
 <div class="container">
 	{#each Readings as reading, index}
-		<div class="card" in:fly={{ y: 300, x: 600, duration: 175, delay: index * 90 }} out:fade>
+		<div class="card" in:fly|global={{ y: 300, x: 600, duration: 175, delay: index * 90 }} out:fade|global>
 			<h4 class="title">{reading.date}</h4>
 			<p class="passage">{reading.passage} {index}</p>
 		</div>

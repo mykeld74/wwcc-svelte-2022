@@ -4,6 +4,6 @@
 
 <svelte:head />
 
-<div in:fade={{ duration: 750 }} out:fade={{ duration: 250 }}>
+<div in:fade|global={{ duration: 750 }} out:fade|global={{ duration: 250 }}>
 	<slot />
 </div>

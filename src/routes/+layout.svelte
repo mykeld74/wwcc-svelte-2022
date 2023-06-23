@@ -72,7 +72,7 @@
 	<ThemeWrapper key="my-svelte-app__theme" {themes}>
 		{#if isLoaded}
 			<Topbar />
-			<main transition:fade={{ duration: 125 }}>
+			<main transition:fade|global={{ duration: 125 }}>
 				<slot />
 			</main>
 			<footer>

@@ -14,9 +14,9 @@
 
 {#if isEasterModalOpen}
 	<Portal>
-		<div class="modalWrapper" transition:fade>
+		<div class="modalWrapper" transition:fade|global>
 			<div class="modalBackground" on:click={closeModal} />
-			<div class="modalContent" transition:fly={{ opacity: 0, y: 500 }}>
+			<div class="modalContent" transition:fly|global={{ opacity: 0, y: 500 }}>
 				<p class="modalHeader" />
 				<h1>Easter Sunday in the Park</h1>
 				<hr />

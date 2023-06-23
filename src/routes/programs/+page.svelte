@@ -26,8 +26,8 @@
 				{#each Programs as program, i}
 					<div
 						class="program"
-						in:scale={{ duration: 500, delay: 100 * i }}
-						out:fade={{ duration: 500 }}
+						in:scale|global={{ duration: 500, delay: 100 * i }}
+						out:fade|global={{ duration: 500 }}
 					>
 						<a href={program.location} class="programLink" target="_blank" rel="noopener noreferrer"
 							>Program {program.date}</a
