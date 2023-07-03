@@ -50,15 +50,6 @@
 		<h1 id="wwcc">Westwoods Community Church</h1>
 		<p class="bigBold">Belong before you believe!</p>
 	</div>
-	<AnnounceModal isAnnouncementOpen="true">
-		<div slot="header"><h2>July 2nd</h2></div>
-		<div slot="content">
-			<div class="imgContainer">
-				<Image source="julySecond" altTag="One service July 2nd" />
-			</div>
-			<h3>On Sunday, July 2nd we will have only 1 service at 10:00am. We hope to see you then!</h3>
-		</div>
-	</AnnounceModal>
 
 	<!-- <div class="skylineContainer">
 		<svg
