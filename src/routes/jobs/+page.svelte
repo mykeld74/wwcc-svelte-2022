@@ -91,6 +91,11 @@
 					Wants and seeks feedback for themselves and provides that to others in a positive way
 				</li>
 			</ul>
+			<h3>Salary and Hours</h3>
+			<ul>
+				<li>$22,000/yr, Exempt</li>
+				<li>~20hrs/week</li>
+			</ul>
 			<p>
 				Westwoods Community Church exists to transform our city with the love of Jesus one friend at
 				time. Through relative teaching and authentic worship, we desire to honor Jesus by building
@@ -101,7 +106,7 @@
 			</p>
 		</div>
 		<p>Download the PDF job description here:</p>
-		<a href="./PastorofKidsMinistry.pdf" target="_blank" class="button">Job Description</a>
+		<a href="./PastorofKidsMinistry.pdf" target="_blank" class="button">Click for More Details</a>
 	</div>
 </div>
 
