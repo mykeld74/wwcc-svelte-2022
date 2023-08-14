@@ -25,12 +25,6 @@ const mcs = [
 		time: '6:00pm'
 	},
 	{
-		title: 'Young Adults/College Aged',
-		day: '2nd & 4th Tuesday Night',
-		contact: ['716.514.6200', '303.717.8328'],
-		time: '6:00pm'
-	},
-	{
 		title: 'Sanchez/Hayes',
 		day: '1st and 3rd Tuesday Night',
 		contact: ['303.653.5002'],

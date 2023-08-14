@@ -172,6 +172,12 @@
 		</div>
 	</BgImgSection>
 </div>
+<AnnounceModal isAnnouncementOpen="true">
+	<div slot="header"><h2>August 20th</h2></div>
+	<div slot="content">
+		<h3>On Sunday, August 20th we will have only 1 service at 9:00am. We hope to see you then!</h3>
+	</div>
+</AnnounceModal>
 
 <style lang="scss">
 	#welcomeBlock {
