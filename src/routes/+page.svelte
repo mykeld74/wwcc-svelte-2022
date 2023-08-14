@@ -173,9 +173,14 @@
 	</BgImgSection>
 </div>
 <AnnounceModal isAnnouncementOpen="true">
-	<div slot="header"><h2>August 20th</h2></div>
-	<div slot="content">
-		<h3>On Sunday, August 20th we will have only 1 service at 9:00am. We hope to see you then!</h3>
+	<div slot="header"><h2>Back to School Sunday</h2></div>
+	<div slot="content" class="btsContent">
+		<h3>
+			On Sunday, August 20th we will have only 1 service at 9:00am. It will be an outdoor service so
+			bring blanket or lawn chairs. We will recognize our students, teachers and other school
+			professionals.
+		</h3>
+		<h3>Again, there will be no 10:30 service so we hope to see you at 9:00.</h3>
 	</div>
 </AnnounceModal>
 
@@ -196,6 +201,10 @@
 			min-height: calc(100vh - 50px);
 			background-position: -230px center;
 		}
+	}
+
+	.btsContent {
+		text-align: center;
 	}
 
 	.lentBanner {
