@@ -177,7 +177,7 @@
 	<div slot="content" class="btsContent">
 		<h3>
 			On Sunday, August 20th we will have only 1 service at 9:00am. It will be an outdoor service so
-			bring blanket or lawn chairs. We will recognize our students, teachers and other school
+			a bring blanket or lawn chairs. We will recognize our students, teachers and other school
 			professionals.
 		</h3>
 		<h3>Again, there will be no 10:30 service so we hope to see you at 9:00.</h3>
