@@ -24,7 +24,7 @@
 				<div>
 					<p class="xtraLrg">Join us this Sunday</p>
 					<div>
-						<p class="xtraLrg">9:00am & 10:30am</p>
+						<p class="xtraLrg">9:30am</p>
 						<p>7700 Woodard Dr.</p>
 						<p>Lakewood, CO 80227</p>
 						<iframe

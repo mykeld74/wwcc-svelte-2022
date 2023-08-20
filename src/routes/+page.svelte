@@ -11,9 +11,20 @@
 
 	// let filled = false;
 	// let showAnnouncement = true;
+	let isAnnouncementOpen = 'true';
+	let serviceTimeNoShow = false;
+
+	const handleClick = () => {
+		localStorage.setItem('serviceTimeNoShow', true);
+		serviceTimeNoShow = false;
+	};
 
 	onMount(() => {
 		gsap.registerPlugin(SplitText);
+
+		localStorage.getItem('serviceTimeNoShow')
+			? (serviceTimeNoShow = false)
+			: (serviceTimeNoShow = true);
 
 		var tl = gsap.timeline(),
 			mySplitText = new SplitText('#header', { type: 'words,chars' }),
@@ -121,7 +132,7 @@
 			<p slot="trigger" class="trigger lbText">Service Times and Directions</p>
 			<p slot="header" class="xtraLrg">Join us this Sunday</p>
 			<div slot="content">
-				<p class="xtraLrg">9:00am & 10:30am</p>
+				<p class="xtraLrg">9:30am</p>
 				<p>7700 Woodard Dr.</p>
 				<p>Lakewood, CO 80227</p>
 				<iframe
@@ -172,15 +183,23 @@
 		</div>
 	</BgImgSection>
 </div>
-<AnnounceModal isAnnouncementOpen="true">
-	<div slot="header"><h2>Back to School Sunday</h2></div>
+
+<AnnounceModal {isAnnouncementOpen} {serviceTimeNoShow}>
+	<div slot="header"><h2>Change in service times</h2></div>
 	<div slot="content" class="btsContent">
 		<h3>
-			On Sunday, August 20th we will have only 1 service at 9:00am. It will be an outdoor service so
-			bring blanket or lawn chairs. We will recognize our students, teachers and other school
-			professionals.
+			Beginning Sunday, August 27th, we will be combining our two services into one service at
+			9:30am.
 		</h3>
-		<h3>Again, there will be no 10:30 service so we hope to see you at 9:00.</h3>
+		<h3>We will no longer have a 9:00 and 10:30 service.</h3>
+		<h3>
+			We look forward to worshipping all together and are excited to continue the amazing work that
+			He is doing in our midst.
+		</h3>
+
+		<button class="dontShow" on:click={handleClick}
+			>Click here to not see this message in the future.</button
+		>
 	</div>
 </AnnounceModal>
 
@@ -205,6 +224,9 @@
 
 	.btsContent {
 		text-align: center;
+	}
+	.dontShow {
+		font-size: 16px;
 	}
 
 	.lentBanner {

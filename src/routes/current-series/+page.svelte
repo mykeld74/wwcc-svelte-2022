@@ -1,6 +1,6 @@
 <script>
 	import HeroBlock from '$components/hero.svelte';
-	import Img from '$components/image.svelte';
+
 	/** @type {import('./$types').PageData} */
 	export let data;
 	$: ({ currentSeriesID } = data);
@@ -19,7 +19,7 @@
 
 <div class="container">
 	<h2 class="joinUs">Join us Sunday mornings!</h2>
-	<p class="times">9:00am - 10:30am Live in person and online</p>
+	<p class="times">9:30am Live in person and online</p>
 	<div class="videoContainer">
 		<iframe
 			src="https://www.youtube.com/embed/videoseries?list={seriesID}"
