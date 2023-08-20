@@ -1,16 +1,19 @@
 <script lang="ts">
 	import { fly, fade } from 'svelte/transition';
 	import Portal from '$components/portal.svelte';
-	export let isAnnouncementOpen: boolean = false;
+	export let isAnnouncementOpen: boolean = false,
+		serviceTimeNoShow: boolean = true;
 	function openModal() {
 		isAnnouncementOpen = true;
 	}
 	function closeModal() {
 		isAnnouncementOpen = false;
 	}
+
+	$: console.log('serviceTimeNoShow', serviceTimeNoShow);
 </script>
 
-{#if isAnnouncementOpen}
+{#if isAnnouncementOpen && serviceTimeNoShow}
 	<Portal>
 		<div class="modalWrapper" transition:fade>
 			<div class="modalBackground" on:click={closeModal} />

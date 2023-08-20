@@ -36,6 +36,7 @@
 	<title>{title}</title>
 	<script src="https://js.churchcenter.com/modal/v1"></script>
 	<!--  Start Google Analytics -->
+	<!--  Start Google Analytics -->
 	<script>
 		window.ga = function () {
 			ga.q.push(arguments);
@@ -49,6 +50,7 @@
 	</script>
 	<script src="https://www.google-analytics.com/analytics.js" async></script>
 	<!--  End Google Analytics -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-55JS0EX64L"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -115,7 +117,7 @@
 							<p slot="trigger" class="trigger">Directions and Times</p>
 							<p slot="header" class="xtraLrg">Join us this Sunday</p>
 							<div slot="content">
-								<p class="xtraLrg">9:00am & 10:30am</p>
+								<p class="xtraLrg">9:30am</p>
 								<p>7700 Woodard Dr.</p>
 								<p>Lakewood, CO 80227</p>
 								<iframe
