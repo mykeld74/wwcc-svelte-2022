@@ -116,11 +116,11 @@
 		</BgImgSection> -->
 
 		<BgImgSection
-			source="Reconstruction"
+			source="LetsGetMoving2"
 			bgSize="cover"
 			id="currentSeries"
 			className="linkBlock"
-			position="0 center"
+			position="center center"
 		>
 			<div class="currentSeriesContainer">
 				<p class="lbText">Current Series</p>
