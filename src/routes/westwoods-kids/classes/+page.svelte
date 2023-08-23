@@ -30,13 +30,10 @@
 		</p>
 
 		<p>
-			In this COVID time we will have all our volunteers wearing masks and each classroom will have
-			two adult volunteers excited and ready to welcome the children each Sunday.
-		</p>
-
-		<p>
-			We will be monitoring the classroom sizes and if we begin to have more than 8 kiddos in a room
-			we will be multiplying to have more classrooms available for those age groups.
+			We further believe that what we are doing in Westwoods Kids is as much church as people
+			attending our main service in the auditorium. It is more than kid care and those serving are
+			not "missing out on church," but truly we are getting to engage church with the next
+			generation as we all learn together the invitations to life found in the way of Jesus.
 		</p>
 	</div>
 </div>
