@@ -67,11 +67,6 @@ const navItems = [
 				page: 'Current Events',
 				slug: '/current-events',
 				order: 11
-			},
-			{
-				page: 'Jobs',
-				slug: '/jobs',
-				order: 12
 			}
 		]
 	},
@@ -81,22 +76,22 @@ const navItems = [
 			{
 				page: 'Facility Rentals',
 				slug: '/facility-rentals/',
-				order: 13
+				order: 12
 			},
 			{
 				page: 'Weddings',
 				slug: '/facility-rentals/weddings',
-				order: 14
+				order: 13
 			}
 		]
 	},
 	{
 		heading: 'Campaign',
-		items: [{ page: '7700 Lighthouse', slug: '/lighthouse', order: 15 }]
+		items: [{ page: '7700 Lighthouse', slug: '/lighthouse', order: 14 }]
 	},
 	{
 		heading: 'Have a Question',
-		items: [{ page: 'Contact Us', slug: '/contact-us', order: 16 }]
+		items: [{ page: 'Contact Us', slug: '/contact-us', order: 15 }]
 	}
 ];
 
