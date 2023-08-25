@@ -9,7 +9,6 @@ export async function load() {
       time,
 			location,
       body,
-
 		}`;
 	const Events = await client.fetch(query);
 
