@@ -5,6 +5,8 @@
 	/** @type {import('./$types').PageData} */
 	export let data;
 	$: ({ Events } = data);
+
+	$: console.log(Events);
 </script>
 
 <svelte:head>
@@ -26,7 +28,9 @@
 				<p class="dateTime"><strong>Time: </strong>{time}</p>
 				<p class="location"><strong>Location: </strong>{location}</p>
 				<hr />
-				<PortableText value={body} />
+				{#if body}
+					<PortableText value={body} />
+				{/if}
 			</article>
 		{/each}
 	</section>
@@ -45,7 +49,7 @@
 	.eventContainer {
 		width: 100%;
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 		gap: 20px;
 	}
 	.eventCard {
