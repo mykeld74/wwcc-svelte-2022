@@ -33,13 +33,6 @@
 	</p>
 
 	<p>
-		This Summer we have several gatherings to connect, enjoy the summer days and intentionally
-		encourage one another in the way of Jesus. We will seek to press into the truth that
-		apprenticeship to Jesus is not on pause just because it is summer, but that He is still pursuing
-		us and leading us over these swell days.
-	</p>
-
-	<p>
 		<a href="mailto:drew@westwoodscc.org">drew@westwoodscc.org</a><br />
 		303-279-1616 ext. 2
 	</p>
