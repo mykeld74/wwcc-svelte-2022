@@ -25,9 +25,9 @@ const mcs = [
 		time: '6:00pm'
 	},
 	{
-		title: 'Sanchez/Hayes',
+		title: 'Sanchez/Eberly',
 		day: '1st and 3rd Tuesday Night',
-		contact: ['303.653.5002'],
+		contact: ['720.828.6422'],
 		time: '6:00pm'
 	},
 	{
@@ -43,7 +43,7 @@ const mcs = [
 		time: '6:30pm'
 	},
 	{
-		title: 'Van Horn/Burkett',
+		title: 'Van Horn',
 		day: '2nd & 4th Wednesday Night',
 		contact: ['806.470.1642'],
 		time: '7:00pm'
