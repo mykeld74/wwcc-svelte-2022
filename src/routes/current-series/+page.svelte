@@ -31,10 +31,11 @@
 	</div>
 
 	<div class="currentSeriesList">
-		<h2>Our current series - Let's Get Moving</h2>
-		<h4>7.20 - Growing People Change</h4>
-		<h4>7.27 - We Can't Do Life Alone</h4>
-		<h4>8.3 - You Can't Out Give God</h4>
+		<h2>Our current series - Things Jesus Never Said</h2>
+		<h4>9.10 - Try Harder</h4>
+		<h4>9.17 - My Way Is Easy</h4>
+		<h4>9.24 - Follow Your Heart</h4>
+		<h4>10.1 - You Get What You Deserve</h4>
 	</div>
 </div>
 

@@ -116,7 +116,7 @@
 		</BgImgSection> -->
 
 		<BgImgSection
-			source="LetsGetMoving2"
+			source="TJNS"
 			bgSize="cover"
 			id="currentSeries"
 			className="linkBlock"
@@ -272,7 +272,7 @@
 		background: transparent;
 		flex-direction: column;
 		display: flex;
-		justify-content: space-between;
+		justify-content: flex-end;
 		align-items: center;
 		padding: 20px 0 10px;
 	}
