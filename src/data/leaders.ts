@@ -21,7 +21,7 @@ const Elders = [
 	{ name: 'Trent & Meg Freedman', imgId: 'Freedman' },
 	{ name: 'Taryn & Matt Marchena', imgId: 'Marchena' },
 	{ name: 'Sue & Steve Saindon', imgId: 'Saindon' },
-	{ name: 'Charlie and Karissa', imgId: 'Eberly' }
+	{ name: 'Charlie & Karissa Eberly', imgId: 'Eberly' }
 ];
 
 export { Staff, Elders };
