@@ -19,22 +19,10 @@ const mcs = [
 		time: '6:30pm'
 	},
 	{
-		title: 'Boswell/Tonkin',
-		day: 'Tuesday Night',
-		contact: ['303.264.7206'],
-		time: '6:00pm'
-	},
-	{
 		title: 'Sanchez/Eberly',
 		day: '1st and 3rd Tuesday Night',
 		contact: ['720.828.6422'],
 		time: '6:00pm'
-	},
-	{
-		title: 'Parents Praying for Adult Kids',
-		day: '1st and 3rd Tuesday Night',
-		time: '6:30pm',
-		location: '@Westwoods Community Church'
 	},
 	{
 		title: 'Blackman/Winger',
@@ -43,9 +31,15 @@ const mcs = [
 		time: '6:30pm'
 	},
 	{
-		title: 'Van Horn',
-		day: '2nd & 4th Wednesday Night',
-		contact: ['806.470.1642'],
+		title: 'Brink/Sanchez',
+		day: 'Every Other Wednesday Night',
+		contact: ['720.338.6478'],
+		time: 'Evening'
+	},
+	{
+		title: 'Van Schooten',
+		day: '2nd and 4th Wednesday Night',
+		contact: ['503.989.0932'],
 		time: '7:00pm'
 	},
 	{
@@ -63,7 +57,7 @@ const mcs = [
 	{
 		title: 'Westwoods Students',
 		day: 'Monday Night',
-		time: '6:30pm',
+		time: '7:00pm',
 		location: '@Westwoods Community Church'
 	}
 ];
