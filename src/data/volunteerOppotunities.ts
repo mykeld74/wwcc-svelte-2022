@@ -27,7 +27,7 @@ const Opportunities = [
 	{
 		title: 'Tech Team',
 		desc: 'Run all audio and visual elements of Sunday services',
-		time: 'Every Sunday morning and special events',
+		time: 'Thursday Night rehearsal, Sunday mornings and special events',
 		id: '04'
 	},
 	{
