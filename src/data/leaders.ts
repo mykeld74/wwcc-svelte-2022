@@ -9,6 +9,7 @@ const Staff = [
 	{ name: 'Joe & Sarah Brooks', position: 'Executive Pastor', imgId: 'Brooks' },
 	{ name: 'Drew & Shelby Cole', position: 'Student Pastor', imgId: 'Cole' },
 	{ name: 'Chris & Alyssa Sanchez', position: 'Worship/Creative Arts Pastor', imgId: 'Sanchez' },
+	{ name: 'Kayla & Josh Brake', position: 'Kids Pastor', imgId: 'Brake' },
 	{ name: 'Sara & Justin Phelps', position: 'Church Administrator', imgId: 'Phelps' }
 ];
 

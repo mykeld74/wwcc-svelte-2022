@@ -116,7 +116,7 @@
 		</BgImgSection> -->
 
 		<BgImgSection
-			source="TJNS"
+			source="TGS"
 			bgSize="cover"
 			id="currentSeries"
 			className="linkBlock"
@@ -184,7 +184,7 @@
 	</BgImgSection>
 </div>
 
-<AnnounceModal {isAnnouncementOpen} {serviceTimeNoShow}>
+<!-- <AnnounceModal {isAnnouncementOpen} {serviceTimeNoShow}>
 	<div slot="header"><h2>Change in service times</h2></div>
 	<div slot="content" class="btsContent">
 		<h3>
@@ -201,7 +201,7 @@
 			>Click here to not see this message in the future.</button
 		>
 	</div>
-</AnnounceModal>
+</AnnounceModal> -->
 
 <style lang="scss">
 	#welcomeBlock {
