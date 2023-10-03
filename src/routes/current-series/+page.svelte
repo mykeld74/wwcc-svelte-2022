@@ -31,11 +31,13 @@
 	</div>
 
 	<div class="currentSeriesList">
-		<h2>Our current series - Things Jesus Never Said</h2>
-		<h4>9.10 - Try Harder</h4>
-		<h4>9.17 - My Way Is Easy</h4>
-		<h4>9.24 - Follow Your Heart</h4>
-		<h4>10.1 - You Get What You Deserve</h4>
+		<h2>Our current series - The Gospel Story</h2>
+		<h4>10.8: The Gospel Story - Ephesians 1</h4>
+		<h4>10.15: God's Grace and The Multiethnic Family of God - Ephesians 2</h4>
+		<h4>10.22: Our Role in the Gospel Story - Ephesians 3</h4>
+		<h4>10.29: Our Call To Unity But Not Uniformity - Ephesians 4</h4>
+		<h4>11.5: The Church and Gender Roles - Ephesians 5</h4>
+		<h4>11.12: The Reality Of Evil And No Fear - Ephesians 6</h4>
 	</div>
 </div>
 
