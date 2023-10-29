@@ -184,24 +184,13 @@
 	</BgImgSection>
 </div>
 
-<!-- <AnnounceModal {isAnnouncementOpen} {serviceTimeNoShow}>
-	<div slot="header"><h2>Change in service times</h2></div>
+<AnnounceModal {isAnnouncementOpen}>
+	<div slot="header"><h2>No Service - Oct 29</h2></div>
 	<div slot="content" class="btsContent">
-		<h3>
-			Beginning Sunday, August 27th, we will be combining our two services into one service at
-			9:30am.
-		</h3>
-		<h3>We will no longer have a 9:00 and 10:30 service.</h3>
-		<h3>
-			We look forward to worshipping all together and are excited to continue the amazing work that
-			He is doing in our midst.
-		</h3>
-
-		<button class="dontShow" on:click={handleClick}
-			>Click here to not see this message in the future.</button
-		>
+		<h3>Due to inclement weather, we will not have service Sunday, Oct 29th.</h3>
+		<h3>Stay home and stay safe, we'll see you next week!</h3>
 	</div>
-</AnnounceModal> -->
+</AnnounceModal>
 
 <style lang="scss">
 	#welcomeBlock {
