@@ -184,13 +184,13 @@
 	</BgImgSection>
 </div>
 
-<AnnounceModal {isAnnouncementOpen}>
+<!-- <AnnounceModal {isAnnouncementOpen}>
 	<div slot="header"><h2>No Service - Oct 29</h2></div>
 	<div slot="content" class="btsContent">
 		<h3>Due to inclement weather, we will not have service Sunday, Oct 29th.</h3>
 		<h3>Stay home and stay safe, we'll see you next week!</h3>
 	</div>
-</AnnounceModal>
+</AnnounceModal> -->
 
 <style lang="scss">
 	#welcomeBlock {
