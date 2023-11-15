@@ -1,5 +1,8 @@
 <script lang="ts">
 	import Modal from '$components/modal.svelte';
+	import Portal from '$components/portal.svelte';
+	import { fly, fade } from 'svelte/transition';
+	import { imask } from 'svelte-imask';
 	let fields = { name: '', email: '', phone: '', subject: '', message: '' };
 	let errors = { name: '', email: '', phone: '', subject: '', message: '' };
 	let formIsValid = false;
@@ -9,6 +12,15 @@
 		isOpen = false;
 
 	$: isOpen;
+
+	const maskConfig = { mask: '(000) 000-0000' };
+
+	function openModal() {
+		isOpen = true;
+	}
+	function closeModal() {
+		isOpen = false;
+	}
 
 	const validateField = (fieldName, value) => {
 		let error = '';
@@ -34,13 +46,13 @@
 			// 		errors.phone = '';
 			// 	}
 			// 	break;
-			case 'message':
-				if (value.length < 10) {
-					errors.message = 'Message must be at least 10 characters long';
-				} else {
-					errors.message = '';
-				}
-				break;
+			// case 'message':
+			// 	if (value.length < 5) {
+			// 		errors.message = 'Message must be at least 5 characters long';
+			// 	} else {
+			// 		errors.message = '';
+			// 	}
+			// 	break;
 		}
 		return error;
 	};
@@ -63,12 +75,12 @@
 			errors.email = '';
 		}
 
-		if (fields.message.length < 3) {
-			formIsValid = false;
-			errors.message = 'Please tell us how we can help you.';
-		} else {
-			errors.message = '';
-		}
+		// if (fields.message.length < 5) {
+		// 	formIsValid = false;
+		// 	errors.message = 'Please tell us how we can help you.';
+		// } else {
+		// 	errors.message = '';
+		// }
 
 		e.preventDefault();
 
@@ -81,71 +93,93 @@
 				body: new URLSearchParams(formData).toString()
 			})
 				.then(() => {
-					console.log('Form successfully submitted'), (showTYModal = true), myForm.reset();
+					console.log('Form successfully submitted'),
+						closeModal(),
+						(showTYModal = true),
+						myForm.reset();
 				})
 				.catch((error) => alert(error));
 		}
 	};
 </script>
 
-<Modal {isOpen}>
-	<div slot="trigger" class="infoButton">
-		<h4>Get More Info</h4>
-	</div>
-	<div slot="header">
-		<h3>Fill out this form to get more info about {title}</h3>
-	</div>
-	<form name={team} id={team} method="POST" slot="content">
-		<input type="hidden" name="form-name" value={team} />
-		<input class="hidden" name="bot-field" />
-		<input type="hidden" name="subject" value={`I'm interested in ${title}`} />
-		<div class="formBlock">
-			<label for="name">Name*</label>
-			<input
-				type="text"
-				name="name"
-				id="name"
-				placeholder="Name"
-				required
-				bind:value={fields.name}
-				on:blur={() => validateField('name', fields.name)}
-			/>
-			<p class="error">{errors.name}</p>
-		</div>
-		<div class="formBlock">
-			<label for="email">Email*</label>
-			<input
-				type="email"
-				name="email"
-				id="email"
-				placeholder="Email"
-				required
-				bind:value={fields.email}
-				on:blur={() => validateField('email', fields.email)}
-			/>
-			<p class="error">{errors.email}</p>
-		</div>
-		<div class="formBlock">
-			<label for="phone">Phone</label>
-			<input type="tel" name="phone" id="phone" placeholder="Phone" bind:value={fields.phone} />
-			<p class="error">{errors.phone}</p>
-		</div>
+<button class="infoButton" on:click={openModal}>
+	<h4>Get More Info</h4>
+</button>
 
-		<div class="formBlock">
-			<label for="message">Message*</label>
-			<textarea
-				name="message"
-				id="message"
-				placeholder="Message"
-				required
-				bind:value={fields.message}
-				on:blur={() => validateField('message', fields.message)}
-			/>
-			<p class="error">{errors.message}</p>
+{#if isOpen}
+	<Portal>
+		<div class="modalWrapper" transition:fade|global>
+			<div class="modalBackground" on:click={closeModal} />
+			<div class="modalContent" transition:fly|global={{ opacity: 0, y: 500 }}>
+				<div class="modalHeader"><h3>Fill out this form to get more info about {title}</h3></div>
+				<div class="modalBody">
+					<form name={team} id={team} method="POST">
+						<input type="hidden" name="form-name" value={team} />
+						<input class="hidden" name="bot-field" />
+						<input type="hidden" name="subject" value={`I'm interested in ${title}`} />
+						<div class="formBlock">
+							<label for="name">Name*</label>
+							<input
+								type="text"
+								name="name"
+								id="name"
+								placeholder="Name"
+								required
+								bind:value={fields.name}
+								on:blur={() => validateField('name', fields.name)}
+							/>
+							<p class="error">{errors.name}</p>
+						</div>
+						<div class="formBlock">
+							<label for="email">Email*</label>
+							<input
+								type="email"
+								name="email"
+								id="email"
+								placeholder="Email"
+								required
+								bind:value={fields.email}
+								on:blur={() => validateField('email', fields.email)}
+							/>
+							<p class="error">{errors.email}</p>
+						</div>
+						<div class="formBlock">
+							<label for="phone">Phone</label>
+							<input
+								use:imask={maskConfig}
+								type="tel"
+								name="phone"
+								id="phone"
+								placeholder="Phone"
+								bind:value={fields.phone}
+							/>
+							<p class="error">{errors.phone}</p>
+						</div>
+
+						<div class="formBlock">
+							<label for="message">Message</label>
+							<textarea
+								name="message"
+								id="message"
+								placeholder="Add specific questions here."
+								required
+								bind:value={fields.message}
+								on:blur={() => validateField('message', fields.message)}
+							/>
+							<p class="error">{errors.message}</p>
+						</div>
+						<button type="submit" on:click={handleSubmit}>Send</button>
+					</form>
+				</div>
+				<button class="modalCloseButton" on:click={closeModal}
+					><p class="modalCloseText">&#10007;</p></button
+				>
+			</div>
 		</div>
-		<button type="submit" on:click={handleSubmit}>Send</button>
-	</form>
-</Modal>
+	</Portal>
+{/if}
+
 <Modal isOpen={showTYModal}>
 	<div slot="content" class="successContent">
 		<p>
@@ -224,5 +258,22 @@
 			margin: 0;
 			text-transform: uppercase;
 		}
+	}
+
+	.modalCloseButton {
+		position: absolute;
+		top: -20px;
+		right: -20px;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #ed2328;
+		color: #fff;
+		border: 3px solid var(--theme-colors-text);
+		cursor: pointer;
+		z-index: 503;
 	}
 </style>
