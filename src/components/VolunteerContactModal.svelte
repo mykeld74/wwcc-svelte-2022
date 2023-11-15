@@ -93,12 +93,12 @@
 		<h4>Get More Info</h4>
 	</div>
 	<div slot="header">
-		<h3>Fill out this form to get more info on {title}</h3>
+		<h3>Fill out this form to get more info about {title}</h3>
 	</div>
 	<form name={team} id={team} method="POST" slot="content">
 		<input type="hidden" name="form-name" value={team} />
 		<input class="hidden" name="bot-field" />
-		<input type="hidden" name="subject" value={`I'm interested in {title}`} />
+		<input type="hidden" name="subject" value={`I'm interested in ${title}`} />
 		<div class="formBlock">
 			<label for="name">Name*</label>
 			<input
