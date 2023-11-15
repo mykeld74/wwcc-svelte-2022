@@ -4,6 +4,11 @@
 	let errors = { name: '', email: '', phone: '', subject: '', message: '' };
 	let formIsValid = false;
 	let showTYModal = false;
+	export let team = 'General',
+		title = 'General',
+		isOpen = false;
+
+	$: isOpen;
 
 	const validateField = (fieldName, value) => {
 		let error = '';
@@ -67,7 +72,7 @@
 
 		e.preventDefault();
 
-		let myForm = document.getElementById('ContactUs') as HTMLFormElement;
+		let myForm = document.getElementById(team) as HTMLFormElement;
 		let formData = new FormData(myForm) as any;
 		if (formIsValid) {
 			fetch('/', {
@@ -83,10 +88,17 @@
 	};
 </script>
 
-<section>
-	<form name="Contact Us" id="ContactUs" method="POST">
-		<input type="hidden" name="form-name" value="Contact Us" />
+<Modal {isOpen}>
+	<div slot="trigger" class="infoButton">
+		<h4>Get More Info</h4>
+	</div>
+	<div slot="header">
+		<h3>Fill out this form to get more info on {title}</h3>
+	</div>
+	<form name={team} id={team} method="POST" slot="content">
+		<input type="hidden" name="form-name" value={team} />
 		<input class="hidden" name="bot-field" />
+		<input type="hidden" name="subject" value={`I'm interested in {title}`} />
 		<div class="formBlock">
 			<label for="name">Name*</label>
 			<input
@@ -118,17 +130,7 @@
 			<input type="tel" name="phone" id="phone" placeholder="Phone" bind:value={fields.phone} />
 			<p class="error">{errors.phone}</p>
 		</div>
-		<div class="formBlock">
-			<label for="subject">Subject</label>
-			<input
-				type="text"
-				name="subject"
-				id="subject"
-				placeholder="Subject"
-				bind:value={fields.subject}
-			/>
-			<p class="error">{errors.phone}</p>
-		</div>
+
 		<div class="formBlock">
 			<label for="message">Message*</label>
 			<textarea
@@ -143,15 +145,15 @@
 		</div>
 		<button type="submit" on:click={handleSubmit}>Send</button>
 	</form>
-
-	{#if showTYModal}
-		<Modal isOpen={showTYModal}>
-			<div slot="content" class="successContent">
-				<p>Thank you for your submission, we'll be in touch soon.</p>
-			</div>
-		</Modal>
-	{/if}
-</section>
+</Modal>
+<Modal isOpen={showTYModal}>
+	<div slot="content" class="successContent">
+		<p>
+			Thank you for your inquiry about {title}, someone will be in touch with you soon about how you
+			can get involved.
+		</p>
+	</div>
+</Modal>
 
 <style lang="scss">
 	form {
@@ -207,5 +209,20 @@
 	}
 	.successContent {
 		min-height: 50vh;
+	}
+	.infoButton {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 50px;
+		margin-top: 20px;
+		background: var(--theme-colors-text);
+		color: var(--theme-colors-background);
+		cursor: pointer;
+		h4 {
+			margin: 0;
+			text-transform: uppercase;
+		}
 	}
 </style>

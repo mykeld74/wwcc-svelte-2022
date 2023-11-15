@@ -1,13 +1,16 @@
 <script>
 	import { onMount } from 'svelte';
-
+	import VolunteerContactModal from '$components/VolunteerContactModal.svelte';
 	import Opportunities from '$data/volunteerOppotunities';
 	import HeroBlock from '$components/hero.svelte';
 
+	let isOpen = false;
 	let desc;
 	let descHeight = 0;
 	let w;
 	// let descMinHeight;
+
+	$: isOpen;
 
 	onMount(() => {
 		if (window.innerWidth > 768) {
@@ -49,6 +52,8 @@
 			{#if op.time}
 				<p class="time">{op.time}</p>
 			{/if}
+
+			<div class="getInfo"><VolunteerContactModal {isOpen} team={op.team} title={op.title} /></div>
 		</div>
 	{/each}
 </div>
@@ -64,6 +69,8 @@
 		gap: 2vh 3vw;
 	}
 	.volBlock {
+		display: flex;
+		flex-direction: column;
 		border: 1px solid #ccc;
 		min-height: 300px;
 		background: rgba(0, 0, 0, 0.3);
@@ -92,5 +99,8 @@
 		padding: 10px;
 		margin: 0;
 		font-weight: 700;
+	}
+	.getInfo {
+		margin-top: auto;
 	}
 </style>
