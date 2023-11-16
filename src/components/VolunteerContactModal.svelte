@@ -112,7 +112,7 @@
 		<div class="modalWrapper" transition:fade|global>
 			<div class="modalBackground" on:click={closeModal} />
 			<div class="modalContent" transition:fly|global={{ opacity: 0, y: 500 }}>
-				<div class="modalHeader"><h3>Fill out this form to get more info about {title}</h3></div>
+				<div class="modalHeader"><h3>Fill out this form to get more info about {title}.</h3></div>
 				<div class="modalBody">
 					<form name={team} id={team} method="POST">
 						<input type="hidden" name="form-name" value={team} />
