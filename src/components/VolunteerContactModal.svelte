@@ -182,7 +182,8 @@
 
 <Modal isOpen={showTYModal}>
 	<div slot="content" class="successContent">
-		<p>
+		<div class="successTitle"><h2>Success!</h2></div>
+		<p class="successMessage">
 			Thank you for your inquiry about {title}, someone will be in touch with you soon about how you
 			can get involved.
 		</p>
@@ -275,5 +276,16 @@
 		border: 3px solid var(--theme-colors-text);
 		cursor: pointer;
 		z-index: 503;
+	}
+	.successContent {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+	.successMessage {
+		font-size: clamp(24px, 3.5vw, 32px);
+		text-align: left;
 	}
 </style>
