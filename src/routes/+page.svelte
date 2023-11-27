@@ -116,7 +116,7 @@
 		</BgImgSection> -->
 
 		<BgImgSection
-			source="TGS"
+			source="advent"
 			bgSize="cover"
 			id="currentSeries"
 			className="linkBlock"
