@@ -22,7 +22,7 @@
 		for students to be known, noticed and encouraged in the journey of life. You belong before you
 		believe and we seek to offer the environment where students can be themselves by connecting
 		amazing adult leaders to come alongside each student over these formative years. We have weekly
-		gatherings during the school year on Monday Evenings at 7:00 pm for fun, connection, missional
+		gatherings during the school year on Monday Evenings at 6:30 pm for fun, connection, missional
 		communities and to encourage the students in the way of Jesus in their lives with friends,
 		family, at school, at home and ultimately who they are becoming.
 	</p>
