@@ -116,7 +116,7 @@
 		</BgImgSection> -->
 
 		<BgImgSection
-			source="advent"
+			source="LFLB"
 			bgSize="cover"
 			id="currentSeries"
 			className="linkBlock"
@@ -346,8 +346,10 @@
 	h1 {
 		font-size: clamp(32px, 5vw, 58px);
 		font-weight: 700;
-		text-shadow: var(--theme-colors-background) -1px -1px 0px,
-			var(--theme-colors-background) 1px -1px 0px, var(--theme-colors-background) -1px 1px 0px,
+		text-shadow:
+			var(--theme-colors-background) -1px -1px 0px,
+			var(--theme-colors-background) 1px -1px 0px,
+			var(--theme-colors-background) -1px 1px 0px,
 			var(--theme-colors-background) 1px 1px 0px;
 		color: var(--theme-colors-text);
 	}
@@ -359,8 +361,10 @@
 		font-family: Teko, serif;
 		font-weight: 700;
 		line-height: 1;
-		text-shadow: var(--theme-colors-background) -1px -1px 0px,
-			var(--theme-colors-background) 1px -1px 0px, var(--theme-colors-background) -1px 1px 0px,
+		text-shadow:
+			var(--theme-colors-background) -1px -1px 0px,
+			var(--theme-colors-background) 1px -1px 0px,
+			var(--theme-colors-background) -1px 1px 0px,
 			var(--theme-colors-background) 1px 1px 0px;
 	}
 
