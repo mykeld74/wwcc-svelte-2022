@@ -31,12 +31,9 @@
 	</div>
 
 	<div class="currentSeriesList">
-		<h2>Our current series - Songs of Christmas</h2>
-		<h4>11.26 - Come, Thou Long Expected Jesus</h4>
-		<h4>12.03 - What Child Is This</h4>
-		<h4>12.10 - O Come All Ye Faithful</h4>
-		<h4>12.17 - Joy to the World</h4>
-		<h4>12.24 - O Holy Night</h4>
+		<h2>Our current series - Looking Forward / Looking Back</h2>
+		<h4>12.31 - Looking Back</h4>
+		<h4>01.07 - Looking Forward</h4>
 	</div>
 </div>
 
