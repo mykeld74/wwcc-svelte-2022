@@ -116,7 +116,7 @@
 		</BgImgSection> -->
 
 		<BgImgSection
-			source="LFLB"
+			source="ITMatters"
 			bgSize="cover"
 			id="currentSeries"
 			className="linkBlock"
