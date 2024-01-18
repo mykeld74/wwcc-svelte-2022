@@ -31,9 +31,12 @@
 	</div>
 
 	<div class="currentSeriesList">
-		<h2>Our current series - Looking Forward / Looking Back</h2>
-		<h4>12.31 - Looking Back</h4>
-		<h4>01.07 - Looking Forward</h4>
+		<h2>Our current series - It Matters</h2>
+		<h4>01.21 - Connection Matters</h4>
+		<h4>01.28 - Prayer Matters</h4>
+		<h4>02.04 - Gathering Matters</h4>
+		<h4>02.11 - God's Word Matters</h4>
+		<h4>02.18 - Generosity Matters</h4>
 	</div>
 </div>
 
