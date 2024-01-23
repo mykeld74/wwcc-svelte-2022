@@ -60,6 +60,7 @@
 	<div id="header">
 		<h1 id="wwcc">Westwoods Community Church</h1>
 		<p class="bigBold">Belong before you believe!</p>
+		<a href="/about-us/plan-a-visit" class="button">Plan a Visit</a>
 	</div>
 
 	<!-- <div class="skylineContainer">
@@ -228,6 +229,24 @@
 			font-weight: 500;
 			margin: 0;
 			text-transform: uppercase;
+		}
+	}
+	.button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 300px;
+		background: var(--accentColor);
+		color: #fff;
+		height: 60px;
+		border-radius: 200px;
+		margin: 20px auto 0;
+		font-size: 30px;
+		font-weight: 700;
+		transition: all 0.3s ease;
+		&:hover {
+			transform: scale(1.05);
+			box-shadow: 0 0 20px 5px rgba(255, 32, 0, 0.6);
 		}
 	}
 	.holidayAnnouncementLink {
