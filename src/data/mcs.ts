@@ -19,6 +19,12 @@ const mcs = [
 		time: '6:30pm'
 	},
 	{
+		title: 'Brink',
+		day: 'Every Other Tuesday Night',
+		contact: ['720.338.6478'],
+		time: 'Evening'
+	},
+	{
 		title: 'Sanchez/Eberly',
 		day: '1st and 3rd Tuesday Night',
 		contact: ['720.828.6422'],
@@ -31,28 +37,22 @@ const mcs = [
 		time: '6:30pm'
 	},
 	{
-		title: 'Brink/Sanchez',
-		day: 'Every Other Wednesday Night',
-		contact: ['720.338.6478'],
-		time: 'Evening'
-	},
-	{
 		title: 'Van Schooten',
 		day: '2nd and 4th Wednesday Night',
 		contact: ['503.989.0932'],
 		time: '7:00pm'
 	},
 	{
+		title: 'Barrientos/Phelps',
+		day: 'Thursday Night',
+		contact: ['303.653.3148'],
+		time: '6:30pm'
+	},
+	{
 		title: 'Cole',
 		day: 'Thursday Night',
 		contact: ['303.547.7427'],
 		time: '7:00pm'
-	},
-	{
-		title: 'Barrientos/Phelps',
-		day: 'Friday Night',
-		contact: ['303.653.3148'],
-		time: '6:30pm'
 	},
 	{
 		title: 'Westwoods Students',
