@@ -32,11 +32,11 @@
 
 	<div class="currentSeriesList">
 		<h2>Our current series - It Matters</h2>
-		<h4>01.21 - Connection Matters</h4>
-		<h4>01.28 - Prayer Matters</h4>
-		<h4>02.04 - Gathering Matters</h4>
-		<h4>02.11 - God's Word Matters</h4>
-		<h4>02.18 - Generosity Matters</h4>
+		<h4>02-25 - Let's Be Before We Do</h4>
+		<h4>03.03 - Let's Mature Into Spiritual Mothers and Fathers</h4>
+		<h4>03.10 - Service Sunday!</h4>
+		<h4>03.17 - Let's Be Authentic and Vulnerable</h4>
+		<h4>03.24 - Let's Move Past The Surface</h4>
 	</div>
 </div>
 

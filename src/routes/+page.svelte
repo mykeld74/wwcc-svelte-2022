@@ -1,14 +1,9 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
-	import BgImgSection from '$components/bgImgContainer.svelte';
-	import Modal from '$components/modal.svelte';
-	import WatchOnline from '$components/watchOnline.svelte';
+	import { BgImgSection, Modal, WatchOnline, AnnounceModal, Image } from '../components';
 	import { gsap } from 'gsap/dist/gsap';
 	import { SplitText } from 'gsap/dist/SplitText.js';
-	import AnnounceModal from '$components/announceModal.svelte';
-	import Image from '$components/image.svelte';
-
 	// let filled = false;
 	// let showAnnouncement = true;
 	let isAnnouncementOpen = 'true';
@@ -117,7 +112,7 @@
 		</BgImgSection> -->
 
 		<BgImgSection
-			source="ITMatters"
+			source="DmD"
 			bgSize="cover"
 			id="currentSeries"
 			className="linkBlock"
