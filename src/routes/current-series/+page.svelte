@@ -31,12 +31,12 @@
 	</div>
 
 	<div class="currentSeriesList">
-		<h2>Our current series - It Matters</h2>
-		<h4>02-25 - Let's Be Before We Do</h4>
-		<h4>03.03 - Let's Mature Into Spiritual Mothers and Fathers</h4>
-		<h4>03.10 - Service Sunday!</h4>
-		<h4>03.17 - Let's Be Authentic and Vulnerable</h4>
-		<h4>03.24 - Let's Move Past The Surface</h4>
+		<h2>Our current series:<br />There Is Nothing Religious About It</h2>
+		<h4>03.31 - Theres is Nothing Religious About Easter</h4>
+		<h4>04.07 - Theres is Nothing Religious About Jesus</h4>
+		<h4>04.14 - Theres is Nothing Religious About His Teaching</h4>
+		<h4>04.21 - Theres is Nothing Religious About His Followers</h4>
+		<h4>04.28 - Theres is Nothing Religious About His Church</h4>
 	</div>
 </div>
 

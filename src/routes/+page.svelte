@@ -112,7 +112,7 @@
 		</BgImgSection> -->
 
 		<BgImgSection
-			source="DmD"
+			source="Religion"
 			bgSize="cover"
 			id="currentSeries"
 			className="linkBlock"
