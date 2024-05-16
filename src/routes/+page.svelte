@@ -112,7 +112,7 @@
 		</BgImgSection> -->
 
 		<BgImgSection
-			source="Religion"
+			source="GPC"
 			bgSize="cover"
 			id="currentSeries"
 			className="linkBlock"

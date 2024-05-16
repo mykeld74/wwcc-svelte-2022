@@ -31,12 +31,11 @@
 	</div>
 
 	<div class="currentSeriesList">
-		<h2>Our current series:<br />There Is Nothing Religious About It</h2>
-		<h4>03.31 - Theres is Nothing Religious About Easter</h4>
-		<h4>04.07 - Theres is Nothing Religious About Jesus</h4>
-		<h4>04.14 - Theres is Nothing Religious About His Teaching</h4>
-		<h4>04.21 - Theres is Nothing Religious About His Followers</h4>
-		<h4>04.28 - Theres is Nothing Religious About His Church</h4>
+		<h2>Our current series:<br />God, Politics & The Church</h2>
+		<h4>5.19 - The Lamb > The Elephant or The Donkey</h4>
+		<h4>5.26 - A Tale of 2 Kingdoms</h4>
+		<h4>6.2 - Waging War Against Flesh and The Danger of Labeling</h4>
+		<h4>6.9 - The Declaration</h4>
 	</div>
 </div>
 
