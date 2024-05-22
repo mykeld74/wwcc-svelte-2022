@@ -1,9 +1,9 @@
 <script>
 	import HeroBlock from '$components/hero.svelte';
 	import Block from '$components/textComponent.svelte';
-	import { gsap } from 'gsap';
-	import { onMount } from 'svelte';
-	import ScrollTrigger from 'gsap/dist/ScrollTrigger.js';
+	// import { gsap } from 'gsap';
+	// import { onMount } from 'svelte';
+	// import ScrollTrigger from 'gsap/dist/ScrollTrigger.js';
 	// gsap.registerPlugin(ScrollTrigger);
 
 	// onMount(() => {

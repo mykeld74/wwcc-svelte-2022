@@ -1,76 +1,76 @@
 <script>
 	import HeroBlock from '$components/hero.svelte';
 	import Block from '$components/textComponent.svelte';
-	import { gsap } from 'gsap';
-	import { onMount } from 'svelte';
-	import ScrollTrigger from 'gsap/dist/ScrollTrigger.js';
-	gsap.registerPlugin(ScrollTrigger);
+	// import { gsap } from 'gsap';
+	// import { onMount } from 'svelte';
+	// import ScrollTrigger from 'gsap/dist/ScrollTrigger.js';
+	// gsap.registerPlugin(ScrollTrigger);
 
-	onMount(() => {
-		gsap.from('.block .blockContent', {
-			opacity: 0,
-			scale: 0,
-			x: 800,
-			duration: 0.5,
-			ease: 'power1.inOut'
-		});
-		gsap.from('.block2 .blockContent', {
-			opacity: 0,
-			scale: 0,
-			x: -800,
-			duration: 0.5,
-			stagger: 0.25,
-			ease: 'power1.inOut'
-		});
-		gsap.from('.block3 .blockContent', {
-			scrollTrigger: {
-				trigger: '.block3',
-				// toggleActions: 'play none none none',
-				start: 'top bottom',
-				end: 'bottom bottom-=50',
-				scrub: 0.5,
-				markers: false
-			},
-			opacity: 0,
-			scale: 0,
-			x: 800,
-			duration: 1.5,
-			stagger: 0.25,
-			ease: 'power1.inOut'
-		});
-		gsap.from('.block4 .blockContent', {
-			scrollTrigger: {
-				trigger: '.block4',
-				// toggleActions: 'play none none none',
-				start: '0 85%',
-				end: 'bottom bottom-=50',
-				scrub: 0.5,
-				markers: false
-			},
-			opacity: 0,
-			scale: 0,
-			x: -800,
-			duration: 1.5,
-			stagger: 0.25,
-			ease: 'power1.inOut'
-		});
-		gsap.from('.block5 .blockContent', {
-			scrollTrigger: {
-				trigger: '.block5',
-				// toggleActions: 'play none none none',
-				start: '0 85%',
-				end: 'bottom bottom-=50',
-				scrub: 0.5,
-				markers: false
-			},
-			opacity: 0,
-			scale: 0,
-			x: 800,
-			duration: 1.5,
-			stagger: 0.25,
-			ease: 'power1.inOut'
-		});
-	});
+	// onMount(() => {
+	// 	gsap.from('.block .blockContent', {
+	// 		opacity: 0,
+	// 		scale: 0,
+	// 		x: 800,
+	// 		duration: 0.5,
+	// 		ease: 'power1.inOut'
+	// 	});
+	// 	gsap.from('.block2 .blockContent', {
+	// 		opacity: 0,
+	// 		scale: 0,
+	// 		x: -800,
+	// 		duration: 0.5,
+	// 		stagger: 0.25,
+	// 		ease: 'power1.inOut'
+	// 	});
+	// 	gsap.from('.block3 .blockContent', {
+	// 		scrollTrigger: {
+	// 			trigger: '.block3',
+	// 			// toggleActions: 'play none none none',
+	// 			start: 'top bottom',
+	// 			end: 'bottom bottom-=50',
+	// 			scrub: 0.5,
+	// 			markers: false
+	// 		},
+	// 		opacity: 0,
+	// 		scale: 0,
+	// 		x: 800,
+	// 		duration: 1.5,
+	// 		stagger: 0.25,
+	// 		ease: 'power1.inOut'
+	// 	});
+	// 	gsap.from('.block4 .blockContent', {
+	// 		scrollTrigger: {
+	// 			trigger: '.block4',
+	// 			// toggleActions: 'play none none none',
+	// 			start: '0 85%',
+	// 			end: 'bottom bottom-=50',
+	// 			scrub: 0.5,
+	// 			markers: false
+	// 		},
+	// 		opacity: 0,
+	// 		scale: 0,
+	// 		x: -800,
+	// 		duration: 1.5,
+	// 		stagger: 0.25,
+	// 		ease: 'power1.inOut'
+	// 	});
+	// 	gsap.from('.block5 .blockContent', {
+	// 		scrollTrigger: {
+	// 			trigger: '.block5',
+	// 			// toggleActions: 'play none none none',
+	// 			start: '0 85%',
+	// 			end: 'bottom bottom-=50',
+	// 			scrub: 0.5,
+	// 			markers: false
+	// 		},
+	// 		opacity: 0,
+	// 		scale: 0,
+	// 		x: 800,
+	// 		duration: 1.5,
+	// 		stagger: 0.25,
+	// 		ease: 'power1.inOut'
+	// 	});
+	// });
 </script>
 
 <svelte:head>
