@@ -31,11 +31,14 @@
 	</div>
 
 	<div class="currentSeriesList">
-		<h2>Our current series:<br />God, Politics & The Church</h2>
-		<h4>5.19 - The Lamb > The Elephant or The Donkey</h4>
-		<h4>5.26 - A Tale of 2 Kingdoms</h4>
-		<h4>6.2 - Waging War Against Flesh and The Danger of Labeling</h4>
-		<h4>6.9 - The Declaration</h4>
+		<h2>Our current series:<br />James, The Wisdom of Jesus</h2>
+		<h4>6.30 - James - Introduction</h4>
+		<h4>7.7 - James 1</h4>
+		<h4>7.14 - James 2</h4>
+		<h4>7.21 - James 3</h4>
+		<h4>7.28 - James 4</h4>
+		<h4>8.4 - James 5</h4>
+		<h4>8.11 - James - Conclusion</h4>
 	</div>
 </div>
 
