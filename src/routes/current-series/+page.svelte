@@ -40,6 +40,59 @@
 		<h4>8.4 - James 5</h4>
 		<h4>8.11 - James - Conclusion</h4>
 	</div>
+
+	<h2 class="previousSeriesTitle">Previous Series</h2>
+
+	<div class="previousSeriesContainer">
+		<div class="seriesContainer">
+			<div class="previousVideoContainer">
+				<iframe
+					src="https://www.youtube.com/embed/videoseries?list=PLzIu1DkkWpWyIBsI5Jeaibeld6l6Dld9D&si=BAqzrW9OQH0QaTh2"
+					title="YouTube video player"
+					frameBorder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowFullScreen
+				/>
+			</div>
+			<p class="seriesTitle">God, Politics & the Church</p>
+		</div>
+		<div class="seriesContainer">
+			<div class="previousVideoContainer">
+				<iframe
+					src="https://www.youtube.com/embed/videoseries?list=PLzIu1DkkWpWzqolvbu3i4Pqsv8GofrJ-4&si=moARPAzhOLOUNmZA"
+					title="YouTube video player"
+					frameBorder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowFullScreen
+				/>
+			</div>
+			<p class="seriesTitle">Religion</p>
+		</div>
+		<div class="seriesContainer">
+			<div class="previousVideoContainer">
+				<iframe
+					src="https://www.youtube.com/embed/videoseries?list=PLzIu1DkkWpWypnzSWoefBYy2s5CxwFZ1y&si=oSpHsZdCHvxL01Ax"
+					title="YouTube video player"
+					frameBorder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowFullScreen
+				/>
+			</div>
+			<p class="seriesTitle">Easter</p>
+		</div>
+		<div class="seriesContainer">
+			<div class="previousVideoContainer">
+				<iframe
+					src="https://www.youtube.com/embed/videoseries?list=PLzIu1DkkWpWy72_pd36UOrWhGDJvlYg7t&si=1RY6QfPK-avcnScB"
+					title="YouTube video player"
+					frameBorder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowFullScreen
+				/>
+			</div>
+			<p class="seriesTitle">Disciples</p>
+		</div>
+	</div>
 </div>
 
 <style lang="scss">
@@ -77,11 +130,32 @@
 			margin-left: 20px;
 		}
 	}
+
+	.previousVideoContainer {
+		position: relative;
+		width: 100%;
+		aspect-ratio: 16/9;
+		margin-bottom: 10px;
+	}
 	iframe {
 		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
+	}
+	.previousSeriesContainer {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 20px;
+	}
+	.seriesTitle {
+		text-align: center;
+	}
+	.previousSeriesTitle {
+		border-top: 2px solid var(--theme-colors-text);
+		border-bottom: 2px solid var(--theme-colors-text);
+		padding: 10px 0;
+		margin-top: 60px;
 	}
 </style>
