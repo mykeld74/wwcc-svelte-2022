@@ -31,19 +31,28 @@
 	</div>
 
 	<div class="currentSeriesList">
-		<h2>Our current series:<br />James, The Wisdom of Jesus</h2>
-		<h4>6.30 - James - Introduction</h4>
-		<h4>7.7 - James 1</h4>
-		<h4>7.14 - James 2</h4>
-		<h4>7.21 - James 3</h4>
-		<h4>7.28 - James 4</h4>
-		<h4>8.4 - James 5</h4>
-		<h4>8.11 - James - Conclusion</h4>
+		<h2>Our current series:<br />Becoming a Student of Jesus</h2>
+		<h4>8.18 - Becoming a Student of the Way of Jesus</h4>
+		<h4>8.25 - Becoming a Student of the Word</h4>
+		<h4>9.1 - Becoming a Student of Ourselves</h4>
+		<h4>9.8 - Becoming a Student of the Quiet Life</h4>
 	</div>
 
 	<h2 class="previousSeriesTitle">Previous Series</h2>
 
 	<div class="previousSeriesContainer">
+		<div class="seriesContainer">
+			<div class="previousVideoContainer">
+				<iframe
+					src="https://www.youtube.com/embed/videoseries?list=PLzIu1DkkWpWykxNesaa0joXWHmNoQXsFW"
+					title="YouTube video player"
+					frameBorder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowFullScreen
+				/>
+			</div>
+			<p class="seriesTitle">James</p>
+		</div>
 		<div class="seriesContainer">
 			<div class="previousVideoContainer">
 				<iframe
@@ -79,18 +88,6 @@
 				/>
 			</div>
 			<p class="seriesTitle">Easter</p>
-		</div>
-		<div class="seriesContainer">
-			<div class="previousVideoContainer">
-				<iframe
-					src="https://www.youtube.com/embed/videoseries?list=PLzIu1DkkWpWy72_pd36UOrWhGDJvlYg7t&si=1RY6QfPK-avcnScB"
-					title="YouTube video player"
-					frameBorder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-					allowFullScreen
-				/>
-			</div>
-			<p class="seriesTitle">Disciples</p>
 		</div>
 	</div>
 </div>
