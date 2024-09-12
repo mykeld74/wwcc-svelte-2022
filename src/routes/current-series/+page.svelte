@@ -1,7 +1,7 @@
 <script>
 	import HeroBlock from '$components/hero.svelte';
 	import { onMount } from 'svelte';
-
+	let description = [];
 	let previousSeries;
 	/** @type {import('./$types').PageData} */
 	export let data;
@@ -10,6 +10,7 @@
 	$: console.log(data);
 	onMount(() => {
 		previousSeries = currentSeriesID.slice(1);
+		description = currentSeriesID[0].description;
 	});
 </script>
 
@@ -36,10 +37,11 @@
 
 	<div class="currentSeriesList">
 		<h2>Our current series:<br />{currentSeriesID[0].title}</h2>
-		<h4>8.18 - Becoming a Student of the Way of Jesus</h4>
-		<h4>8.25 - Becoming a Student of the Word</h4>
-		<h4>9.1 - Becoming a Student of Ourselves</h4>
-		<h4>9.8 - Becoming a Student of the Quiet Life</h4>
+		{#if description}
+			{#each description as desc}
+				<h4>{desc}</h4>
+			{/each}
+		{/if}
 	</div>
 
 	<h2 class="previousSeriesTitle">Previous Series</h2>
