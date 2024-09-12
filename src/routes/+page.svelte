@@ -4,10 +4,17 @@
 	import { BgImgSection, Modal, WatchOnline, AnnounceModal, Image } from '../components';
 	import { gsap } from 'gsap/dist/gsap';
 	import { SplitText } from 'gsap/dist/SplitText.js';
+	/** @type {import('./$types').PageData} */
+	export let data;
 	// let filled = false;
 	// let showAnnouncement = true;
 	let isAnnouncementOpen = 'true';
 	let serviceTimeNoShow = false;
+	let seriesImg;
+
+	$: ({ currentSeriesImg } = data);
+
+	$: console.log(currentSeriesImg[0].seriesImg);
 
 	const handleClick = () => {
 		localStorage.setItem('serviceTimeNoShow', true);
@@ -16,6 +23,7 @@
 
 	onMount(() => {
 		gsap.registerPlugin(SplitText);
+		seriesImg = currentSeriesImg[0].seriesImg;
 
 		localStorage.getItem('serviceTimeNoShow')
 			? (serviceTimeNoShow = false)
@@ -110,18 +118,19 @@
 		<!-- <BgImgSection source="currentSeries" id="currentSeries" className="linkBlock">
 			<p class="lbText">Current Series</p>
 		</BgImgSection> -->
-
-		<BgImgSection
-			source="StudentOfJesus"
-			bgSize="cover"
-			id="currentSeries"
-			className="linkBlock"
-			position="center center"
-		>
-			<div class="currentSeriesContainer">
-				<p class="lbText">Current Series</p>
-			</div>
-		</BgImgSection>
+		{#if seriesImg}
+			<BgImgSection
+				source={seriesImg}
+				bgSize="cover"
+				id="currentSeries"
+				className="linkBlock"
+				position="center center"
+			>
+				<div class="currentSeriesContainer">
+					<p class="lbText">Current Series</p>
+				</div>
+			</BgImgSection>
+		{/if}
 	</a>
 	<BgImgSection source="building" id="directions" className="linkBlock">
 		<Modal>
