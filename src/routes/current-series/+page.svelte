@@ -42,7 +42,7 @@
 		<h4>9.8 - Becoming a Student of the Quiet Life</h4>
 	</div>
 
-	<h2 class="previousSeriesTitle">Previous Series:</h2>
+	<h2 class="previousSeriesTitle">Previous Series</h2>
 
 	<div class="previousSeriesContainer">
 		{#if previousSeries}
