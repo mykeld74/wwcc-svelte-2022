@@ -1,12 +1,16 @@
 <script>
 	import HeroBlock from '$components/hero.svelte';
+	import { onMount } from 'svelte';
 
+	let previousSeries;
 	/** @type {import('./$types').PageData} */
 	export let data;
 	$: ({ currentSeriesID } = data);
-	$: seriesID = currentSeriesID[0].linkid;
 
-	$: console.log(seriesID);
+	$: console.log(data);
+	onMount(() => {
+		previousSeries = currentSeriesID.slice(1);
+	});
 </script>
 
 <svelte:head>
@@ -22,7 +26,7 @@
 	<p class="times">9:30am Live in person and online</p>
 	<div class="videoContainer">
 		<iframe
-			src="https://www.youtube.com/embed/videoseries?list={seriesID}"
+			src="https://www.youtube.com/embed/videoseries?list={currentSeriesID[0].linkid}"
 			title="YouTube video player"
 			frameBorder="0"
 			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -31,7 +35,7 @@
 	</div>
 
 	<div class="currentSeriesList">
-		<h2>Our current series:<br />Becoming a Student of Jesus</h2>
+		<h2>Our current series:<br />{currentSeriesID[0].title}</h2>
 		<h4>8.18 - Becoming a Student of the Way of Jesus</h4>
 		<h4>8.25 - Becoming a Student of the Word</h4>
 		<h4>9.1 - Becoming a Student of Ourselves</h4>
@@ -41,54 +45,22 @@
 	<h2 class="previousSeriesTitle">Previous Series</h2>
 
 	<div class="previousSeriesContainer">
-		<div class="seriesContainer">
-			<div class="previousVideoContainer">
-				<iframe
-					src="https://www.youtube.com/embed/videoseries?list=PLzIu1DkkWpWykxNesaa0joXWHmNoQXsFW"
-					title="YouTube video player"
-					frameBorder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-					allowFullScreen
-				/>
-			</div>
-			<p class="seriesTitle">James</p>
-		</div>
-		<div class="seriesContainer">
-			<div class="previousVideoContainer">
-				<iframe
-					src="https://www.youtube.com/embed/videoseries?list=PLzIu1DkkWpWyIBsI5Jeaibeld6l6Dld9D&si=BAqzrW9OQH0QaTh2"
-					title="YouTube video player"
-					frameBorder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-					allowFullScreen
-				/>
-			</div>
-			<p class="seriesTitle">God, Politics & the Church</p>
-		</div>
-		<div class="seriesContainer">
-			<div class="previousVideoContainer">
-				<iframe
-					src="https://www.youtube.com/embed/videoseries?list=PLzIu1DkkWpWzqolvbu3i4Pqsv8GofrJ-4&si=moARPAzhOLOUNmZA"
-					title="YouTube video player"
-					frameBorder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-					allowFullScreen
-				/>
-			</div>
-			<p class="seriesTitle">Religion</p>
-		</div>
-		<div class="seriesContainer">
-			<div class="previousVideoContainer">
-				<iframe
-					src="https://www.youtube.com/embed/videoseries?list=PLzIu1DkkWpWypnzSWoefBYy2s5CxwFZ1y&si=oSpHsZdCHvxL01Ax"
-					title="YouTube video player"
-					frameBorder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-					allowFullScreen
-				/>
-			</div>
-			<p class="seriesTitle">Easter</p>
-		</div>
+		{#if previousSeries}
+			{#each previousSeries as series}
+				<div class="seriesContainer">
+					<div class="previousVideoContainer">
+						<iframe
+							src="https://www.youtube.com/embed/videoseries?list={series.linkid}"
+							title="YouTube video player"
+							frameBorder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowFullScreen
+						/>
+					</div>
+					<p class="seriesTitle">{series.title}</p>
+				</div>
+			{/each}
+		{/if}
 	</div>
 </div>
 
