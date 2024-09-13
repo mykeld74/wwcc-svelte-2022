@@ -39,6 +39,7 @@
 	"type": "module",
 	"dependencies": {
 		"@fortawesome/free-solid-svg-icons": "^6.4.0",
+		"cloudinary": "^2.4.0",
 		"gsap": "npm:@gsap/shockingly@^3.11.5",
 		"netlify-cli": "^13.2.2",
 		"svelte-fa": "^3.0.3",
