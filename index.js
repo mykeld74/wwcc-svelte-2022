@@ -14,7 +14,8 @@ const uploadImage = async (imagePath) => {
 	// allow overwriting the asset with new versions
 	const options = {
 		use_filename: true,
-		unique_filename: false,
+		public_id: 'lion',
+		unique_filename: true,
 		overwrite: true
 	};
 
@@ -76,8 +77,7 @@ const createImageTag = (publicId, ...colors) => {
 //////////////////
 (async () => {
 	// Set the image to upload
-	const imagePath =
-		'https://cloudinary-devs.github.io/cld-docs-assets/assets/images/happy_people.jpg';
+	const imagePath = './src/images/lion.jpg';
 
 	// Upload the image
 	const publicId = await uploadImage(imagePath);
