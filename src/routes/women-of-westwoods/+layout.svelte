@@ -4,7 +4,7 @@
 
 <div class="hero">
 	<div class="logoContainer">
-		<Image source="WoWLogoNew" altTag="WoW Logo" />
+		<Image source="WoWLogo2024" altTag="WoW Logo" />
 	</div>
 </div>
 
