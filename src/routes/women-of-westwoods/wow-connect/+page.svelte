@@ -48,7 +48,7 @@
 		width: 100%;
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-		gap: 20px;
+		gap: 50px;
 	}
 	.eventCard {
 		border: var(--theme-colors-text) 2px solid;

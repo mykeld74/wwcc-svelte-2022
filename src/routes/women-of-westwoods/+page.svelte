@@ -36,40 +36,6 @@
 		target="_blank"
 		rel="noopener noreferrer"><p class="trigger">Click here to add your info.</p></a
 	>
-
-	<!-- <div class="center">
-		<h2>Easter is Coming (April 17th)</h2>
-		<p>But the Season of Lent leads us in and prepares us.</p>
-
-		<p>
-			And Ladies, we'd like to invite you to join us as we press into taking ourselves off the hook
-			for perfection. Our friend Jessica has co-written a devotional with a companion guide to walk
-			us through this season of Lent with Hope, AND the reality of brokenness.
-		</p>
-
-		<p>
-			Click <a
-				href="https://katebowler.com/good-enough/#pre-order"
-				target="_blank"
-				rel="noopener noreferrer">HERE</a
-			> to purchase the book Good Enough - 40ish Devotionals for a Life of Imperfection by Kate Bowler
-			and Jessica Richie, and Click HERE to order your Free Downloadable Lent Reflection Guide.
-		</p>
-
-		<p>
-			Visit the <a
-				href="https://www.facebook.com/womenofwestwoods"
-				target="_blank"
-				rel="noopener noreferrer">WoW FB page</a
-			> to comment and be in communication as we embrace this season together.
-		</p>
-
-		<p>
-			You can participate in the Lent reflections without purchasing the book, however it will
-			enhance your experience with the blessings contained it, and you'll have it for the days
-			beyond.
-		</p>
-	</div> -->
 </div>
 
 <style lang="scss">
