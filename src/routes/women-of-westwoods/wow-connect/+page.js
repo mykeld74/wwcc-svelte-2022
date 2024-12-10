@@ -4,13 +4,24 @@ export const prerender = true;
 export async function load() {
 	const query = `*[_type == "event"] | order(order asc){
       _id,
-      title,
-      date,
+      title,    
+      eventDate,
       time,
 			location,
       body,
-		}`;
-	const Events = await client.fetch(query);
+    }`;
+	const events = await client.fetch(query);
 
-	return { Events };
+	const formattedEvents = events.map((event) => ({
+		...event,
+		date: new Date(event.eventDate + 'T00:00:00').toLocaleDateString('en-US', {
+			weekday: 'long',
+			month: 'long',
+			day: 'numeric'
+		})
+	}));
+
+	return {
+		Events: formattedEvents
+	};
 }
