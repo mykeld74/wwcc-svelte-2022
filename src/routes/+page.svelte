@@ -6,28 +6,26 @@
 	import { SplitText } from 'gsap/dist/SplitText.js';
 	/** @type {import('./$types').PageData} */
 	export let data;
-	// let filled = false;
-	// let showAnnouncement = true;
-	let isAnnouncementOpen = 'true';
-	let serviceTimeNoShow = false;
+	let filled = false;
+	let showAnnouncement = true;
+	let isAnnouncementOpen = false;
+
 	let seriesImg;
 
 	$: ({ currentSeriesImg } = data);
 
-	$: console.log(currentSeriesImg[0].seriesImg);
-
 	const handleClick = () => {
-		localStorage.setItem('serviceTimeNoShow', true);
-		serviceTimeNoShow = false;
+		localStorage.setItem('isAnnouncementOpen', true);
+		isAnnouncementOpen = false;
 	};
 
 	onMount(() => {
 		gsap.registerPlugin(SplitText);
 		seriesImg = currentSeriesImg[0].seriesImg;
 
-		localStorage.getItem('serviceTimeNoShow')
-			? (serviceTimeNoShow = false)
-			: (serviceTimeNoShow = true);
+		sessionStorage.getItem('isAnnouncementOpen')
+			? (isAnnouncementOpen = false)
+			: (isAnnouncementOpen = true);
 
 		var tl = gsap.timeline(),
 			mySplitText = new SplitText('#header', { type: 'words,chars' }),
@@ -100,6 +98,9 @@
 		</svg>
 	</div> -->
 </div>
+<div class="banner">
+	<p class="xtraLrg noMargin">Christmas Eve Services: 3:00pm & 4:30pm</p>
+</div>
 
 <div id="linkSection">
 	<a
@@ -115,9 +116,6 @@
 		</BgImgSection>
 	</a>
 	<a href="/current-series">
-		<!-- <BgImgSection source="currentSeries" id="currentSeries" className="linkBlock">
-			<p class="lbText">Current Series</p>
-		</BgImgSection> -->
 		{#if seriesImg}
 			<BgImgSection
 				source={seriesImg}
@@ -189,13 +187,13 @@
 	</BgImgSection>
 </div>
 
-<!-- <AnnounceModal {isAnnouncementOpen}>
-	<div slot="header"><h2>No Service - Oct 29</h2></div>
+<AnnounceModal {isAnnouncementOpen} on:click={handleClick}>
+	<div slot="header"><h2>Christmas Eve Services</h2></div>
 	<div slot="content" class="btsContent">
-		<h3>Due to inclement weather, we will not have service Sunday, Oct 29th.</h3>
-		<h3>Stay home and stay safe, we'll see you next week!</h3>
+		<h3>We hope to see you Christmas Eve.</h3>
+		<p>Our Christmas Eve services will be at 3:00pm and 4:30pm.</p>
 	</div>
-</AnnounceModal> -->
+</AnnounceModal>
 
 <style lang="scss">
 	#welcomeBlock {
@@ -474,5 +472,15 @@
 		h3 {
 			margin: 0;
 		}
+	}
+
+	.banner {
+		background: var(--accentColor);
+		color: #fff;
+		text-align: center;
+		padding: 10px;
+	}
+	.noMargin {
+		margin: 0;
 	}
 </style>
