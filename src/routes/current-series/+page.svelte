@@ -39,7 +39,7 @@
 		<h2>Our current series:<br />{currentSeriesID[0].title}</h2>
 		{#if description}
 			{#each description as desc}
-				<h4>{desc}</h4>
+				<h4>{@html desc}</h4>
 			{/each}
 		{/if}
 	</div>
