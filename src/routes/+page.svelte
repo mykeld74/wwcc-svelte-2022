@@ -98,9 +98,9 @@
 		</svg>
 	</div> -->
 </div>
-<div class="banner">
+<!-- <div class="banner">
 	<p class="xtraLrg noMargin">Christmas Eve Services: 3:00pm & 4:30pm</p>
-</div>
+</div> -->
 
 <div id="linkSection">
 	<a
@@ -187,13 +187,13 @@
 	</BgImgSection>
 </div>
 
-<AnnounceModal {isAnnouncementOpen} on:click={handleClick}>
+<!-- <AnnounceModal {isAnnouncementOpen} on:click={handleClick}>
 	<div slot="header"><h2>Christmas Eve Services</h2></div>
 	<div slot="content" class="btsContent">
 		<h3>We hope to see you Christmas Eve.</h3>
 		<p>Our Christmas Eve services will be at 3:00pm and 4:30pm.</p>
 	</div>
-</AnnounceModal>
+</AnnounceModal> -->
 
 <style lang="scss">
 	#welcomeBlock {
