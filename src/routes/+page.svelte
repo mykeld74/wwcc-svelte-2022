@@ -15,7 +15,6 @@
 	$: ({ currentSeriesImg } = data);
 
 	const handleClick = () => {
-		localStorage.setItem('isAnnouncementOpen', true);
 		isAnnouncementOpen = false;
 	};
 
@@ -23,9 +22,11 @@
 		gsap.registerPlugin(SplitText);
 		seriesImg = currentSeriesImg[0].seriesImg;
 
-		sessionStorage.getItem('isAnnouncementOpen')
-			? (isAnnouncementOpen = false)
-			: (isAnnouncementOpen = true);
+		isAnnouncementOpen = true;
+
+		// sessionStorage.getItem('isAnnouncementOpen')
+		// 	? (isAnnouncementOpen = false)
+		// 	: (isAnnouncementOpen = true);
 
 		var tl = gsap.timeline(),
 			mySplitText = new SplitText('#header', { type: 'words,chars' }),
@@ -187,13 +188,13 @@
 	</BgImgSection>
 </div>
 
-<!-- <AnnounceModal {isAnnouncementOpen} on:click={handleClick}>
-	<div slot="header"><h2>Christmas Eve Services</h2></div>
+<AnnounceModal {isAnnouncementOpen} on:click={handleClick}>
+	<div slot="header"><h2>Service Cancelled</h2></div>
 	<div slot="content" class="btsContent">
-		<h3>We hope to see you Christmas Eve.</h3>
-		<p>Our Christmas Eve services will be at 3:00pm and 4:30pm.</p>
+		<h3>Sunday, January 26th</h3>
+		<p>Due to weather conditions, we will not be having our Sunday service.</p>
 	</div>
-</AnnounceModal> -->
+</AnnounceModal>
 
 <style lang="scss">
 	#welcomeBlock {
