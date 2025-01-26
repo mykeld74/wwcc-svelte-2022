@@ -188,13 +188,13 @@
 	</BgImgSection>
 </div>
 
-<AnnounceModal {isAnnouncementOpen} on:click={handleClick}>
+<!-- <AnnounceModal {isAnnouncementOpen} on:click={handleClick}>
 	<div slot="header"><h2>Service Cancelled</h2></div>
 	<div slot="content" class="btsContent">
 		<h3>Sunday, January 26th</h3>
 		<p>Due to weather conditions, we will not be having our Sunday service.</p>
 	</div>
-</AnnounceModal>
+</AnnounceModal> -->
 
 <style lang="scss">
 	#welcomeBlock {

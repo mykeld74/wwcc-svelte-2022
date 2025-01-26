@@ -7,28 +7,22 @@ export interface mcs {
 
 const mcs = [
 	{
+		title: 'Brooks',
+		day: 'Sunday',
+		contact: ['970.208.7560'],
+		time: 'After Church'
+	},
+	{
 		title: 'Ver Millers',
 		day: '2nd Sunday',
 		contact: ['303.519.0501'],
 		time: '2:00pm'
 	},
 	{
-		title: 'Brooks',
-		day: 'Monday Night',
-		contact: ['970.208.7560'],
-		time: '6:30pm'
-	},
-	{
-		title: 'Brink',
-		day: 'Every Other Tuesday Night',
-		contact: ['720.338.6478'],
-		time: 'Evening'
-	},
-	{
-		title: 'Sanchez/Eberly',
-		day: '1st and 3rd Tuesday Night',
-		contact: ['720.828.6422'],
-		time: '6:00pm'
+		title: 'Cole',
+		day: 'Tuesday Night',
+		contact: ['303.547.7427'],
+		time: '7:00pm'
 	},
 	{
 		title: 'Blackman/Winger',
@@ -38,27 +32,34 @@ const mcs = [
 	},
 	{
 		title: 'Van Schooten',
-		day: '2nd and 4th Wednesday Night',
+		day: 'Every Other Wednesday Night',
 		contact: ['503.989.0932'],
 		time: '7:00pm'
 	},
 	{
 		title: 'Barrientos/Phelps',
-		day: 'Thursday Night',
+		day: 'Firday Night',
 		contact: ['303.653.3148'],
 		time: '6:30pm'
 	},
-	{
-		title: 'Cole',
-		day: 'Thursday Night',
-		contact: ['303.547.7427'],
-		time: '7:00pm'
-	},
+
 	{
 		title: 'Westwoods Students',
 		day: 'Monday Night',
 		time: '7:00pm',
 		location: '@Westwoods Community Church'
+	},
+	{
+		title: "Men's Group",
+		day: 'Saturday Morning',
+		time: '7:00am',
+		contact: ['740.624.7669']
+	},
+	{
+		title: 'Young Adults',
+		day: 'Tuesday Night',
+		time: '6:30pm',
+		contact: ['720.346.3246']
 	}
 ];
 
