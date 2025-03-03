@@ -13,8 +13,8 @@
 		<div class="content">
 			<h1>Join a Missional Community!</h1>
 			<p class="info">
-				We think that the best learning and life change occurs in a small groups of people doing
-				life together and that's what our missional communities (MCs) are all about! Check out these
+				We think that the best learning and life change occurs in small groups of people doing life
+				together and that's what our missional communities (MCs) are all about! Check out these
 				communities currently meeting. Reach out and see when and where they are meeting next!
 			</p>
 			<div class="MCs">

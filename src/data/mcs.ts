@@ -40,13 +40,13 @@ const mcs = [
 		title: 'Barrientos/Phelps',
 		day: 'Firday Night',
 		contact: ['303.653.3148'],
-		time: '6:30pm'
+		time: '6:00pm'
 	},
 
 	{
 		title: 'Westwoods Students',
 		day: 'Monday Night',
-		time: '7:00pm',
+		time: '6:30pm',
 		location: '@Westwoods Community Church'
 	},
 	{

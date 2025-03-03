@@ -2,8 +2,8 @@
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
 	import { BgImgSection, Modal, WatchOnline, AnnounceModal, Image } from '../components';
-	import { gsap } from 'gsap/dist/gsap';
-	import { SplitText } from 'gsap/dist/SplitText.js';
+	import { gsap } from '@gsap/shockingly/dist/gsap';
+	import { SplitText } from '@gsap/shockingly/dist/SplitText.js';
 	/** @type {import('./$types').PageData} */
 	export let data;
 	let filled = false;
