@@ -38,7 +38,7 @@ const mcs = [
 	},
 	{
 		title: 'Barrientos/Phelps',
-		day: 'Firday Night',
+		day: 'Friday Night',
 		contact: ['303.653.3148'],
 		time: '6:00pm'
 	},
