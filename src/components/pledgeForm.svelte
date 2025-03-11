@@ -88,7 +88,7 @@
 		If you would like to be part of one of the teams or are interested in making a financial pledge
 		please complete this form:
 	</h4>
-	<form name="lighthousePledgeForm" id="lighthousePledgeForm" onSubmit={handleSubmit} class="form">
+	<form name="lighthousePledgeForm" id="lighthousePledgeForm" on:submit={handleSubmit} class="form">
 		<section class="formSection">
 			<div class="inputContainer">
 				<input id="FirstName" name="FirstName" type="text" bind:value={fields.FirstName} required />
