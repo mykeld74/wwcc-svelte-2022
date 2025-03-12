@@ -18,12 +18,7 @@ const mcs = [
 		contact: ['303.519.0501'],
 		time: '2:00pm'
 	},
-	{
-		title: 'Cole',
-		day: 'Tuesday Night',
-		contact: ['303.547.7427'],
-		time: '7:00pm'
-	},
+
 	{
 		title: 'Blackman/Winger',
 		day: 'Wednesday Night',
