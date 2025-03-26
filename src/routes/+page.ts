@@ -1,8 +1,8 @@
 import client from '$lib/client';
 
 export async function load() {
-	const query = `*[_type == "currentseriesimage"] {
-      seriesImg
+	const query = `*[_type == "currentseries"] | order(_createdAt desc)[0]{
+			seriesImage
 		}`;
 	const currentSeriesImg = await client.fetch(query);
 	return { currentSeriesImg };

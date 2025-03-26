@@ -95,17 +95,10 @@ const Opportunities = [
 		id: '13'
 	},
 	{
-		title: 'Food Rescue and Distribution (Joy’s Kitchen)',
-		desc: 'Rescues and distributes food for families in need in our community.',
-		time: 'Meets every Thursday 6pm-8pm and every other Saturday from 10am-1pm',
-		team: 'General',
-		id: '14'
-	},
-	{
 		title: 'Administration Team',
 		desc: 'Helps with the logistical and organizational aspects of the church.',
 		team: 'General',
-		id: '15'
+		id: '14'
 	}
 ];
 
