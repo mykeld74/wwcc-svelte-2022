@@ -14,13 +14,15 @@
 
 	$: ({ currentSeriesImg } = data);
 
+	$: console.log(currentSeriesImg);
+
 	const handleClick = () => {
 		isAnnouncementOpen = false;
 	};
 
 	onMount(() => {
 		gsap.registerPlugin(SplitText);
-		seriesImg = currentSeriesImg[0].seriesImg;
+		seriesImg = currentSeriesImg.seriesImage;
 
 		isAnnouncementOpen = true;
 
