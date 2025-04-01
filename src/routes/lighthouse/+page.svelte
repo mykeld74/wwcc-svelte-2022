@@ -1,5 +1,4 @@
 <script>
-	import Img from '$components/image.svelte';
 	import PledgeForm from '$components/pledgeForm.svelte';
 	import LighthouseIcon from '$components/lighthouseIcon.svelte';
 </script>
@@ -129,10 +128,6 @@
 		</li>
 	</ol>
 	<PledgeForm />
-
-	<div class="redesign">
-		<Img source="7700woodard" altTag="7700 Woodard" />
-	</div>
 </div>
 
 <style lang="scss">
