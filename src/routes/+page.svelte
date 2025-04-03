@@ -151,11 +151,33 @@
 			</div>
 		</Modal>
 	</BgImgSection>
-	<a href="/current-events">
-		<BgImgSection source="currentEvents" id="currentEvents" className="linkBlock">
-			<p class="lbText">Current Events</p>
-		</BgImgSection>
-	</a>
+
+	<BgImgSection source="Easter2025" id="easter2025" className="linkBlock">
+		<Modal>
+			<p slot="trigger" class="trigger lbText">Easter 2025</p>
+			<p slot="header" class="easterHeader">
+				We will be celebrating 3 weeks of Easter with 2 services each week
+			</p>
+			<div slot="content">
+				<p class="easterText">April 20th, 27th, and May 4th</p>
+				<p class="easterText">9:00am and 10:30am</p>
+				<p class="easterText">
+					Additionally, we will be hosting an Easter Egg Hunt on Saturday, April 19th from
+					10:00am-12:00pm.
+				</p>
+
+				<p class="easterText">
+					As well as a Stations of the Cross Experience in Good Friday - April 18th from 12-6:30pm.
+				</p>
+				<p class="easterText">And a Good Friday Worship Service at 7pm.</p>
+				<a href="https://easterinlakewood.com" target="_blank">
+					<p class="center easterText easterLink">
+						Click here for more information about all our Easter events
+					</p>
+				</a>
+			</div>
+		</Modal>
+	</BgImgSection>
 </div>
 <div id="weAreContainer">
 	<BgImgSection id="weAre" source="wwWorship22b" className="weAre">
@@ -230,12 +252,34 @@
 		text-align: center;
 		padding: 10px;
 		p {
-			font-size: clamp(22px, 3vw, 32px);
+			font-size: clamp(22px, 3.5vw, 32px);
 			font-weight: 500;
 			margin: 0;
 			text-transform: uppercase;
 		}
 	}
+	.easterHeader {
+		font-size: clamp(24px, 5vw, 40px);
+		font-weight: 500;
+		margin: 0;
+		text-wrap: balance;
+		text-align: center;
+	}
+	.easterText {
+		font-size: clamp(18px, 2.5vw, 26px);
+		font-weight: 500;
+		margin: 1rem 0;
+		text-align: center;
+		text-wrap: balance;
+	}
+	.easterLink {
+		color: var(--accentColor);
+		margin-top: 2rem;
+		&:hover {
+			color: #fff;
+		}
+	}
+
 	.button {
 		display: flex;
 		justify-content: center;
