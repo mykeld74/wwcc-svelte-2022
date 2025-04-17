@@ -104,7 +104,11 @@
 <!-- <div class="banner">
 	<p class="xtraLrg noMargin">Christmas Eve Services: 3:00pm & 4:30pm</p>
 </div> -->
-
+<div class="banner">
+	<p class="bannerText">
+		We will have 2 services on April 20th, April 27th, May 4th and May 11th - 9:00 and 10:30am.
+	</p>
+</div>
 <div id="linkSection">
 	<a
 		href="https://www.youtube.com/channel/UCJkTcdfWk2DWGDuqJUOsrxA/playlists"
@@ -138,7 +142,7 @@
 			<p slot="trigger" class="trigger lbText">Service Times and Directions</p>
 			<p slot="header" class="xtraLrg">Join us this Sunday</p>
 			<div slot="content">
-				<p class="xtraLrg">9:30am</p>
+				<p class="xtraLrg">9:00 & 10:30am</p>
 				<p>7700 Woodard Dr.</p>
 				<p>Lakewood, CO 80227</p>
 				<iframe
@@ -526,6 +530,11 @@
 		color: #fff;
 		text-align: center;
 		padding: 10px;
+	}
+	.bannerText {
+		font-size: clamp(22px, 2.5vw, 32px);
+		font-weight: 700;
+		margin: 0;
 	}
 	.noMargin {
 		margin: 0;
