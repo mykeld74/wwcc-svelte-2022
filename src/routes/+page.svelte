@@ -108,10 +108,6 @@
 	<p class="bannerText">
 		We will have 2 services on April 20th, April 27th, May 4th and May 11th - 9:00 and 10:30am.
 	</p>
-	<div class="divider" />
-	<p class="bannerText">
-		Sadly do to inclement weather, our Easter Egg Hunt on Saturday, is cancelled.
-	</p>
 </div>
 <div id="linkSection">
 	<a
