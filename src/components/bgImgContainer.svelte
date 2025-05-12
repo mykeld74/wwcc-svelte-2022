@@ -23,6 +23,7 @@
 		background: var(--bgImage) no-repeat var(--bgPosition, center) / var(--bgSize, cover);
 	}
 	.linkBlock {
+		height: 100%;
 		min-height: 300px;
 		padding: 0 2vw;
 		text-align: center;
