@@ -117,7 +117,7 @@
 							<p slot="trigger" class="trigger">Directions and Times</p>
 							<p slot="header" class="xtraLrg">Join us this Sunday</p>
 							<div slot="content">
-								<p class="xtraLrg">9:00 & 10:30am</p>
+								<p class="xtraLrg">9:30am</p>
 								<p>7700 Woodard Dr.</p>
 								<p>Lakewood, CO 80227</p>
 								<iframe

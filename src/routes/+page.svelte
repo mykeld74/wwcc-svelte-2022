@@ -104,11 +104,7 @@
 <!-- <div class="banner">
 	<p class="xtraLrg noMargin">Christmas Eve Services: 3:00pm & 4:30pm</p>
 </div> -->
-<div class="banner">
-	<p class="bannerText">
-		We will have 2 services on April 20th, April 27th, May 4th and May 11th - 9:00 and 10:30am.
-	</p>
-</div>
+
 <div id="linkSection">
 	<a
 		href="https://www.youtube.com/channel/UCJkTcdfWk2DWGDuqJUOsrxA/playlists"
@@ -142,7 +138,7 @@
 			<p slot="trigger" class="trigger lbText">Service Times and Directions</p>
 			<p slot="header" class="xtraLrg">Join us this Sunday</p>
 			<div slot="content">
-				<p class="xtraLrg">9:00 & 10:30am</p>
+				<p class="xtraLrg">9:30am</p>
 				<p>7700 Woodard Dr.</p>
 				<p>Lakewood, CO 80227</p>
 				<iframe
@@ -152,33 +148,6 @@
 					title="Westwoods Map"
 					id="wwMap"
 				/>
-			</div>
-		</Modal>
-	</BgImgSection>
-
-	<BgImgSection source="Easter2025" id="easter2025" className="linkBlock">
-		<Modal>
-			<p slot="trigger" class="trigger lbText">Easter 2025</p>
-			<p slot="header" class="easterHeader">
-				We will be celebrating 3 weeks of Easter with 2 services each week
-			</p>
-			<div slot="content">
-				<p class="easterText">April 20th, 27th, and May 4th</p>
-				<p class="easterText">9:00am and 10:30am</p>
-				<p class="easterText">
-					Additionally, we will be hosting an Easter Egg Hunt on Saturday, April 19th from
-					10:00am-12:00pm.
-				</p>
-
-				<p class="easterText">
-					As well as a Stations of the Cross Experience in Good Friday - April 18th from 12-6:30pm.
-				</p>
-				<p class="easterText">And a Good Friday Worship Service at 7pm.</p>
-				<a href="https://easterinlakewood.com" target="_blank">
-					<p class="center easterText easterLink">
-						Click here for more information about all our Easter events
-					</p>
-				</a>
 			</div>
 		</Modal>
 	</BgImgSection>
@@ -335,6 +304,7 @@
 		width: 100%;
 		height: 100%;
 		min-height: 300px;
+		aspect-ratio: 3 / 2;
 		background: transparent;
 		flex-direction: column;
 		display: flex;
