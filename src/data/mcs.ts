@@ -7,12 +7,6 @@ export interface mcs {
 
 const mcs = [
 	{
-		title: 'Brooks',
-		day: 'Sunday',
-		contact: ['970.208.7560'],
-		time: 'After Church'
-	},
-	{
 		title: 'Ver Millers',
 		day: '2nd Sunday',
 		contact: ['303.519.0501'],
@@ -35,12 +29,12 @@ const mcs = [
 		title: 'Barrientos/Phelps',
 		day: 'Friday Night',
 		contact: ['303.653.3148'],
-		time: '6:00pm'
+		time: '6:30pm'
 	},
 
 	{
 		title: 'Westwoods Students',
-		day: 'Monday Night',
+		day: 'Every Other Monday Night',
 		time: '6:30pm',
 		location: '@Westwoods Community Church'
 	},
