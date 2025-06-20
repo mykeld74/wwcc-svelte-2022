@@ -9,7 +9,7 @@ const Opportunities = [
 	{
 		title: 'Westwoods Kids',
 		desc: 'Provides a fun, age appropriate learning environment for kids.',
-		time: 'Every Sunday during church services',
+		time: 'Sunday during church services',
 		team: 'WWKids',
 		id: '01'
 	},
@@ -37,14 +37,14 @@ const Opportunities = [
 	{
 		title: 'Green Room Team',
 		desc: 'Reaches out to new people at Westwoods, helping them get connected.',
-		time: 'Every Sunday after service',
+		time: 'Sunday after service',
 		team: 'General',
 		id: '05'
 	},
 	{
 		title: 'Hospitality Team',
 		desc: 'Prepares coffee, donuts, and bagels to ensure a warm enjoyable experience',
-		time: 'Every Sunday service',
+		time: 'Sunday services',
 		team: 'General',
 		id: '06'
 	},
@@ -57,7 +57,7 @@ const Opportunities = [
 	{
 		title: 'Greeter Team',
 		desc: 'Ensures that everyone’s first interaction is warm and inviting.',
-		time: 'Every Sunday service',
+		time: 'Sunday services',
 		team: 'General',
 		id: '08'
 	},
