@@ -101,9 +101,17 @@
 		</svg>
 	</div> -->
 </div>
-<!-- <div class="banner">
-	<p class="xtraLrg noMargin">Christmas Eve Services: 3:00pm & 4:30pm</p>
-</div> -->
+<div class="banner">
+	<a
+		href="https://westwoods.churchcenter.com/registrations/events/2929519"
+		target="_blank"
+		rel="noopener noreferrer"
+	>
+		<p class="bannerText noMargin">
+			Kids Camp - July 7-10 - Click this banner for more info or to register!
+		</p>
+	</a>
+</div>
 
 <div id="linkSection">
 	<a
@@ -510,6 +518,8 @@
 		font-size: clamp(22px, 2.5vw, 32px);
 		font-weight: 700;
 		margin: 0;
+		text-decoration: none;
+		color: #fff;
 	}
 	.noMargin {
 		margin: 0;
