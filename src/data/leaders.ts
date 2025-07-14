@@ -19,9 +19,7 @@ export interface Elders {
 }
 
 const Elders = [
-	{ name: 'Taryn & Matt Marchena', imgId: 'Marchena' },
 	{ name: 'Sue & Steve Saindon', imgId: 'Saindon' },
-	{ name: 'Charlie & Karissa Eberly', imgId: 'Eberly' },
 	{ name: 'Tom & Jenni Blackman', imgId: 'Blackman' }
 ];
 

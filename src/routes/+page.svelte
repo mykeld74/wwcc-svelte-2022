@@ -101,17 +101,6 @@
 		</svg>
 	</div> -->
 </div>
-<div class="banner">
-	<a
-		href="https://westwoods.churchcenter.com/registrations/events/2929519"
-		target="_blank"
-		rel="noopener noreferrer"
-	>
-		<p class="bannerText noMargin">
-			Kids Camp - July 7-10 - Click this banner for more info or to register!
-		</p>
-	</a>
-</div>
 
 <div id="linkSection">
 	<a
